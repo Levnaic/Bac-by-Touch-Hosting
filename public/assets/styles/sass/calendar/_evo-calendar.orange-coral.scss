@@ -1,0 +1,164 @@
+/*!
+* Evo Calendar - Simple and Modern-looking Event Calendar Plugin
+*
+* Licensed under the MIT License
+* 
+* Version: 1.1.2
+* Author: Edlyn Villegas
+* Docs: https://edlynvillegas.github.com/evo-calendar
+* Repo: https://github.com/edlynvillegas/evo-calendar
+* Issues: https://github.com/edlynvillegas/evo-calendar/issues
+* 
+*/
+
+/* Evo Calendar - Theme: Orange Coral */
+
+.orange-coral {
+  -webkit-box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65);
+  box-shadow: 0 10px 50px -20px rgb(255, 153, 102, 0.65);
+  border: 2px solid $primaryColor; // okvir celog kalendara
+}
+.orange-coral .calendar-sidebar {
+  //cela klasa je levi meni
+  background: $primaryColor;
+  background: -o-linear-gradient(left, $primaryColor_darker, #ff9966);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($primaryColor_darker),
+    to($primaryColor_darker)
+  );
+  background: linear-gradient(to right, $primaryColor_darker, #ff9966);
+  -webkit-box-shadow: 5px 0 18px -3px rgb(255, 152, 101);
+  box-shadow: 5px 0 18px -3px rgb(255, 152, 101);
+}
+.orange-coral.sidebar-hide .calendar-sidebar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.orange-coral .calendar-sidebar > .month-list::-webkit-scrollbar-thumb:hover {
+  background: $primaryColor_lighter;
+}
+.orange-coral .calendar-sidebar > .month-list > .calendar-months > li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.orange-coral
+  .calendar-sidebar
+  > .month-list
+  > .calendar-months
+  > li.active-month {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.orange-coral .calendar-sidebar > span#sidebarToggler,
+.orange-coral #eventListToggler {
+  background-color: $primaryColor_darker; //dugmad za gasenje i paljenje sajdbarova
+  -webkit-box-shadow: 0 0 18px -3px rgb(255, 153, 102, 0.65);
+  box-shadow: 0 0 18px -3px rgb(255, 153, 102, 0.65);
+}
+.orange-coral th[colspan="7"] {
+  position: relative;
+  font-size: 30px;
+  color: $textPrimary !important; // naslov meseca u headu
+}
+.orange-coral th[colspan="7"]::after {
+  content: "";
+  display: block;
+  width: 92%;
+  height: 1px;
+  margin: 0 auto;
+  background: $primaryColor;
+}
+.orange-coral tr.calendar-body .calendar-day .day:hover {
+  background-color: rgba(255, 153, 102, 0.32);
+  color: $primaryColor_darker;
+}
+.orange-coral tr.calendar-body .calendar-day .day.calendar-today {
+  background: $primaryColor; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -o-linear-gradient(left, $primaryColor_darker, $primaryColor);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($primaryColor_darker),
+    to($primaryColor)
+  );
+  background: linear-gradient(
+    to right,
+    $primaryColor_darker,
+    $primaryColor
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.orange-coral tr.calendar-body .calendar-day .day.calendar-active,
+.orange-coral tr.calendar-body .calendar-day .day.calendar-active:hover {
+  border-color: $primaryColor_darker;
+}
+.orange-coral tr.calendar-body .calendar-day .day.calendar-today:hover {
+  color: #fff;
+}
+.orange-coral .calendar-events {
+  background-color: #fff;
+}
+.orange-coral .calendar-events::-webkit-scrollbar-thumb {
+  background: $primaryColor;
+  border-radius: 5px;
+}
+.orange-coral .calendar-events::-webkit-scrollbar-thumb:hover {
+  background: $primaryColor;
+}
+.orange-coral .event-container > .event-icon > div.event-bullet-event,
+.orange-coral .event-indicator > .type-bullet > div.type-event {
+  background-color: $primaryColor_darker;
+}
+.orange-coral .event-list > .event-empty {
+  background-color: rgba(255, 150, 101, 0.15);
+  border: 1px solid $primaryColor_lighter;
+}
+.orange-coral .event-list > .event-empty > p {
+  color: $textPrimary !important; //boja teksta dogadjaja
+}
+.orange-coral .event-container > .event-info > p.event-title > span {
+  color: $primaryColor_lighter;
+  background-color: rgba(255, 150, 101, 0.15);
+  border: 1px solid $primaryColor_lighter;
+}
+@media only screen and (max-width: 768px) {
+  .orange-coral .calendar-inner::after {
+    background-color: rgba(160, 131, 119, 0.5);
+  }
+  .orange-coral .calendar-events {
+    -webkit-box-shadow: -5px 0 18px -3px rgba(255, 152, 101, 0.5);
+    box-shadow: -5px 0 18px -3px rgba(255, 152, 101, 0.5);
+  }
+  .orange-coral.event-hide .calendar-events {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .orange-coral .calendar-sidebar > .calendar-year {
+    background: $primaryColor;
+    background: -o-linear-gradient(left, #ff7b64, #f96);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#ff7b64),
+      to(#f96)
+    );
+    background: linear-gradient(to right, #ff7b64, #f96);
+    -webkit-box-shadow: 0 5px 18px -3px rgba(152, 91, 61, 0.65);
+    box-shadow: 0 3px 8px -3px rgba(152, 91, 61, 0.65);
+  }
+  .orange-coral .calendar-sidebar > .month-list {
+    background: -o-linear-gradient(left, $primaryColor_darker, #f96);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from($primaryColor_darker),
+      to(#f96)
+    );
+    background: linear-gradient(to right, $primaryColor_darker, #f96);
+  }
+}

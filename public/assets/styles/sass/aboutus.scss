@@ -1,0 +1,44 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+
+h1 {
+  text-align: center;
+  margin-top: $headlineTop;
+  margin-bottom: $headlineBottom;
+}
+
+h2 {
+  margin-top: 80px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+
+.persons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+  .person {
+    text-align: center;
+    margin-bottom: 50px;
+    p {
+      text-align: center;
+    }
+    img {
+      width: 180px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+    .personName {
+      font-size: 18px;
+    }
+    .personRole {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@import "responsive/aboutusResponsive";

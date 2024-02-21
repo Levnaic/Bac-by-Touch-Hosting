@@ -1,0 +1,44 @@
+footer {
+  margin-top: 150px;
+  padding: 0 10%;
+  padding-top: 68px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $primaryColor;
+
+  .footerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerHeadline {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .socialMediaHeadline {
+    font-size: 22px;
+  }
+
+  .socialLinks {
+    a {
+      color: $textPrimary;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+//mobile and smartphone css
+@media only screen and (max-width: 480px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}

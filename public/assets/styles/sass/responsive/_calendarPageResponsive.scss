@@ -1,0 +1,28 @@
+//* MOBILE
+@media only screen and (max-width: 480px) {
+  #showTime {
+    flex-direction: column;
+    .showTimeHeadline {
+      text-align: center;
+      width: 100%;
+    }
+    .showTimeBigContainer {
+      flex-direction: column;
+      justify-content: center;
+      gap: 0;
+    }
+  }
+
+  #events {
+    .upperPart {
+      img {
+        width: 100%;
+        height: 300px;
+      }
+      .dateContainer {
+        padding: 6px 8px;
+        left: 12px;
+      }
+    }
+  }
+}

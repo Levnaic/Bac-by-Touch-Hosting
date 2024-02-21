@@ -1,0 +1,120 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+@import "partials/btn/btnStandard";
+
+h1{
+text-align: center;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.backIcon{
+  margin-top: 20px;
+  margin-left: 20px;
+  color: $textPrimary;
+}
+
+#formContainer {
+    // position: absolute;
+    // top: 65%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+  color: $textPrimary;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  .formTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .formCard {
+    margin: 100px 0;
+    width: 300px;
+    background-color: $primaryColor;
+    padding: 20px;
+    border-radius: 10px;
+    border-top: 4px solid $secondaryColor;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      input {
+        padding: 10px;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $backgroundColor;
+        color: $textPrimary;
+        transition: box-shadow 0.3s;
+        &:focus {
+          box-shadow: 0 0 10px $secondaryColor;
+        }
+      }
+      textarea {
+        box-sizing: border-box;
+        padding: 15px;
+        background-color: $primaryColor_lighter;
+        border: none;
+        resize: none;
+      }
+    }
+  }
+  .formButtons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.loginButton,
+.registerLink {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+.loginButton {
+  background-color: transparent;
+  color: $secondaryColor;
+  &:hover {
+    background-color: $secondaryColor;
+    color: $backgroundColor;
+    box-shadow: none;
+  }
+  &:active {
+    box-shadow: 0 0 10px $secondaryColor;
+  }
+}
+
+.registerLink {
+  color: $backgroundColor;
+  background-color: transparent;
+}
+
+.registerLink:hover {
+  color: $backgroundColor;
+}
+
+.registerLink:active {
+  box-shadow: 0 0 10px #ccc;
+}
+
+.btnStandard {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+@import "responsive/formResponsive";

@@ -1,0 +1,105 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+
+h1 {
+  margin-top: $headlineTop;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 120px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 40px;
+}
+
+#showTime {
+  margin: 30px 7%;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background-color: $primaryColor;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  .showTimeHeadline {
+    width: 30%;
+  }
+  .showTimeBigContainer {
+    display: flex;
+    justify-content: flex-end;
+    .showTimeContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    width: 70%;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .showTimeBoxContainer {
+      display: flex;
+      gap: 3px;
+      flex-direction: row-reverse;
+      .showTimeBox {
+        width: 40px;
+        height: 55px;
+        border: 3px solid $secondaryColor;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        p {
+          margin: 0;
+          padding: 0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+#events {
+  display: flex;
+  flex-direction: column;
+  gap: 110px;
+  a {
+    text-decoration: none;
+  }
+
+  .eventContainer {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .upperPart {
+    width: 100%;
+    position: relative;
+    .dateContainer {
+      padding: 10px 14px;
+      border-radius: 0 0 15px 15px;
+      margin: 0;
+      position: absolute;
+      left: 30px;
+      background-color: $secondaryColor;
+      .date {
+        padding: 14px, 20px;
+      }
+    }
+    img {
+      width: 100%;
+      height: 600px;
+    }
+  }
+  .lowerPart {
+    padding: 20px 40px;
+  }
+}
+
+@import "responsive/calendarPageResponsive";

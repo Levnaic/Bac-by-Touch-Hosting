@@ -1,0 +1,134 @@
+/*!
+* Evo Calendar - Simple and Modern-looking Event Calendar Plugin
+*
+* Licensed under the MIT License
+* 
+* Version: 1.1.2
+* Author: Edlyn Villegas
+* Docs: https://edlynvillegas.github.com/evo-calendar
+* Repo: https://github.com/edlynvillegas/evo-calendar
+* Issues: https://github.com/edlynvillegas/evo-calendar/issues
+* 
+*/
+/* Evo Calendar - Theme: Orange Coral */
+.orange-coral {
+  box-shadow: 0 10px 50px -20px rgba(255, 153, 102, 0.65);
+  border: 2px solid #f1c376;
+}
+
+.orange-coral .calendar-sidebar {
+  background: #f1c376;
+  background: linear-gradient(to right, #f0b145, #ff9966);
+  box-shadow: 5px 0 18px -3px rgb(255, 152, 101);
+}
+
+.orange-coral.sidebar-hide .calendar-sidebar {
+  box-shadow: none;
+}
+
+.orange-coral .calendar-sidebar > .month-list::-webkit-scrollbar-thumb:hover {
+  background: #fde5b6;
+}
+
+.orange-coral .calendar-sidebar > .month-list > .calendar-months > li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.orange-coral .calendar-sidebar > .month-list > .calendar-months > li.active-month {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.orange-coral .calendar-sidebar > span#sidebarToggler,
+.orange-coral #eventListToggler {
+  background-color: #f0b145;
+  box-shadow: 0 0 18px -3px rgba(255, 153, 102, 0.65);
+}
+
+.orange-coral th[colspan="7"] {
+  position: relative;
+  font-size: 30px;
+  color: #3a3a3a !important;
+}
+
+.orange-coral th[colspan="7"]::after {
+  content: "";
+  display: block;
+  width: 92%;
+  height: 1px;
+  margin: 0 auto;
+  background: #f1c376;
+}
+
+.orange-coral tr.calendar-body .calendar-day .day:hover {
+  background-color: rgba(255, 153, 102, 0.32);
+  color: #f0b145;
+}
+
+.orange-coral tr.calendar-body .calendar-day .day.calendar-today {
+  background: #f1c376; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f0b145, #f1c376); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.orange-coral tr.calendar-body .calendar-day .day.calendar-active,
+.orange-coral tr.calendar-body .calendar-day .day.calendar-active:hover {
+  border-color: #f0b145;
+}
+
+.orange-coral tr.calendar-body .calendar-day .day.calendar-today:hover {
+  color: #fff;
+}
+
+.orange-coral .calendar-events {
+  background-color: #fff;
+}
+
+.orange-coral .calendar-events::-webkit-scrollbar-thumb {
+  background: #f1c376;
+  border-radius: 5px;
+}
+
+.orange-coral .calendar-events::-webkit-scrollbar-thumb:hover {
+  background: #f1c376;
+}
+
+.orange-coral .event-container > .event-icon > div.event-bullet-event,
+.orange-coral .event-indicator > .type-bullet > div.type-event {
+  background-color: #f0b145;
+}
+
+.orange-coral .event-list > .event-empty {
+  background-color: rgba(255, 150, 101, 0.15);
+  border: 1px solid #fde5b6;
+}
+
+.orange-coral .event-list > .event-empty > p {
+  color: #3a3a3a !important;
+}
+
+.orange-coral .event-container > .event-info > p.event-title > span {
+  color: #fde5b6;
+  background-color: rgba(255, 150, 101, 0.15);
+  border: 1px solid #fde5b6;
+}
+
+@media only screen and (max-width: 768px) {
+  .orange-coral .calendar-inner::after {
+    background-color: rgba(160, 131, 119, 0.5);
+  }
+  .orange-coral .calendar-events {
+    box-shadow: -5px 0 18px -3px rgba(255, 152, 101, 0.5);
+  }
+  .orange-coral.event-hide .calendar-events {
+    box-shadow: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .orange-coral .calendar-sidebar > .calendar-year {
+    background: #f1c376;
+    background: linear-gradient(to right, #ff7b64, #f96);
+    box-shadow: 0 3px 8px -3px rgba(152, 91, 61, 0.65);
+  }
+  .orange-coral .calendar-sidebar > .month-list {
+    background: linear-gradient(to right, #f0b145, #f96);
+  }
+}/*# sourceMappingURL=evo-calendar.orange-coral.css.map */

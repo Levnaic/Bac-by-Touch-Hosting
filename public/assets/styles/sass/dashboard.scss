@@ -1,0 +1,43 @@
+@import "partials/variables";
+@import "partials/general";
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+#dashboardHeadline {
+  h1 {
+    text-align: center;
+    margin-top: $headlineTop;
+  }
+}
+
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 80px;
+  align-items: center;
+  a {
+    all: unset;
+    cursor: pointer;
+    .navCard {
+      width: 300px;
+      height: 150px;
+      background-color: $primaryColor;
+      border: 2px solid $secondaryColor;
+      border-radius: 6px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .navCardHome {
+      background-color: $secondaryColor;
+    }
+  }
+}
+
+@import "responsive/dashboardResponsive";

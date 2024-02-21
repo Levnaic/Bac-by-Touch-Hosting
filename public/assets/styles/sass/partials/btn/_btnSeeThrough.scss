@@ -1,0 +1,37 @@
+.btnSeeThrough {
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 40px;
+  background-color: $secondaryColor;
+  color: $textPrimary;
+  font-size: 1.1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  cursor: pointer;
+  &:active {
+    transform: scale(0.98);
+  }
+
+  // cursor: pointer;
+  // margin-top: 40px;
+  // margin-right: 18%;
+  // padding: 15px 10px;
+  // border: 3px solid $textPrimary;
+  // font-size: $textSize;
+  // color: $textPrimary;
+  // background-color: transparent;
+  // background: linear-gradient(to right, $primaryColor 50%, transparent 50%);
+  // background-size: 200% 100%;
+  // background-position: right bottom;
+  // transition: all 0.5s ease-out;
+
+  // &:hover {
+  //   background-position: left bottom;
+  // }
+
+  // &:active {
+  //   transform: scale(0.96);
+  // }
+}

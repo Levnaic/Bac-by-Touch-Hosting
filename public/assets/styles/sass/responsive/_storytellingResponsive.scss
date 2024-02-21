@@ -1,0 +1,29 @@
+//* MOBILE AND SMARTPHONE
+@media only screen and (max-width: 480px) {
+  //tour selection part
+  #selectionPart {
+    .selectionBox {
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  //video part
+  .videos {
+    video {
+      width: 100%;
+    }
+    .goUpLink {
+      justify-content: center;
+      a {
+        width: 200px;
+        height: 60px;
+      }
+    }
+  }
+}

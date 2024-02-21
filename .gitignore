@@ -1,0 +1,15 @@
+#folders
+logs/
+data/
+img/
+node_modules/
+
+#config files
+config.php
+mailer-config.php
+paths-config-local.php
+sec-config.php
+
+#api
+api-endpoint.json
+api-keys.json

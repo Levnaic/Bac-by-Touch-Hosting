@@ -1,0 +1,153 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+
+h1 {
+  text-align: center;
+  margin-top: $headlineTop;
+  margin-bottom: $headlineBottom;
+}
+
+.cardsPageText {
+  margin-top: 90px;
+  margin-bottom: 150px;
+}
+h2 {
+  text-align: justify;
+}
+h3 {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+//? MOZDA NECE TREBATI
+
+//slideshow part
+
+.slideshow-container {
+  margin-top: 150px;
+  position: relative;
+  box-shadow: $textPrimary 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  height: 550px;
+  overflow: hidden;
+  .slide {
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out;
+    img {
+      width: 100%;
+      height: 100%
+    }
+  }
+
+  .activeSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    transform: translateX(0);
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+  }
+
+  .prevBtn,
+  .nextBtn {
+    height: 40px;
+    aspect-ratio: 1;
+    background-color: $primaryColor;
+    color: $textPrimary;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    font-size: 18px;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+
+  .prevBtn {
+    margin-left: 12px;
+  }
+
+  .nextBtn {
+    right: 0;
+    margin-right: 12px;
+  }
+}
+
+.dots {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  .dot {
+    width: 20px;
+    aspect-ratio: 1;
+    background-color: $primaryColor;
+    border: 1px solid black;
+    border-radius: 50%;
+    transform: scale(0.76);
+    cursor: pointer;
+  }
+
+  .activeDot {
+    transform: scale(1);
+    background-color: $primaryColor_darker;
+  }
+}
+//?MOZDA NECE TREBATI
+
+//suggested pages part
+.suggestedPages {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  flex-wrap: wrap;
+  .suggestedPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      width: 22vw;
+      p {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 5px;
+        aspect-ratio: 1;
+        //dodati deo
+
+        --g: 3px; /* the gap */
+        --b: 8px; /* border thickness*/
+        --c: #679e73; /* the color */
+
+        padding: calc(var(--g) + var(--b));
+        --_c: #0000 0 25%, var(--c) 0 50%;
+        --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+        --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+        background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+          var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+        background-size: 200% var(--b), var(--b) 200%;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+          --_p: 75%;
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+}
+
+@import "responsive/sightsResponsive";

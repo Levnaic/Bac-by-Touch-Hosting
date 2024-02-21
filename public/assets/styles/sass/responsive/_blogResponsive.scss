@@ -1,0 +1,28 @@
+//mobile and smartphone
+@media only screen and (max-width: 480px) {
+  .blogCards-container {
+    .blogCard {
+      .blog-container {
+        flex-direction: column;
+        .blogImg img {
+          width: 100%;
+        }
+      }
+      .blogMeta {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        .blogMetaData {
+          text-align: start;
+          gap: 6px;
+          margin-bottom: 12px;
+          .blogMetaBox {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

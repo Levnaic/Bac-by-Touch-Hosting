@@ -1,0 +1,22 @@
+//*MOBILE
+@media only screen and (max-width: 480px) {
+  .slideshow-container {
+    height: 400px;
+    .slide {
+      img {
+        height: 400px;
+      }
+    }
+  }
+
+  .suggestedPages {
+    flex-direction: column;
+    .suggestedPage {
+      a {
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
+}

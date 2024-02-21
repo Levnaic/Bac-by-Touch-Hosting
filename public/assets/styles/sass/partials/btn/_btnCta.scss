@@ -1,0 +1,53 @@
+.btnCta {
+  width: 140px;
+  height: 40px;
+  color: $textPrimary;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: $secondaryColor;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    color: $textPrimary;
+    background: transparent;
+    box-shadow: none;
+  }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: $secondaryColor;
+    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+      4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+  }
+
+  &:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+}

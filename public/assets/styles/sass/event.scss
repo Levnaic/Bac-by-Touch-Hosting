@@ -1,0 +1,51 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+@import "partials/btn/btnStandard";
+
+.pageControll {
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-between;
+  .adminPostBtns {
+    display: flex;
+    gap: 60px;
+  }
+
+  a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: $textPrimary;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.title {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    margin-bottom: 70px;
+    aspect-ratio: 1.77;
+    height: 70vh;
+    -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+    box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+  }
+}
+
+.body {
+  text-align: justify;
+}
+
+@import "responsive/eventResponsive";

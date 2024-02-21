@@ -1,0 +1,316 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/btn/btnCta";
+
+body {
+  position: relative;
+}
+
+.open-btn {
+  display: none;
+}
+
+nav {
+  padding: 5%;
+  margin-top: 30px;
+  // position: relative;
+  width: 100%;
+  min-height: 150px;
+  background-color: $primaryColor;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 5px;
+  .mapNavBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    width: 120px;
+    height: 80px;
+    background-color: $primaryColor_lighter;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+  .mapNavBtnSymbol {
+    font-size: 36px;
+    text-decoration: none;
+    color: $textPrimary;
+  }
+  .openMapResp {
+    display: none;
+  }
+  .standardMode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    #mapCategorySelect {
+      margin: 20px 0;
+      padding: 0 20px;
+      width: 70%;
+      height: 80px;
+      background-color: $primaryColor_lighter;
+      font-size: $textSize;
+      font-family: khorla;
+      color: $textPrimary;
+      border: none;
+      border-radius: 5px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .focusedMode {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#map-container {
+  //! ISKLJUCITI U PRODUKCIJI!!
+  // display: none;
+  .markers-container {
+    margin-bottom: 60px;
+    position: relative;
+    left: 2%;
+    top: 0;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    .marker {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 20px;
+      width: 100%;
+      background-color: $primaryColor;
+      border-radius: 5px;
+      min-height: 150px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      cursor: pointer;
+      .upperMarker {
+        display: flex;
+        gap: 40px;
+      }
+      .markerInvisablePart {
+        display: none;
+      }
+      .markerMeta {
+        display: none;
+      }
+    }
+    .invisibleMarker {
+      display: none;
+    }
+  }
+
+  #loadingOVerlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  .mapBoxContainer {
+    width: 65%;
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}
+
+//*COMMENTS
+
+.markerCommentsHeadlinePart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: $textPrimary;
+  .commentsHeadline {
+    margin-top: 60px;
+  }
+  button {
+    width: 50px;
+    aspect-ratio: 1;
+  }
+}
+.comment {
+  margin: 30px 0;
+  padding: 5px 20px 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid $secondaryColor;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+  .commentUpperPart {
+    display: flex;
+    flex-direction: column;
+    .commentUpperUpperPart {
+      padding-top: 25px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 19px;
+
+      .commentUser {
+        font-size: 1.2rem;
+      }
+      .commentTime {
+        font-weight: 300;
+        font-size: 0.8rem;
+        opacity: 0.9;
+      }
+    }
+  }
+  .commentLowerPart {
+    padding-top: 19px;
+  }
+}
+
+//* ADD COMMENT PART
+.mapPopups {
+  display: none;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50vw;
+  min-height: 50vh;
+  border-radius: 15px;
+  background-color: $primaryColor;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  .upperPart {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    .btnClosePopup {
+      aspect-ratio: 1;
+      width: 40px;
+      margin: 20px;
+      grid-column: 1 / 2;
+      cursor: pointer;
+      background-color: $secondaryColor;
+      border: none;
+      box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      color: $textPrimary;
+      &:active {
+        transform: scale(0.96);
+      }
+    }
+    h3 {
+      justify-self: center;
+      margin-top: 50px;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    textarea {
+      box-sizing: border-box;
+      padding: 15px;
+      background-color: $primaryColor_lighter;
+      border: none;
+      resize: none;
+    }
+  }
+}
+
+//* RATE STARS
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+  &:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+  }
+  &:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: $primaryColor_lighter;
+  }
+  &:not(:checked) > label:before {
+    content: "★ ";
+  }
+
+  & > input:checked ~ label {
+    color: $secondaryColor;
+  }
+
+  &:not(:checked) > label:hover,
+  &:not(:checked) > label:hover ~ label {
+    color: $secondaryColor;
+  }
+
+  & > input:checked + label:hover,
+  & > input:checked + label:hover ~ label,
+  & > input:checked ~ label:hover,
+  & > input:checked ~ label:hover ~ label,
+  & > label:hover ~ input:checked ~ label {
+    color: $secondaryColor;
+  }
+}
+
+.rateOther {
+  float: left;
+  height: 46px;
+  pointer-events: none;
+  &:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+  }
+  &:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: $primaryColor_lighter;
+  }
+  &:not(:checked) > label:before {
+    content: "★ ";
+  }
+
+  & > input:checked ~ label {
+    color: $secondaryColor;
+  }
+}
+
+@import "responsive/mapResponsive";

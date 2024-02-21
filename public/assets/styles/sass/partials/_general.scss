@@ -1,0 +1,110 @@
+// FONTS
+@font-face {
+  font-family: khorla;
+  src: url(../font/Khorla.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// HTML ELEMENTS
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: khorla;
+  margin: 0;
+  padding: 0;
+  background-color: $backgroundColor;
+  font-size: $textSize;
+  line-height: 1.5;
+}
+
+select {
+  font-family: khorla;
+}
+
+button {
+  font-family: khorla;
+}
+
+h1 {
+  font-size: $headlineSize;
+  line-height: 1.2;
+  color: $textPrimary;
+}
+
+h2 {
+  font-size: $subtitleSize;
+  line-height: 1.3;
+  color: $textPrimary;
+}
+
+h3 {
+  font-size: $h3text;
+  line-height: 1.4;
+  color: $textPrimary;
+}
+
+h4 {
+  font-size: $h4text;
+  line-height: 1.5;
+  color: $textPrimary;
+}
+
+p {
+  font-size: $textSize;
+  color: $textPrimary;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+small {
+  font-size: 0.8rem;
+  color: $textPrimary;
+}
+
+//* CLASSES
+.margins {
+  margin: 0 7%;
+}
+
+.unBold {
+  text-decoration: none;
+  font-weight: 50;
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.invisible {
+  display: none;
+}
+
+.popupSection {
+  transition: ease-in 0.5s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+// mobile and smartphone css
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: $mobileSize;
+  }
+
+  p {
+    font-size: $mobileSize;
+  }
+
+  .margins {
+    margin: 0 12%;
+  }
+}

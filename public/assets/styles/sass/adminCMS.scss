@@ -1,0 +1,88 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/btn/btnStandard";
+@import "partials/btn/btnAdminNav";
+
+nav {
+  margin-top: 60px !important;
+}
+
+#dashBoardUpperPart {
+  text-align: center;
+  margin-bottom: 20px;
+
+  h1 {
+    margin-bottom: 70px;
+  }
+
+  #addMapLinkBtn {
+    @extend .btnAdminNav;
+  }
+}
+
+#usersTable {
+  table {
+    margin-top: 70px;
+    margin-bottom: 80px;
+    width: 100%;
+    border-collapse: collapse;
+
+    th,
+    td {
+      padding: 15px;
+      text-align: left;
+      border: 1px solid $textPrimary;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .tableSearch {
+      input {
+        padding: 10px;
+        width: 40%;
+        margin-right: 10px;
+      }
+    }
+
+    .otherTh {
+      background-color: $primaryColor;
+      color: $textPrimary;
+    }
+
+    .actionTh {
+      background-color: $secondaryColor;
+      color: $textPrimary;
+    }
+
+    .usersTableBtns {
+      .tableBtnsContainer {
+        display: flex;
+
+        a,
+        button {
+          all: unset;
+          display: inline-block;
+          padding: 5px 10px;
+          text-decoration: none;
+          color: #fff;
+          border-radius: 3px;
+          transition: background-color 0.3s ease;
+          cursor: pointer;
+
+          &.firstActionBtn {
+            background-color: $secondaryColor;
+            margin-right: 25px;
+          }
+
+          &.adminAction {
+            background-color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "responsive/adminCMSResponsive";

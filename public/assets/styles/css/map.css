@@ -1,0 +1,494 @@
+@charset "UTF-8";
+@font-face {
+  font-family: khorla;
+  src: url(../font/Khorla.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: khorla;
+  margin: 0;
+  padding: 0;
+  background-color: #fff4f4;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+select {
+  font-family: khorla;
+}
+
+button {
+  font-family: khorla;
+}
+
+h1 {
+  font-size: 2.7rem;
+  line-height: 1.2;
+  color: #3a3a3a;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #3a3a3a;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #3a3a3a;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+
+p {
+  font-size: 16px;
+  color: #3a3a3a;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #3a3a3a;
+}
+
+.margins {
+  margin: 0 7%;
+}
+
+.unBold {
+  text-decoration: none;
+  font-weight: 50;
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.invisible {
+  display: none;
+}
+
+.popupSection {
+  transition: ease-in 0.5s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .margins {
+    margin: 0 12%;
+  }
+}
+.btnCta {
+  width: 140px;
+  height: 40px;
+  color: #3a3a3a;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: #679e73;
+  text-decoration: none;
+  text-align: center;
+}
+.btnCta:hover {
+  color: #3a3a3a;
+  background: transparent;
+  box-shadow: none;
+}
+.btnCta:before, .btnCta:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #679e73;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.1333333333);
+  transition: 400ms ease all;
+}
+.btnCta:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btnCta:hover:before, .btnCta:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+body {
+  position: relative;
+}
+
+.open-btn {
+  display: none;
+}
+
+nav {
+  padding: 5%;
+  margin-top: 30px;
+  width: 100%;
+  min-height: 150px;
+  background-color: #f1c376;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 5px;
+}
+nav .mapNavBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  width: 120px;
+  height: 80px;
+  background-color: #fde5b6;
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+nav .mapNavBtn:active {
+  transform: scale(0.98);
+}
+nav .mapNavBtnSymbol {
+  font-size: 36px;
+  text-decoration: none;
+  color: #3a3a3a;
+}
+nav .openMapResp {
+  display: none;
+}
+nav .standardMode {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav .standardMode #mapCategorySelect {
+  margin: 20px 0;
+  padding: 0 20px;
+  width: 70%;
+  height: 80px;
+  background-color: #fde5b6;
+  font-size: 16px;
+  font-family: khorla;
+  color: #3a3a3a;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+nav .standardMode #mapCategorySelect:focus {
+  outline: none;
+}
+nav .focusedMode {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#map-container .markers-container {
+  margin-bottom: 60px;
+  position: relative;
+  left: 2%;
+  top: 0;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+#map-container .markers-container .marker {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  width: 100%;
+  background-color: #f1c376;
+  border-radius: 5px;
+  min-height: 150px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+#map-container .markers-container .marker .upperMarker {
+  display: flex;
+  gap: 40px;
+}
+#map-container .markers-container .marker .markerInvisablePart {
+  display: none;
+}
+#map-container .markers-container .marker .markerMeta {
+  display: none;
+}
+#map-container .markers-container .invisibleMarker {
+  display: none;
+}
+#map-container #loadingOVerlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+#map-container .mapBoxContainer {
+  width: 65%;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.markerCommentsHeadlinePart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #3a3a3a;
+}
+.markerCommentsHeadlinePart .commentsHeadline {
+  margin-top: 60px;
+}
+.markerCommentsHeadlinePart button {
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.comment {
+  margin: 30px 0;
+  padding: 5px 20px 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #679e73;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+}
+.comment .commentUpperPart {
+  display: flex;
+  flex-direction: column;
+}
+.comment .commentUpperPart .commentUpperUpperPart {
+  padding-top: 25px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+.comment .commentUpperPart .commentUpperUpperPart .commentUser {
+  font-size: 1.2rem;
+}
+.comment .commentUpperPart .commentUpperUpperPart .commentTime {
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+.comment .commentLowerPart {
+  padding-top: 19px;
+}
+
+.mapPopups {
+  display: none;
+  padding-bottom: 20px;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50vw;
+  min-height: 50vh;
+  border-radius: 15px;
+  background-color: #f1c376;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.mapPopups .upperPart {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+.mapPopups .upperPart .btnClosePopup {
+  aspect-ratio: 1;
+  width: 40px;
+  margin: 20px;
+  grid-column: 1/2;
+  cursor: pointer;
+  background-color: #679e73;
+  border: none;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  color: #3a3a3a;
+}
+.mapPopups .upperPart .btnClosePopup:active {
+  transform: scale(0.96);
+}
+.mapPopups .upperPart h3 {
+  justify-self: center;
+  margin-top: 50px;
+}
+.mapPopups form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.mapPopups form textarea {
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #fde5b6;
+  border: none;
+  resize: none;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fde5b6;
+}
+.rate:not(:checked) > label:before {
+  content: "★ ";
+}
+.rate > input:checked ~ label {
+  color: #679e73;
+}
+.rate:not(:checked) > label:hover, .rate:not(:checked) > label:hover ~ label {
+  color: #679e73;
+}
+.rate > input:checked + label:hover, .rate > input:checked + label:hover ~ label, .rate > input:checked ~ label:hover, .rate > input:checked ~ label:hover ~ label, .rate > label:hover ~ input:checked ~ label {
+  color: #679e73;
+}
+
+.rateOther {
+  float: left;
+  height: 46px;
+  pointer-events: none;
+}
+.rateOther:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+.rateOther:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fde5b6;
+}
+.rateOther:not(:checked) > label:before {
+  content: "★ ";
+}
+.rateOther > input:checked ~ label {
+  color: #679e73;
+}
+
+@media only screen and (max-width: 480px) {
+  .open-btn,
+  .close-btn {
+    display: block;
+  }
+  .open-btn {
+    all: unset;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    position: fixed;
+    font-size: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    top: 10px;
+    left: 10px;
+    color: #679e73;
+    background-color: #f1c376;
+    z-index: 1000000000;
+  }
+  nav {
+    width: 80%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  nav .openMapResp {
+    font-size: 26px;
+    display: flex;
+  }
+  #map-container .mapBoxContainer {
+    width: 100%;
+    display: block;
+  }
+  #map-container .markers-container {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #map-container .markers-container .marker {
+    width: 80%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  #map-container .markers-container .marker:last-child {
+    margin-bottom: 60px;
+  }
+  .mapPopups {
+    width: 80%;
+  }
+  .mapPopups .upperPart h3 {
+    margin-top: 70px;
+  }
+  .mapPopups textarea {
+    width: 80%;
+  }
+}/*# sourceMappingURL=map.css.map */

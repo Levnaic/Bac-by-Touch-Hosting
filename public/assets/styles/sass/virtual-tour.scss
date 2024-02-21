@@ -1,0 +1,18 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+
+#wip {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workInProgress {
+  font-size: 60px;
+  text-align: center;
+}
+
+@import "responsive/virtual-tourResponsive";

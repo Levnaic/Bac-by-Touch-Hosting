@@ -1,0 +1,88 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+
+a {
+  text-decoration: none;
+  color: $textPrimary;
+}
+
+.blogHeadline {
+  text-align: center;
+  h1 {
+    margin-top: $headlineTop;
+    margin-bottom: $headlineBottom;
+  }
+}
+
+.pageControllBtn {
+  margin-top: 70px;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.blogCards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  .blogHeadline {
+    margin-top: 70px;
+    margin-bottom: 120px;
+    text-align: center;
+  }
+
+  .blogCard {
+    text-align: justify;
+    .blog-container {
+      display: flex;
+      gap: 50px;
+      .blogImg img {
+        width: 320px;
+        height: 202px;
+      }
+      .blogTitles {
+        .blogTitle {
+          font-size: $blogSubtitleSize;
+          font-weight: 800;
+        }
+        .blogSubtitle {
+          font-size: $textSize;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .blogMeta {
+      padding: 5px 0;
+      margin-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid rgba($color: $textPrimary, $alpha: 0.2);
+      border-bottom: 1px solid rgba($color: $textPrimary, $alpha: 0.2);
+      .blogMetaData {
+        display: flex;
+        gap: 40px;
+      }
+      .blogLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a:hover {
+          color: $primaryColor_darker;
+        }
+      }
+      .blogMetaBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p,
+        a {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@import "responsive/blogResponsive";

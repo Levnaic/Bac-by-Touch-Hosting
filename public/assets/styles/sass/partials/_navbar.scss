@@ -1,0 +1,380 @@
+nav {
+  z-index: 10000;
+  .nav-white {
+    .secondPart-user {
+      .dropdown-userPart{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        padding: 0 6px;
+      }
+      .userCredencials {
+       padding: 0;
+       margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .userLogOut {
+        text-align: center;
+        cursor: pointer;
+        font-family: khorla;
+        font-size: $textSize;
+        background-color: $primaryColor_lighter;
+        color: $textPrimary;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        border: none;
+        width: 150px;
+        height: 45px;
+      }
+    }
+  }
+  .dropdown-user-visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: $textPrimary;
+    font-size: $textSize;
+    // text-transform: uppercase;
+  }
+  //login part
+  .secondPart-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 30%;
+  }
+}
+
+.adminDashboardBtn {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primaryColor_lighter;
+  color: $textPrimary;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
+  width: 150px;
+  height: 45px;
+}
+
+//*DESKTOP
+@media only screen and (min-width: 420px) {
+  .open-btn {
+    display: none;
+  }
+  nav {
+    position: sticky;
+    transition: ease-in 0.3s;
+
+    .open-btn,
+    .close-btn {
+      display: none;
+    }
+    ul,
+    li {
+      padding: 0;
+      margin: 0;
+      padding-left: 7%;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .nav-white {
+      display: flex;
+      background-color: $primaryColor;
+      border-bottom: 3px solid $secondaryColor;
+      gap: 50px;
+      //list of links
+      .list {
+        width: 73%;
+        display: flex;
+        gap: 50px;
+        .dropdown {
+          position: relative;
+          &:hover ~ .dropdownContent {
+            display: block;
+          }
+          .dropdownBtn {
+            all: unset;
+            color: $textPrimary;
+            cursor: pointer;
+            &:hover ~ .dropdownContent {
+              display: block;
+            }
+          }
+          .dropdownContent {
+            position: absolute;
+            display: none;
+            ul {
+              z-index: 100000;
+              padding: 0 7px;
+              padding-top: 15px;
+              margin: 0;
+              top: 0;
+              left: 0;
+              background-color: $primaryColor;
+              border: 3px solid $secondaryColor;
+              border-bottom-left-radius: 15px;
+              border-bottom-right-radius: 15px;
+              display: flex;
+              flex-direction: column;
+              width: 200px;
+              li {
+                padding-bottom: 15px;
+                width: 200px;
+                position: inherit;
+                z-index: 100;
+              }
+            }
+            &:hover {
+              display: block;
+            }
+          }
+        }
+      }
+
+      //user acc part
+      .secondPart-user {
+        display: flex;
+        justify-content: center;
+        width: 10%;
+        padding: 10px 0;
+        position: relative;
+        .navUserBtn {
+          all: unset;
+          color: $textPrimary;
+          cursor: pointer;
+        }
+        .dropdown-user {
+          display: none;
+          padding: 15px 7px;
+          position: absolute;
+          z-index: 100000;
+          margin: 0;
+          top: 62px;
+          left: 0;
+          background-color: $primaryColor;
+          border: 3px solid $secondaryColor;
+          border-bottom-left-radius: 15px;
+          border-bottom-right-radius: 15px;
+          width: 200px;
+        }
+        .dropdown-user-visible {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      //language part
+      .langaugePart {
+        text-transform: uppercase;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        button {
+          all: unset;
+          cursor: pointer;
+          color: $textPrimary;
+        }
+      }
+    }
+  }
+}
+
+//*mobile
+@media only screen and (max-width: 480px) {
+  //*ubaceni deo
+  .open-btn,
+  .close-btn {
+    display: block;
+  }
+  .open-btn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    color: $secondaryColor;
+    z-index: 1000000000;
+  }
+  nav {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: none;
+  }
+  nav.nav-visible {
+    display: flex;
+  }
+
+  .text {
+    text-transform: uppercase;
+  }
+
+  .nav-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .nav.visible {
+    transform: translateX(0);
+  }
+
+  .nav-green {
+    background-color: $secondaryColor;
+    width: 100%;
+    transition-delay: 0.4s;
+  }
+
+  .nav-green.visible {
+    transition-delay: 0s;
+  }
+
+  .nav-yellow {
+    background-color: $primaryColor;
+    width: 100%;
+    transition-delay: 0.2s;
+  }
+
+  .nav-yellow.visible {
+    transition-delay: 0.2s;
+  }
+
+  .nav-white {
+    display: block;
+    background-color: $backgroundColor;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    padding-bottom: 0;
+    position: relative;
+    transition-delay: 0s;
+    .list {
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  .nav-white.visible {
+    transition-delay: 0.4s;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    color: $secondaryColor;
+  }
+
+  .list li {
+    margin: 20px 0;
+  }
+
+  .list li a {
+    color: $textPrimary;
+    font-size: $textSize;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .list ul {
+    list-style-type: none;
+  }
+
+  //*moj deo
+  nav {
+    button {
+      all: unset;
+      font-size: $textSize;
+      color: $textPrimary;
+      &:hover ~ .dropdownContent {
+        display: block !important;
+      }
+    }
+    //login part
+    .secondPart-login {
+      position: absolute;
+      bottom: 32px;
+      right: 20px;
+      width: fit-content;
+      gap: 20px;
+    }
+  }
+
+  //user acc part
+  .secondPart-user {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    padding: 10px 0;
+    .navUserBtn {
+      position: relative;
+      all: unset;
+      color: $textPrimary;
+      cursor: pointer;
+    }
+    .dropdown-user {
+      padding: 20px 15px;
+      background-color: $primaryColor;
+      border: 3px solid $secondaryColor;
+      border-radius: 15px;
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      display: none;
+    }
+    .dropdown-user-visible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  //language part
+  .nav {
+    .nav-white {
+      .langaugePart {
+        display: flex;
+        gap: 5px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        border: none;
+        cursor: pointer;
+        margin-right: 7%;
+        width: 10%;
+      }
+    }
+  }
+}

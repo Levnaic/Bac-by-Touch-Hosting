@@ -1,0 +1,291 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+@import "partials/btn/btnSeeThrough";
+
+//*HEADLINE SECTION
+#headlineSection {
+  position: relative;
+  text-align: center;
+  background-image: url("../../img/nove-koristene/hero-pc.jpg");
+  // background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  p {
+    color: $primaryColor;
+  }
+  .headlineBluredPart {
+    padding-left: 7%;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    filter: brightness(90%);
+    backdrop-filter: blur(8px);
+    transform: translateX(-100%);
+    transition: ease-out 1.1s;
+  }
+  h1 {
+    color: $primaryColor;
+    margin-top: 60px;
+    padding-top: 70px;
+    font-size: 64px;
+    padding-right: 40%;
+  }
+
+  span.differentColorHeadline {
+    color: $secondaryColor;
+  }
+
+  span {
+    padding-right: 20px;
+  }
+
+  p {
+    margin-top: 20px;
+    padding-left: 5%;
+    width: 80%;
+    text-align: left;
+  }
+}
+
+//* TEXT AFTER SLIDESHOW
+#textAfterSlideshow {
+  margin-top: 120px;
+  h2 {
+    text-align: center;
+    color: $textPrimary;
+  }
+}
+
+//* FLOATING PART
+#floatingPart {
+  overflow: hidden;
+  display: flex;
+  margin-top: 150px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 500px;
+  .split {
+    position: relative;
+    width: 50%;
+    transition: width 1s ease-in-out, z-index 0s 0.5s;
+  }
+  .left {
+    position: relative;
+    background-image: url("../../img/skinute/map3.jpg");
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $primaryColor;
+      background-position: center;
+      opacity: 0.8;
+    }
+  }
+  .right {
+    position: relative;
+    background-image: url("../../img/skinute/event2.jpg");
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: $secondaryColor;
+      background-position: center;
+      opacity: 0.8;
+    }
+  }
+
+  .floatCard {
+    padding: 15px 30px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 300px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    a {
+      text-decoration: none;
+    }
+    #ancorRight {
+      color: $primaryColor;
+    }
+    #ancorLeft {
+      color: $secondaryColor;
+    }
+  }
+  .floatCardLeft {
+    background-color: $primaryColor;
+  }
+
+  .floatCardRight {
+    background-color: $secondaryColor;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #floatingPart .split:hover{
+    width: 70%;
+    z-index: 9000;
+  }
+}
+
+//* SPONSORS
+#sponsors {
+  margin-top: 150px;
+  padding: 0 10%;
+  background-color: $primaryColor;
+  h2 {
+    padding-top: 60px;
+    text-align: center;
+  }
+  .logos {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    width: 15%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+  }
+}
+
+//* CARDS
+.cards {
+  h2 {
+    padding: 150px 0;
+    text-align: center;
+  }
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    .card {
+      display: block;
+      text-decoration: none;
+      margin-bottom: 40px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 4px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      width: 400px;
+      min-height: 70vh;
+      background-color: $primaryColor;
+      transition: ease-in;
+      transition-duration: 0.35s;
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      img {
+        width: 100%;
+        height: 250px;
+        transition: 2s;
+      }
+
+      .cardsHeadline {
+        padding: 0 14px;
+        text-align: center;
+        font-size: 34px;
+      }
+
+      .cardImage {
+        transition-duration: 1s;
+      }
+
+      .hoveredCard {
+        overflow: hidden;
+        transform: scale(1.2);
+      }
+
+      .cardsText {
+        margin-bottom: 45px;
+        padding: 0 7%;
+        padding-top: 20px;
+        text-align: justify;
+      }
+
+      a {
+        margin-bottom: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        color: $textPrimary !important;
+        text-decoration: none;
+        border: none;
+        font-size: 27px;
+        font-weight: 400;
+        font-family: khorla;
+        color: $primaryColor;
+        letter-spacing: 2px;
+        cursor: pointer;
+        &:active {
+          transform: scale(0.96);
+        }
+      }
+    }
+  }
+}
+
+//* ANIMATIONS
+.animationCards {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: -5px;
+    left: 0;
+    background-color: $secondaryColor;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+  }
+}
+
+.animationCardsAddPart {
+  &::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  &:active {
+    transform: scaleX(0.96);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@import "responsive/indexResponsive";

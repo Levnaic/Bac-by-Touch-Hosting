@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# Exclude existing files and directories from rewrite
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Rewrite URLs to your public/index.php file for routing
+RewriteRule ^ index.php [L]

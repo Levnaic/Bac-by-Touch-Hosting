@@ -1,0 +1,15 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+
+#errorMsg {
+  margin-top: 200px;
+  height: 80vh;
+  a {
+    color: $secondaryColor;
+    font-size: 22px;
+  }
+}
+
+@import "responsive/errorResponsive";

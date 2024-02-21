@@ -1,0 +1,219 @@
+@font-face {
+  font-family: khorla;
+  src: url(../font/Khorla.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff4f4;
+  font-family: khorla;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2.7rem;
+  line-height: 1.2;
+  color: #3a3a3a;
+}
+
+span.differentColorHeadline {
+  color: #679e73;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+  color: #3a3a3a;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: #3a3a3a;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+
+p {
+  font-size: 16px;
+  color: #3a3a3a;
+  text-align: justify;
+}
+
+small {
+  font-size: 0.8rem;
+  color: #3a3a3a;
+}
+
+.margins {
+  margin: 0 7%;
+}
+
+.unBold {
+  text-decoration: none;
+  font-weight: 50;
+}
+
+.blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+
+.invisible {
+  display: none;
+}
+
+.popupSection {
+  transition: ease-in 0.5s;
+  opacity: 0;
+  transform: translateY(150px);
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .margins {
+    margin: 0 8%;
+  }
+}
+#dashboardBack a {
+  all: unset;
+  display: block;
+  margin-top: 40px;
+}
+
+.btnStandard {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  border: 2px solid #679e73;
+  border-radius: 20px;
+  background-color: #f1c376;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  color: #3a3a3a;
+  cursor: pointer;
+}
+.btnStandard > * {
+  all: unset;
+  text-align: center;
+}
+.btnStandard:active {
+  transform: scale(0.97);
+}
+
+table {
+  margin-bottom: 90px;
+  background-color: #fde5b6;
+  border: 1px solid #f0b145;
+  border-collapse: collapse;
+}
+table th {
+  background-color: #f1c376;
+}
+table th .filterBtn {
+  margin-left: 10px;
+  width: 60px;
+  height: 30px;
+  background-color: #fde5b6;
+  border: 1px solid black;
+  cursor: pointer;
+}
+table .usersTableBtns {
+  width: 250px;
+  border: none;
+  border-top: 1px solid black;
+}
+table .usersTableBtns a {
+  all: unset;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 60px;
+  color: #3a3a3a;
+  font-size: 16px;
+  background-color: #f1c376;
+  border: 1px solid #3a3a3a;
+  cursor: pointer;
+}
+table .usersTableBtns .firstActionBtn {
+  margin-right: 30px;
+}
+table .otherTh,
+table .actionTh {
+  height: 40px;
+}
+table .otherTh {
+  width: 300px;
+}
+table .actionTh {
+  width: 500px;
+}
+table td {
+  text-align: center;
+}
+table th,
+table td {
+  padding: 12px 20px;
+}
+table,
+table td,
+table th {
+  border: 1px solid;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 90px;
+}
+
+.dashboardLinks {
+  all: unset;
+  margin-bottom: 60px;
+  margin-left: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  background-color: #f1c376;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#filterUserTable {
+  margin-left: 15vw;
+}
+#filterUserTable input {
+  margin-bottom: 40px;
+  margin-right: 20px;
+  width: 250px;
+  height: 60px;
+}
+
+#usersTable {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=adminPage.css.map */
