@@ -3,6 +3,7 @@ logs/
 data/
 img/
 node_modules/
+docs/
 
 #config files
 config.php
