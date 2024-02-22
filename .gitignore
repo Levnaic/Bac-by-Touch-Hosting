@@ -11,7 +11,7 @@ mailer-config.php
 paths-config-local.php
 sec-config.php
 
-#server config files
+#environment
 .htaccess
 .env
 
