@@ -18,12 +18,13 @@ class Security
     {
         self::$configSecurity = include(__DIR__ . "/../config/sec-config.php");
 
-        Debug::dd(getenv('ENVIRONMENT'));
-
         if (getenv('ENVIRONMENT') === 'local') {
             self::$configPaths = include(__DIR__ . "/../config/paths-config-local.php");
-        } else {
+        } elseif (getenv('ENVIRONMENT') === 'production') {
             self::$configPaths = include(__DIR__ . "/../config/paths-config.php");
+        } else {
+            ErrorHandler::logError("Pathing error:", "evniroment not set in .env file", __CLASS__, __LINE__);
+            Redirect::redirectToErrorPage(500);
         }
     }
 
