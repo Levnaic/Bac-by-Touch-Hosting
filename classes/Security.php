@@ -17,7 +17,19 @@ class Security
     static function initialize()
     {
         self::$configSecurity = include(__DIR__ . "/../config/sec-config.php");
-        self::$configPaths = include(__DIR__ . "/../config/paths-config-local.php");
+
+        Debug::dd(getenv('ENVIRONMENT'));
+
+        if (getenv('ENVIRONMENT') === 'local') {
+            self::$configPaths = include(__DIR__ . "/../config/paths-config-local.php");
+        } else {
+            self::$configPaths = include(__DIR__ . "/../config/paths-config.php");
+        }
+    }
+
+    static function isLocalEnvironment()
+    {
+        return ($_SERVER['SERVER_ADDR'] ===  '127.0.0.1');
     }
 
     public static function sanitizeInput($data)

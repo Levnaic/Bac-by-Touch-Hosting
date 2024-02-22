@@ -10,6 +10,10 @@ mailer-config.php
 paths-config-local.php
 sec-config.php
 
+#server config files
+.htaccess
+.env
+
 #api
 api-endpoint.json
 api-keys.json
