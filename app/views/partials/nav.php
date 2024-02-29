@@ -15,10 +15,10 @@
                         <button class="dropdownBtn">ISTRAŽI <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                         <div class="dropdownContent">
                             <ul>
-                                <li><a href="/storytelling">Ture</a></li>
-                                <li><a href="/map">Mapa</a></li>
-                                <li><a href="/virtual-tour">Virtualna tura</a></li>
-                                <li><a href="/calendar">Kalendar</a></li>
+                                <li><a href="/storytelling">TURE</a></li>
+                                <li><a href="/map">MAPA</a></li>
+                                <li><a href="/virtual-tour">VIRTUELNA TURA</a></li>
+                                <li><a href="/calendar">KALENDAR</a></li>
                             </ul>
                         </div>
                     </div>
@@ -26,8 +26,8 @@
                         <button class="dropdownBtn">UPOZNAJTE NAS <i class="fa fa-angle-down" aria-hidden="true"></i></button>
                         <div class="dropdownContent">
                             <ul>
-                                <li><a href="/blog">Blog</a></li>
-                                <li><a href="/aboutus">O nama</a></li>
+                                <li><a href="/blog">BLOG</a></li>
+                                <li><a href="/aboutus">O NAMA</a></li>
                             </ul>
                         </div>
                     </div>
