@@ -8,6 +8,8 @@ let formHasErrors = false;
 
 //* FUNCTIONS
 function validateInput(input) {
+  let language = getLanguageCookie();
+  console.log(language);
   switch (input.dataset.inputType) {
     case "str":
       pattern = /^[a-zA-Z]*$/;
@@ -25,20 +27,18 @@ function validateInput(input) {
       break;
 
     case "txt":
-      pattern = /[ćžđĆŽĐa-zA-Z.,()-:" \t\n\r]/;
+      pattern = /^[\p{L}\p{N}\p{P}\s]+$/u;
       errorMessage =
         "Pogrešno unet tekstualni format";
       break;
 
-    //username is 1-20 characters long, no _ or . at the beginning, no __ or _. or ._ or .. inside, no _ or . at the end
-    // /^(?=.{1,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/
-    case "username":
+   case "username":
       pattern = /^[a-zA-Z0-9._]{1,20}$/;
       errorMessage = "Pogrešno uneto korisničko ime";
       break;
 
     case "date":
-      pattern = /^d{4}-d{2}-d{2}$/;
+      pattern = /^\d{4}-\d{2}-\d{2}$/;
       errorMessage = "Pogrešno unet datum";
       break;
 
@@ -48,12 +48,23 @@ function validateInput(input) {
       break;
 
     case "password":
-      // !PRODUKCIJA promeniti ovo
-      // pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d@$!%*#?&]{8,}$/;
-      pattern = /^[sS]*$/;
+      pattern = /^(?=.*[a-z])(?=.*\d)[a-zA-Z\d@$!%*#?&]{8,}$/;
       errorMessage =
         "Morate uneti bar jedno malo slovo, jedno veliko slovo i jedan broj";
       break;
+
+      case "fileName":
+      pattern = /^[a-f\d]+_[a-zA-Z0-9-]+\.(jpg|jpeg|png|gif|bmp)$/;
+      errorMessage =
+        "Pogrešan naziv unete slike";
+      break;
+
+      case "phoneNumber":
+        pattern = /^[\s]*\+?[\s]*\d+[\s]*$/;
+        errorMessage =
+          "Pogrešno unet broj telefona";
+        break;
+    
 
     default:
       pattern = new RegExp(input.dataset.customPattern);
@@ -90,6 +101,22 @@ function clearError(input) {
     errorElement.remove();
     input.style.borderColor = inputOldBorderCollor;
   }
+}
+
+function getLanguageCookie() {
+  let name = 'language' + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
 
 
