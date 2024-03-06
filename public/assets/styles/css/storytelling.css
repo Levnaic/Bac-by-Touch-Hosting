@@ -117,7 +117,6 @@ header * {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
   z-index: 2;
   gap: 1.5rem;
   background: #f1c376;
