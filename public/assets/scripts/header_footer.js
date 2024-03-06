@@ -46,6 +46,8 @@ function setLanguage(language) {
   }
 }
 
+// ! izbacivati
+/*
 //* login credencials show after click on button
 userBtn?.addEventListener("click", () => {
   dropdownUser.classList.toggle("dropdown-user-visible");
@@ -53,8 +55,9 @@ userBtn?.addEventListener("click", () => {
     dropdownUser.style.top = `${navHeight - 7}px`;
   }
 });
-
+// !
 //mobile
+
 open_btn.addEventListener("click", () => {
   navBox.style.display = "flex";
   setTimeout(() => {
@@ -70,7 +73,7 @@ close_btn.addEventListener("click", () => {
     open_btn.style.display = "block";
   }, 700);
 });
-
+*/
 //* sticky navbar
 let prevScrollPos = window.scrollY;
 window.onscroll = function () {
@@ -89,3 +92,40 @@ const footerLogo = document.querySelector(".footerHeadline");
 footerLogo?.addEventListener("click", () => {
   window.scrollTo(0, 0);
 });
+
+// adding new part for nav
+
+const burgerMenu = document.querySelector(".burger-menu");
+const header = document.querySelector("header");
+const yellowRibbon = document.querySelector(".menu__wrapper-yellow");
+const greenRibbon = document.querySelector(".menu__wrapper-green");
+
+let isMenuOpened = false;
+
+function burgerMenuClickHandler() {
+  if (isMenuOpened) {
+    setTimeout(() => {
+      greenRibbon.style.transform = "translateX(100%)";
+    }, 0);
+    setTimeout(() => {
+      yellowRibbon.style.transform = "translateX(100%)";
+    }, 200);
+    setTimeout(() => {
+      header.style.transform = "translateX(100%)";
+    }, 400);
+    isMenuOpened = false;
+  } else {
+    setTimeout(() => {
+      greenRibbon.style.transform = "translateX(0%)";
+    }, 0);
+    setTimeout(() => {
+      yellowRibbon.style.transform = "translateX(0%)";
+    }, 200);
+    setTimeout(() => {
+      header.style.transform = "translateX(0%)";
+    }, 400);
+    isMenuOpened = true;
+  }
+}
+
+burgerMenu.addEventListener("click", burgerMenuClickHandler);

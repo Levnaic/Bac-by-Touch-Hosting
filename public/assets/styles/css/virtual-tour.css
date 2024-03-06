@@ -101,27 +101,14 @@ small {
     margin: 0 12%;
   }
 }
-:root {
-  --background: #fafafa;
-  --secondary-background: #f2f2f2;
-  --gray: #847f90;
-  --gray-hover: #171717;
-  --primary-hover: #555555;
-  --link-gray: #666666;
-  --link-gray-hover: #171717;
-  --gray-border: #e6e6e6;
-  --white: #fcfcfc;
-}
-
 header {
-  font-family: khorla;
-  font-size: 16px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-* {
+header * {
+  font-family: khorla;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .menu__wrapper {
@@ -351,23 +338,79 @@ header {
 
 @media (max-width: 760px) {
   .burger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
-    min-width: 2rem;
-    min-height: 2rem;
-    pointer-events: all;
-    gap: 0.25rem;
-    flex-direction: column;
-    border: 1px solid var(--gray-border);
+    z-index: 5;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: #3a3a3a;
+    display: block;
   }
-  .burger-menu > svg {
-    height: 1.25rem;
-    stroke: #3a3a3a;
-    width: 1.25rem;
+  header {
+    transform: translateX(100%);
+    transition: ease-in 0.2s;
+  }
+  .menu__wrapper-green {
+    transform: translateX(100%);
+    transition: ease-in 0.2s;
+  }
+  .menu__wrapper-yellow {
+    transform: translateX(100%);
+    transition: ease-in 0.2s;
+  }
+  .menu__wrapper-yellow {
+    background-color: #f1c376;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 86vw;
+  }
+  .menu__wrapper-green {
+    background-color: #679e73;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 89vw;
+  }
+  .menu__wrapper {
+    background-color: #fde5b6;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 83vw;
+    margin-left: 27vw;
+    flex-direction: column;
+  }
+  .navigation {
+    background-color: #fde5b6;
+  }
+  .menu__bar {
+    padding-top: 40px;
+    height: 100%;
+    width: 84%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .logo {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .navigation {
+    flex-direction: column;
+  }
+  .right-side {
+    margin-bottom: 20px;
+  }
+  .dropdown__wrapper {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .list-items-with-description {
+    display: block;
   }
 }
 footer {
