@@ -16,7 +16,7 @@ h1 {
 h2 {
   text-align: justify;
 }
-h3 {
+.seeMore {
   margin-bottom: 80px;
   text-align: center;
 }
@@ -38,7 +38,7 @@ h3 {
     transition: transform 0.5s ease-in-out;
     img {
       width: 100%;
-      height: 100%
+      height: 100%;
     }
   }
 
