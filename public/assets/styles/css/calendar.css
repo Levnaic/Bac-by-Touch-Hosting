@@ -325,7 +325,7 @@ header * {
     display: block;
   }
 }
-footer {
+footer .footerFirstRow {
   margin-top: 150px;
   padding: 0 10%;
   padding-top: 68px;
@@ -334,27 +334,27 @@ footer {
   justify-content: space-between;
   background-color: #f1c376;
 }
-footer .footerLogo {
+footer .footerFirstRow .footerLogo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer .footerHeadline {
+footer .footerFirstRow .footerHeadline {
   font-size: 32px;
   font-weight: 700;
   text-align: center;
   cursor: pointer;
 }
-footer .socialMediaHeadline {
+footer .footerFirstRow .socialMediaHeadline {
   font-size: 22px;
 }
-footer .socialLinks {
+footer .footerFirstRow .socialLinks {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
-footer .socialLinks a {
+footer .footerFirstRow .socialLinks a {
   color: #3a3a3a;
 }
 

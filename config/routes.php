@@ -9,6 +9,7 @@ $router->get("/calendar", "calendarController");
 $router->get("/blog", "blogController");
 $router->get("/aboutus", "aboutusController");
 $router->get("/dashboard", "adminDashboardController");
+$router->get("/credits", "creditsController");
 
 // sights
 $router->get("/tvrdjava", "sights/tvrdjavaController");
