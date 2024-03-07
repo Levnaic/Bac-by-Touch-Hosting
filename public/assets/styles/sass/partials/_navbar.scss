@@ -9,6 +9,11 @@ header * {
   margin: 0;
   padding: 0;
 }
+.menu__wrapper-green {
+  position: sticky;
+  z-index: 10002;
+  top: 0;
+}
 
 .menu__wrapper {
   z-index: 10000;
@@ -313,6 +318,12 @@ header * {
   .navigation {
     background-color: $primaryColor_lighter;
     // background-color: $backgroundColor;
+  }
+
+  // resets nav-btn on hover efect
+  .navigation > li:hover > button svg {
+    fill: $textPrimary_lighter;
+    rotate: 180deg;
   }
 
   .menu__bar {

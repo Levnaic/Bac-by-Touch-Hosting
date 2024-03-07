@@ -1,3 +1,11 @@
+//* helper functions
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+}
+
 //* NAV
 //* responsive nav
 
@@ -5,6 +13,8 @@ const burgerMenu = document.querySelector(".burger-menu");
 const header = document.querySelector("header");
 const yellowRibbon = document.querySelector(".menu__wrapper-yellow");
 const greenRibbon = document.querySelector(".menu__wrapper-green");
+const navBtns = document.querySelectorAll(".nav-btn");
+// const dropdowns = document.querySelectorAll(".");
 
 let isMenuOpened = false;
 

@@ -113,6 +113,12 @@ header * {
   padding: 0;
 }
 
+.menu__wrapper-green {
+  position: sticky;
+  z-index: 10002;
+  top: 0;
+}
+
 .menu__wrapper {
   z-index: 10000;
   padding: 0 7%;
@@ -387,6 +393,10 @@ header * {
   }
   .navigation {
     background-color: #fde5b6;
+  }
+  .navigation > li:hover > button svg {
+    fill: #5a5a5a;
+    rotate: 180deg;
   }
   .menu__bar {
     padding-top: 40px;
