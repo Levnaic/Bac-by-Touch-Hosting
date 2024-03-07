@@ -5,7 +5,7 @@ header {
 
 header * {
   z-index: 10000;
-  font-family: khorla;
+  font-family: roboto;
   margin: 0;
   padding: 0;
 }
@@ -86,7 +86,6 @@ header * {
       min-height: 2.25rem;
       font-size: 14px;
       gap: 0.25rem;
-      font-family: khorla;
       flex-wrap: nowrap;
       border-radius: 10rem;
       padding: 0.25rem 0.6125rem;

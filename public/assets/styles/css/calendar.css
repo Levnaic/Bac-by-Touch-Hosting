@@ -5,7 +5,7 @@ header {
 
 header * {
   z-index: 10000;
-  font-family: khorla;
+  font-family: roboto;
   margin: 0;
   padding: 0;
 }
@@ -84,7 +84,6 @@ header * {
   min-height: 2.25rem;
   font-size: 14px;
   gap: 0.25rem;
-  font-family: khorla;
   flex-wrap: nowrap;
   border-radius: 10rem;
   padding: 0.25rem 0.6125rem;
@@ -1516,8 +1515,16 @@ h2 {
 }
 
 @font-face {
-  font-family: khorla;
-  src: url(../font/Khorla.ttf);
+  font-family: archivo-black;
+  src: url(../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: merriweather;
+  src: url(../fonts/Merriweather/Merriweather-Regular.ttf);
 }
 * {
   box-sizing: border-box;
@@ -1528,7 +1535,7 @@ html {
 }
 
 body {
-  font-family: khorla;
+  font-family: roboto;
   margin: 0;
   padding: 0;
   background-color: #fff4f4;
@@ -1537,48 +1544,55 @@ body {
 }
 
 select {
-  font-family: khorla;
+  font-family: roboto;
 }
 
 button {
-  font-family: khorla;
+  font-family: roboto;
 }
 
 h1 {
+  font-family: archivo-black;
   font-size: 2.7rem;
   line-height: 1.2;
   color: #3a3a3a;
 }
 
 h2 {
+  font-family: archivo-black;
   font-size: 2rem;
   line-height: 1.3;
   color: #3a3a3a;
 }
 
 h3 {
+  font-family: archivo-black;
   font-size: 1.5rem;
   line-height: 1.4;
   color: #3a3a3a;
 }
 
 h4 {
+  font-family: archivo-black;
   font-size: 1.2rem;
   line-height: 1.5;
   color: #3a3a3a;
 }
 
 p {
+  font-family: roboto;
   font-size: 16px;
   color: #3a3a3a;
   text-align: justify;
 }
 
 a {
+  font-family: roboto;
   text-decoration: none;
 }
 
 small {
+  font-family: merriweather;
   font-size: 0.8rem;
   color: #3a3a3a;
 }
