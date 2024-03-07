@@ -120,13 +120,14 @@ class Producer
         }
     }
 
-    public function addProducer($title, $email, $body, $latitude, $longitude, $popupMsg, $category)
+    public function addProducer($title, $email, $contact, $body, $latitude, $longitude, $popupMsg, $category)
     {
         try {
-            $query = $this->conn->prepare("INSERT INTO producers (title, email, body, latitude, longitude, popupMsg, category) VALUES (:title, :email, :body, :latitude, :longitude, :popupMsg, :category)");
+            $query = $this->conn->prepare("INSERT INTO producers (title, email, contact, body, latitude, longitude, popupMsg, category) VALUES (:title, :email, :contact, :body, :latitude, :longitude, :popupMsg, :category)");
 
             $query->bindParam(':title', $title, PDO::PARAM_STR);
             $query->bindParam(':email', $email, PDO::PARAM_STR);
+            $query->bindParam(':contact', $contact, PDO::PARAM_STR);
             $query->bindParam(':body', $body, PDO::PARAM_STR);
             $query->bindParam(':latitude', $latitude, PDO::PARAM_STR);
             $query->bindParam(':longitude', $longitude, PDO::PARAM_STR);
@@ -146,14 +147,15 @@ class Producer
         }
     }
 
-    public function updateProducer($title, $email, $body, $latitude, $longitude, $popupMsg, $category, $id)
+    public function updateProducer($title, $email, $contact, $body, $latitude, $longitude, $popupMsg, $category, $id)
     {
         try {
-            $query = $this->conn->prepare("UPDATE producers SET title = :title, email = :email, body = :body, latitude = :latitude, longitude = :longitude, popupMsg = :popupMsg, category = :category WHERE id = :id");
+            $query = $this->conn->prepare("UPDATE producers SET title = :title, email = :email, contact = :contact, body = :body, latitude = :latitude, longitude = :longitude, popupMsg = :popupMsg, category = :category WHERE id = :id");
 
 
             $query->bindParam(':title', $title, PDO::PARAM_STR);
             $query->bindParam(':email', $email, PDO::PARAM_STR);
+            $query->bindParam(':contact', $contact, PDO::PARAM_STR);
             $query->bindParam(':body', $body, PDO::PARAM_STR);
             $query->bindParam(':latitude', $latitude, PDO::PARAM_STR);
             $query->bindParam(':longitude', $longitude, PDO::PARAM_STR);

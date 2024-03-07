@@ -6,6 +6,7 @@ use BacByTouch\Redirect;
 use BacByTouch\Session;
 use BacByTouch\Authenticator;
 use BacByTouch\Database;
+use BacByTouch\Debug;
 use Models\Producer;
 
 require "../config/config.php";
@@ -18,6 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // sanitation of data
         $title = Security::sanitizeInput($_POST["mapTitle"]);
         $email = Security::sanitizeInput($_POST["email"]);
+        $contact = Security::sanitizeInput($_POST["contact"]);
         $body = Security::sanitizeInput($_POST["mapBody"]);
         $latitude = Security::sanitizeInput($_POST["mapLatitude"]);
         $longitude = Security::sanitizeInput($_POST["mapLongitude"]);
@@ -28,6 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // validation of data
             $title = Security::validateInput($title, "txt");
             $email = Security::validateInput($email, "email");
+            $contact = Security::validateInput($contact, "phone");
             $body = Security::validateInput($body, "txt");
             $latitude = Security::validateInput($latitude, "float");
             $longitude = Security::validateInput($longitude, "float");
@@ -36,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             $db = new Database($databaseConfig);
             $producer = new Producer($db->getConnection());
-            $producer->addProducer($title, $email, $body, $latitude, $longitude, $popupMsg, $category);
+            $producer->addProducer($title, $email, $contact, $body, $latitude, $longitude, $popupMsg, $category);
 
             header("Location: /dashboard/producers");
             exit;

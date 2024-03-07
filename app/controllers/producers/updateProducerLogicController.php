@@ -16,10 +16,11 @@ Authenticator::authenticateAdmin();
 
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    if (isset($_POST['title'], $_POST['email'], $_POST['body'], $_POST['latitude'], $_POST['longitude'], $_POST['popupMsg'], $_POST['category'], $_GET["id"])) {
+    if (isset($_POST['title'], $_POST['email'], $_POST['contact'], $_POST['body'], $_POST['latitude'], $_POST['longitude'], $_POST['popupMsg'], $_POST['category'], $_GET["id"])) {
         // sanitation of data
         $title = Security::sanitizeInput($_POST["title"]);
         $email = Security::sanitizeInput($_POST["email"]);
+        $contact = Security::sanitizeInput($_POST["contact"]);
         $body = Security::sanitizeInput($_POST["body"]);
         $latitude = Security::sanitizeInput($_POST["latitude"]);
         $longitude = Security::sanitizeInput($_POST["longitude"]);
@@ -31,6 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // validation of data
             $title = Security::validateInput($title, "txt");
             $email = Security::validateInput($email, "email");
+            $contact = Security::validateInput($contact, "phone");
             $body = Security::validateInput($body, "txt");
             $latitude = Security::validateInput($latitude, "float");
             $longitude = Security::validateInput($longitude, "float");
@@ -41,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $db = new Database($databaseConfig);
             $producer = new Producer($db->getConnection());
 
-            $producer->updateProducer($title, $email, $body, $latitude, $longitude, $popupMsg, $category, $id);
+            $producer->updateProducer($title, $email, $contact, $body, $latitude, $longitude, $popupMsg, $category, $id);
 
             header("Location: /dashboard/producers");
             exit;

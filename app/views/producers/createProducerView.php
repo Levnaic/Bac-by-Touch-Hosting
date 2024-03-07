@@ -4,6 +4,7 @@
         <form method="POST" action="/dashboard/producers/create">
             <input type="text" name="mapTitle" placeholder="Title" data-input-type="txt">
             <input type="email" name="email" placeholder="Email" data-input-type="email">
+            <input type="tel" name="contact" placeholder="Phone Number" data-input-type="phoneNumber">
             <textarea type="text" name="mapBody" placeholder="Text of map bookmark" rows="8" data-input-type="txt"></textarea>
             <input type="text" name="mapLatitude" placeholder="Latitude" data-input-type="float">
             <input type="text" name="mapLongitude" placeholder="Longitude" data-input-type="float">
