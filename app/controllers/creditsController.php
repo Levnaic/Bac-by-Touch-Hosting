@@ -4,4 +4,4 @@ Session::sessionStart();
 
 $title = "Credits";
 
-require "../app/views/credits.md";
+require "../app/views/credits.php";
