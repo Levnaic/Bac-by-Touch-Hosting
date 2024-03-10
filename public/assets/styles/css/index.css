@@ -442,6 +442,9 @@ header * {
     display: block;
   }
 }
+footer {
+  background-color: #f1c376;
+}
 footer .footerFirstRow {
   margin-top: 150px;
   padding: 0 10%;
@@ -449,7 +452,6 @@ footer .footerFirstRow {
   padding-bottom: 70px;
   display: flex;
   justify-content: space-between;
-  background-color: #f1c376;
 }
 footer .footerFirstRow .footerLogo {
   display: flex;
@@ -473,6 +475,18 @@ footer .footerFirstRow .socialLinks {
 }
 footer .footerFirstRow .socialLinks a {
   color: #3a3a3a;
+}
+footer .footerSecondRow {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+footer .footerSecondRow p {
+  text-align: center;
+}
+footer .footerSecondRow a {
+  color: #3a3a3a;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 480px) {

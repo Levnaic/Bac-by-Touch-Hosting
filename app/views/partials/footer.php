@@ -26,7 +26,7 @@
     </div>
   </div>
   <div class="footerSecondRow">
-    <p>Copi</p>
+    <p>Copyright 2024 © Designed and developed by Bac By Touch </p>
     <a href="/credits">Credits</a>
   </div>
 </footer>

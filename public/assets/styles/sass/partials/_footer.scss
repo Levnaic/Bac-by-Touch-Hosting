@@ -1,4 +1,5 @@
 footer {
+  background-color: $primaryColor;
   .footerFirstRow {
     margin-top: 150px;
     padding: 0 10%;
@@ -6,7 +7,6 @@ footer {
     padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
-    background-color: $primaryColor;
 
     .footerLogo {
       display: flex;
@@ -32,6 +32,19 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 30px;
+    }
+  }
+
+  .footerSecondRow {
+    padding-top: 70px;
+    padding-bottom: 30px;
+    text-align: center;
+    p {
+      text-align: center;
+    }
+    a {
+      color: $textPrimary;
+      text-decoration: underline;
     }
   }
 }
