@@ -87,9 +87,14 @@
 
                     <p class="textMarker"><?php echo $row->body; ?></p>
                     <div class="markerContact-container">
-                        <p>Kontakt:</p>
-                        <?php echo "<a href='tel:$row->contact'>$row->contact</a>"; ?>
-                        <?php echo "<a href='mailto:$row->email'>$row->email</a>"; ?>
+                        <div class="contactLink">
+                            <?php echo "<a href='tel:$row->contact'>$row->contact</a>"; ?>
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </div>
+                        <div class="contactLink">
+                            <?php echo "<a href='mailto:$row->email'>$row->email</a>"; ?>
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="markerInvisablePart">
                         <?php

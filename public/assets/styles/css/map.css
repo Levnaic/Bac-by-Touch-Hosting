@@ -291,6 +291,21 @@ nav .focusedMode {
   right: 0;
   top: 0;
 }
+#map-container .markerContact-container {
+  color: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+}
+#map-container .markerContact-container .contactLink {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+#map-container .markerContact-container .contactLink a {
+  color: #3a3a3a;
+  text-decoration: underline;
+}
 
 .markerCommentsHeadlinePart {
   display: flex;

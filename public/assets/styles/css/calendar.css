@@ -131,6 +131,7 @@ header * {
   padding: 0.5rem;
   width: 100%;
   max-width: 36rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.12), 0 30px 60px -30px rgba(0, 0, 0, 0.15);
   z-index: 2;
   animation: fadeIn 0.2s ease-in-out;

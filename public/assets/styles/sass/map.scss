@@ -138,6 +138,22 @@ nav {
     right: 0;
     top: 0;
   }
+
+  .markerContact-container{
+    color: $textPrimary;
+    display: flex;
+    flex-direction: column;
+    .contactLink{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 6px;
+      a{
+        color: $textPrimary;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 //*COMMENTS
