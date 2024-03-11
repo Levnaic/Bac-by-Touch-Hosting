@@ -1,380 +1,363 @@
-nav {
+header {
   z-index: 10000;
-  .nav-white {
-    .secondPart-user {
-      .dropdown-userPart{
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 15px;
-        padding: 0 6px;
-      }
-      .userCredencials {
-       padding: 0;
-       margin: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-      }
-      .userLogOut {
-        text-align: center;
-        cursor: pointer;
-        font-family: khorla;
-        font-size: $textSize;
-        background-color: $primaryColor_lighter;
-        color: $textPrimary;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        border: none;
-        width: 150px;
-        height: 45px;
-      }
-    }
-  }
-  .dropdown-user-visible {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  a {
-    text-decoration: none;
-    color: $textPrimary;
-    font-size: $textSize;
-    // text-transform: uppercase;
-  }
-  //login part
-  .secondPart-login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    width: 30%;
-  }
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.adminDashboardBtn {
-  margin-bottom: 20px;
+header * {
+  z-index: 10000;
+  font-family: roboto;
+  margin: 0;
+  padding: 0;
+}
+.menu__wrapper-green {
+  position: sticky;
+  z-index: 10002;
+  top: 0;
+}
+
+.menu__wrapper {
+  z-index: 10000;
+  padding: 0 7%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: $primaryColor_lighter;
+  gap: 1.5rem;
+  background: $primaryColor;
+  height: 64px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu__bar {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   color: $textPrimary;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  border: none;
-  width: 150px;
-  height: 45px;
-}
-
-//*DESKTOP
-@media only screen and (min-width: 420px) {
-  .open-btn {
-    display: none;
+  font-size: 18px;
+  margin-right: 20px;
+  &:hover {
+    color: $textPrimary_lighter;
   }
-  nav {
-    position: sticky;
-    transition: ease-in 0.3s;
 
-    .open-btn,
-    .close-btn {
-      display: none;
-    }
-    ul,
-    li {
-      padding: 0;
-      margin: 0;
-      padding-left: 7%;
-      list-style: none;
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    .nav-white {
-      display: flex;
-      background-color: $primaryColor;
-      border-bottom: 3px solid $secondaryColor;
-      gap: 50px;
-      //list of links
-      .list {
-        width: 73%;
-        display: flex;
-        gap: 50px;
-        .dropdown {
-          position: relative;
-          &:hover ~ .dropdownContent {
-            display: block;
-          }
-          .dropdownBtn {
-            all: unset;
-            color: $textPrimary;
-            cursor: pointer;
-            &:hover ~ .dropdownContent {
-              display: block;
-            }
-          }
-          .dropdownContent {
-            position: absolute;
-            display: none;
-            ul {
-              z-index: 100000;
-              padding: 0 7px;
-              padding-top: 15px;
-              margin: 0;
-              top: 0;
-              left: 0;
-              background-color: $primaryColor;
-              border: 3px solid $secondaryColor;
-              border-bottom-left-radius: 15px;
-              border-bottom-right-radius: 15px;
-              display: flex;
-              flex-direction: column;
-              width: 200px;
-              li {
-                padding-bottom: 15px;
-                width: 200px;
-                position: inherit;
-                z-index: 100;
-              }
-            }
-            &:hover {
-              display: block;
-            }
-          }
-        }
-      }
-
-      //user acc part
-      .secondPart-user {
-        display: flex;
-        justify-content: center;
-        width: 10%;
-        padding: 10px 0;
-        position: relative;
-        .navUserBtn {
-          all: unset;
-          color: $textPrimary;
-          cursor: pointer;
-        }
-        .dropdown-user {
-          display: none;
-          padding: 15px 7px;
-          position: absolute;
-          z-index: 100000;
-          margin: 0;
-          top: 62px;
-          left: 0;
-          background-color: $primaryColor;
-          border: 3px solid $secondaryColor;
-          border-bottom-left-radius: 15px;
-          border-bottom-right-radius: 15px;
-          width: 200px;
-        }
-        .dropdown-user-visible {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-      }
-
-      //language part
-      .langaugePart {
-        text-transform: uppercase;
-        width: 10%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 5px;
-        button {
-          all: unset;
-          cursor: pointer;
-          color: $textPrimary;
-        }
-      }
-    }
+  svg {
+    fill: $secondaryColor;
   }
 }
 
-//*mobile
-@media only screen and (max-width: 480px) {
-  //*ubaceni deo
-  .open-btn,
-  .close-btn {
-    display: block;
-  }
-  .open-btn {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    color: $secondaryColor;
-    z-index: 1000000000;
-  }
-  nav {
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: none;
-  }
-  nav.nav-visible {
+.navigation {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  gap: 1rem;
+  background: $primaryColor;
+
+  > li {
     display: flex;
-  }
-
-  .text {
-    text-transform: uppercase;
-  }
-
-  .nav-btn {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 20px;
-  }
-
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .nav.visible {
-    transform: translateX(0);
-  }
-
-  .nav-green {
-    background-color: $secondaryColor;
-    width: 100%;
-    transition-delay: 0.4s;
-  }
-
-  .nav-green.visible {
-    transition-delay: 0s;
-  }
-
-  .nav-yellow {
-    background-color: $primaryColor;
-    width: 100%;
-    transition-delay: 0.2s;
-  }
-
-  .nav-yellow.visible {
-    transition-delay: 0.2s;
-  }
-
-  .nav-white {
-    display: block;
-    background-color: $backgroundColor;
-    width: 100%;
-    height: 100%;
-    padding: 40px;
-    padding-bottom: 0;
     position: relative;
-    transition-delay: 0s;
-    .list {
-      list-style-type: none;
-      padding: 0;
-      width: 100%;
-      flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    min-height: 2.25rem;
+
+    > a {
+      color: $textPrimary;
+      font-size: 14px;
+      text-decoration: none;
+
+      &:hover {
+        color: $textPrimary_lighter;
+      }
+    }
+
+    > button {
+      color: $textPrimary;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1;
+      margin-right: -0.25rem;
+      align-items: center;
+      min-height: 2.25rem;
+      font-size: 14px;
+      gap: 0.25rem;
+      flex-wrap: nowrap;
+      border-radius: 10rem;
+      padding: 0.25rem 0.6125rem;
+      white-space: nowrap;
+      background: none;
+      display: flex;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+
+      > svg {
+        margin-top: 2px;
+        fill: $textPrimary;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+
+    &:hover > button {
+      color: $textPrimary_lighter;
+      background: $primaryColor_lighter;
+    }
+
+    &:hover .dropdown,
+    &:focus-within .dropdown {
+      display: block;
     }
   }
+}
 
-  .nav-white.visible {
-    transition-delay: 0.4s;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.99) translateY(-0.7em);
+    transform-origin: top;
   }
-
-  .close-btn {
-    position: absolute;
-    top: 40px;
-    right: 20px;
-    color: $secondaryColor;
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
+}
 
-  .list li {
-    margin: 20px 0;
+.dropdown__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 3.75rem;
+}
+
+.dropdown {
+  border-radius: 0.5rem;
+  background: $primaryColor;
+  display: none;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 36rem;
+  box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.12),
+    0 30px 60px -30px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.list-items-with-description {
+  list-style-type: none;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+
+  > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.375rem;
+
+    &:hover {
+      background: $primaryColor_lighter;
+      color: $textPrimary_lighter;
+    }
+
+    > svg {
+      stroke: $textPrimary_lighter;
+      stroke-width: 1px;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
+}
 
-  .list li a {
+.item-title {
+  h3 {
+    font-weight: 500;
+    font-size: 0.875rem;
     color: $textPrimary;
-    font-size: $textSize;
+  }
+
+  p {
+    font-size: 0.7rem;
+    white-space: nowrap;
+    color: $textPrimary_lighter;
+  }
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  > a {
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.2s ease-in-out;
+    line-height: 1.25rem;
   }
+}
 
-  .list ul {
-    list-style-type: none;
+.secondary {
+  background: $primaryColor_lighter;
+  color: $textPrimary;
+  outline: none;
+  border-radius: 0.375rem;
+  &:hover {
+    background-color: $backgroundColor;
   }
+}
 
-  //*moj deo
-  nav {
+.primary {
+  color: $backgroundColor;
+  border-radius: 0.375rem;
+  background: $secondaryColor;
+  padding: 0.5rem 1rem;
+  &:hover {
+    background: $secondaryColor_lighter;
+  }
+}
+
+.right-side {
+  display: flex;
+  .language-change {
+    color: $textPrimary;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     button {
       all: unset;
-      font-size: $textSize;
-      color: $textPrimary;
-      &:hover ~ .dropdownContent {
-        display: block !important;
-      }
-    }
-    //login part
-    .secondPart-login {
-      position: absolute;
-      bottom: 32px;
-      right: 20px;
-      width: fit-content;
-      gap: 20px;
-    }
-  }
-
-  //user acc part
-  .secondPart-user {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    display: flex;
-    justify-content: center;
-    width: 10%;
-    padding: 10px 0;
-    .navUserBtn {
-      position: relative;
-      all: unset;
-      color: $textPrimary;
       cursor: pointer;
     }
-    .dropdown-user {
-      padding: 20px 15px;
-      background-color: $primaryColor;
-      border: 3px solid $secondaryColor;
-      border-radius: 15px;
-      position: absolute;
-      bottom: 30px;
-      right: 30px;
-      display: none;
-    }
-    .dropdown-user-visible {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
+}
+
+.burger-menu {
+  display: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+}
+// rotate svg on hover
+.navigation > li:hover > button svg {
+  fill: $textPrimary_lighter;
+  rotate: 180deg;
+}
+
+@media (max-width: 760px) {
+  .burger-menu {
+    z-index: 10001;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: $secondaryColor;
+    display: block;
+  }
+
+  header {
+    transform: translateX(100%);
+    transition: ease-in 0.2s;
+  }
+
+  .menu__wrapper-green {
+    z-index: 10000;
+    transform: translateX(100%);
+    transition: ease-in 0.2s;
+  }
+
+  .menu__wrapper-yellow {
+    transform: translateX(100%);
+    transition: ease-in 0.2s;
+  }
+
+  // side ribbons
+  .menu__wrapper-yellow {
+    background-color: $primaryColor;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 86vw;
+  }
+
+  .menu__wrapper-green {
+    background-color: $secondaryColor;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 89vw;
+  }
+
+  .menu__wrapper {
+    // ? moze se promeniti
+    background-color: $primaryColor_lighter;
+    // background-color: $backgroundColor;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 83vw;
+    margin-left: 27vw;
+    flex-direction: column;
+  }
+
+  .navigation {
+    background-color: $primaryColor_lighter;
+    // background-color: $backgroundColor;
+  }
+
+  // resets nav-btn on hover efect
+  .navigation > li:hover > button svg {
+    fill: $textPrimary_lighter;
+    rotate: 180deg;
+  }
+
+  .menu__bar {
+    padding-top: 40px;
+    height: 100%;
+    width: 84%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    > li {
+      flex-direction: column;
+      margin-top: 0;
     }
   }
 
-  //language part
-  .nav {
-    .nav-white {
-      .langaugePart {
-        display: flex;
-        gap: 5px;
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        border: none;
-        cursor: pointer;
-        margin-right: 7%;
-        width: 10%;
-      }
-    }
+  .right-side {
+    margin-bottom: 20px;
+  }
+
+  // dropdown
+  .dropdown__wrapper {
+    position: relative;
+    padding-top: 0;
+  }
+
+  .list-items-with-description {
+    display: block;
   }
 }

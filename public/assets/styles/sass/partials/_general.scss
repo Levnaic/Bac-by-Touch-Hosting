@@ -1,7 +1,17 @@
 // FONTS
 @font-face {
-  font-family: khorla;
-  src: url(../font/Khorla.ttf);
+  font-family: archivo-black;
+  src: url(../fonts/Archivo_Black/ArchivoBlack-Regular.ttf);
+}
+
+@font-face {
+  font-family: roboto;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: merriweather;
+  src: url(../fonts/Merriweather/Merriweather-Regular.ttf);
 }
 
 * {
@@ -14,7 +24,7 @@ html {
 }
 
 body {
-  font-family: khorla;
+  font-family: roboto;
   margin: 0;
   padding: 0;
   background-color: $backgroundColor;
@@ -23,48 +33,55 @@ body {
 }
 
 select {
-  font-family: khorla;
+  font-family: roboto;
 }
 
 button {
-  font-family: khorla;
+  font-family: roboto;
 }
 
 h1 {
+  font-family: archivo-black;
   font-size: $headlineSize;
   line-height: 1.2;
   color: $textPrimary;
 }
 
 h2 {
+  font-family: archivo-black;
   font-size: $subtitleSize;
   line-height: 1.3;
   color: $textPrimary;
 }
 
 h3 {
+  font-family: archivo-black;
   font-size: $h3text;
   line-height: 1.4;
   color: $textPrimary;
 }
 
 h4 {
+  font-family: archivo-black;
   font-size: $h4text;
   line-height: 1.5;
   color: $textPrimary;
 }
 
 p {
+  font-family: roboto;
   font-size: $textSize;
   color: $textPrimary;
   text-align: justify;
 }
 
 a {
+  font-family: roboto;
   text-decoration: none;
 }
 
 small {
+  font-family: merriweather;
   font-size: 0.8rem;
   color: $textPrimary;
 }

@@ -1,19 +1,64 @@
-//* NAV
-const open_btn = document.querySelector(".open-btn");
-const close_btn = document.querySelector(".close-btn");
-const nav = document.querySelectorAll(".nav");
-const navBox = document.querySelector("nav");
-const userBtn = document.querySelector(".navUserBtn");
-const dropdownUser = document.querySelector(".dropdown-user");
-const navHeight = document.querySelector("nav").getBoundingClientRect().height;
-const observeObject = document.querySelector(".header-area");
-let navIsShowing = false;
+//* helper functions
 
 function isMobile() {
   return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
   );
 }
+
+//* NAV
+//* responsive nav
+
+const burgerMenu = document.querySelector(".burger-menu");
+const header = document.querySelector("header");
+const yellowRibbon = document.querySelector(".menu__wrapper-yellow");
+const greenRibbon = document.querySelector(".menu__wrapper-green");
+const navBtns = document.querySelectorAll(".nav-btn");
+// const dropdowns = document.querySelectorAll(".");
+
+let isMenuOpened = false;
+
+function openMenu() {
+  setTimeout(() => {
+    greenRibbon.style.transform = "translateX(0%)";
+  }, 0);
+  setTimeout(() => {
+    yellowRibbon.style.transform = "translateX(0%)";
+  }, 200);
+  setTimeout(() => {
+    header.style.transform = "translateX(0%)";
+  }, 400);
+  isMenuOpened = true;
+}
+
+function closeMenu() {
+  setTimeout(() => {
+    header.style.transform = "translateX(100%)";
+  }, 0);
+  setTimeout(() => {
+    yellowRibbon.style.transform = "translateX(100%)";
+  }, 200);
+  setTimeout(() => {
+    greenRibbon.style.transform = "translateX(100%)";
+  }, 400);
+  isMenuOpened = false;
+}
+
+burgerMenu.addEventListener("click", () => {
+  isMenuOpened ? closeMenu() : openMenu();
+});
+
+//* sticky navbar
+let prevScrollPos = window.scrollY;
+window.onscroll = function () {
+  let currentScrollPos = window.scrollY;
+  if (prevScrollPos > currentScrollPos) {
+    document.querySelector("nav").style.top = "0";
+  } else {
+    document.querySelector("nav").style.top = "-100px";
+  }
+  prevScrollPos = currentScrollPos;
+};
 
 //* Language cookies
 function getCookieValue(cookieName) {
@@ -45,43 +90,6 @@ function setLanguage(language) {
     return true;
   }
 }
-
-//* login credencials show after click on button
-userBtn?.addEventListener("click", () => {
-  dropdownUser.classList.toggle("dropdown-user-visible");
-  if (!isMobile) {
-    dropdownUser.style.top = `${navHeight - 7}px`;
-  }
-});
-
-//mobile
-open_btn.addEventListener("click", () => {
-  navBox.style.display = "flex";
-  setTimeout(() => {
-    nav.forEach((nav_el) => nav_el.classList.add("visible"));
-  }, 50);
-  open_btn.style.display = "none";
-});
-
-close_btn.addEventListener("click", () => {
-  nav.forEach((nav_el) => nav_el.classList.remove("visible"));
-  setTimeout(() => {
-    navBox.style.display = "none";
-    open_btn.style.display = "block";
-  }, 700);
-});
-
-//* sticky navbar
-let prevScrollPos = window.scrollY;
-window.onscroll = function () {
-  let currentScrollPos = window.scrollY;
-  if (prevScrollPos > currentScrollPos) {
-    document.querySelector("nav").style.top = "0";
-  } else {
-    document.querySelector("nav").style.top = "-100px";
-  }
-  prevScrollPos = currentScrollPos;
-};
 
 //* FOOTER
 const footerLogo = document.querySelector(".footerHeadline");

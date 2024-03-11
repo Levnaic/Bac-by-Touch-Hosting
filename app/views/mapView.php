@@ -86,6 +86,11 @@
                     </div>
 
                     <p class="textMarker"><?php echo $row->body; ?></p>
+                    <div class="markerContact-container">
+                        <p>Kontakt:</p>
+                        <?php echo "<a href='tel:$row->contact'>$row->contact</a>"; ?>
+                        <?php echo "<a href='mailto:$row->email'>$row->email</a>"; ?>
+                    </div>
                     <div class="markerInvisablePart">
                         <?php
                         // checks if user is looged and make order or add comment 

@@ -264,9 +264,11 @@ function handleMarkerClick() {
   this.style.cursor = "default";
 
   markerActive = this;
+
+  showMarkerLocation();
 }
 
-function handleShowLocationClick() {
+function showMarkerLocation() {
   targetLat = Number(clickedMarker.querySelector(".latitude").innerHTML);
   targetLng = Number(clickedMarker.querySelector(".longitude").innerHTML);
   targetPopupMsg = clickedMarker.querySelector(".popupMsg").innerHTML;
@@ -274,13 +276,16 @@ function handleShowLocationClick() {
 
   savedBounds = map.getBounds();
   restartMap();
+
+  /*
   //!UBACENA NAJNOVIJA
   handleDirections(targetLat, targetLng, "driving-car");
   //!PRODUKCIJA UKLJUCI U PRODUKCIJI, ISKLJUCENO DA ME NE BI IZBACILI
   // routeFromYourLocation(targetLat, targetLng, targetPopupMsg, targetImgUrl);
+  */
   //!zamenska funkcija
-  // zoomOnLocation(targetLat, targetLng, targetPopupMsg, targetImgUrl);
-  clickedMarker.removeEventListener("click", handleMarkerClick);
+  zoomOnLocation(targetLat, targetLng, targetPopupMsg, targetImgUrl);
+  // clickedMarker.removeEventListener("click", handleMarkerClick);
 }
 
 function handleShowAllBtnClick() {
