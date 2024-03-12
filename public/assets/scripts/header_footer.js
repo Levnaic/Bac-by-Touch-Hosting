@@ -14,7 +14,6 @@ const header = document.querySelector("header");
 const yellowRibbon = document.querySelector(".menu__wrapper-yellow");
 const greenRibbon = document.querySelector(".menu__wrapper-green");
 const navBtns = document.querySelectorAll(".nav-btn");
-// const dropdowns = document.querySelectorAll(".");
 
 let isMenuOpened = false;
 
@@ -49,13 +48,15 @@ burgerMenu.addEventListener("click", () => {
 });
 
 //* sticky navbar
+const nav = document.querySelector(".menu__wrapper-green");
 let prevScrollPos = window.scrollY;
+
 window.onscroll = function () {
   let currentScrollPos = window.scrollY;
   if (prevScrollPos > currentScrollPos) {
-    document.querySelector("nav").style.top = "0";
+    nav.style.top = "0";
   } else {
-    document.querySelector("nav").style.top = "-100px";
+    nav.style.top = "-100px";
   }
   prevScrollPos = currentScrollPos;
 };
