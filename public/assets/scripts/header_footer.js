@@ -14,8 +14,12 @@ const header = document.querySelector("header");
 const yellowRibbon = document.querySelector(".menu__wrapper-yellow");
 const greenRibbon = document.querySelector(".menu__wrapper-green");
 const navBtns = document.querySelectorAll(".nav-btn");
+const dropdownLis = document.querySelectorAll(".dropdown-li");
+const dropdowns = document.querySelectorAll(".dropdown");
+const dropdownSvgs = document.querySelectorAll(".dropdown-svg");
 
 let isMenuOpened = false;
+let isDropdownOpen = [false, false];
 
 function openMenu() {
   setTimeout(() => {
@@ -43,24 +47,47 @@ function closeMenu() {
   isMenuOpened = false;
 }
 
+function closeDropdown(i) {
+  dropdowns[i].style.display = "none";
+  dropdownSvgs[i].style.rotate = "0deg";
+  isDropdownOpen[i] = false;
+  console.log("zatvaranje");
+}
+function openDropdown(i) {
+  closeDropdown(0);
+  closeDropdown(1);
+  dropdowns[i].style.display = "block";
+  dropdownSvgs[i].style.rotate = "180deg";
+  isDropdownOpen[i] = true;
+  console.log("otvaranje");
+}
+
 burgerMenu.addEventListener("click", () => {
   isMenuOpened ? closeMenu() : openMenu();
 });
 
+if (isMobile()) {
+  dropdownLis.forEach((dropdownLi, i) => {
+    dropdownLi.addEventListener("click", () => {
+      isDropdownOpen[i] ? closeDropdown(i) : openDropdown(i);
+    });
+  });
+}
 //* sticky navbar
 const nav = document.querySelector(".menu__wrapper-green");
 let prevScrollPos = window.scrollY;
 
-window.onscroll = function () {
-  let currentScrollPos = window.scrollY;
-  if (prevScrollPos > currentScrollPos) {
-    nav.style.top = "0";
-  } else {
-    nav.style.top = "-100px";
-  }
-  prevScrollPos = currentScrollPos;
-};
-
+if (!isMobile()) {
+  window.onscroll = function () {
+    let currentScrollPos = window.scrollY;
+    if (prevScrollPos > currentScrollPos) {
+      nav.style.top = "0";
+    } else {
+      nav.style.top = "-100px";
+    }
+    prevScrollPos = currentScrollPos;
+  };
+}
 //* Language cookies
 function getCookieValue(cookieName) {
   let cookies = document.cookie.split(";");
