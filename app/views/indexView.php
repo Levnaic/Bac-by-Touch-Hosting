@@ -9,6 +9,8 @@
         </div>
     </section>
 
+    <h1>test</h1>
+
     <!-- //* MAIN TEXT ON PAGE -->
     <section id="textAfterSlideshow" class="margins popupSection">
         <h2 data-i18n="indexMainHeadline">Neki podnaslov</h2>
