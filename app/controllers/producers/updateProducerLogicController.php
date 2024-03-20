@@ -21,6 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $title = Security::sanitizeInput($_POST["title"]);
         $email = Security::sanitizeInput($_POST["email"]);
         $contact = Security::sanitizeInput($_POST["contact"]);
+        $location = Security::sanitizeInput($_POST["location"]);
         $body = Security::sanitizeInput($_POST["body"]);
         $latitude = Security::sanitizeInput($_POST["latitude"]);
         $longitude = Security::sanitizeInput($_POST["longitude"]);
@@ -33,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $title = Security::validateInput($title, "txt");
             $email = Security::validateInput($email, "email");
             $contact = Security::validateInput($contact, "phone");
+            $location = Security::validateInput($location, "txt");
             $body = Security::validateInput($body, "txt");
             $latitude = Security::validateInput($latitude, "float");
             $longitude = Security::validateInput($longitude, "float");
@@ -43,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $db = new Database($databaseConfig);
             $producer = new Producer($db->getConnection());
 
-            $producer->updateProducer($title, $email, $contact, $body, $latitude, $longitude, $popupMsg, $category, $id);
+            $producer->updateProducer($title, $email, $contact, $location, $body, $latitude, $longitude, $popupMsg, $category, $id);
 
             header("Location: /dashboard/producers");
             exit;

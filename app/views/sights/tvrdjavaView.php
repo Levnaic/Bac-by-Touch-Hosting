@@ -53,4 +53,3 @@
   <!-- SCRIPTS -->
   <script src="../assets/scripts/header_footer.js"></script>
   <script src="../assets/scripts/sights.js"></script>
-  <script src="../assets/scripts/slideshow.js"></script>

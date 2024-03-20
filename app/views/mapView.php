@@ -95,6 +95,10 @@
                             <?php echo "<a href='mailto:$row->email'>$row->email</a>"; ?>
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </div>
+                        <div class="contactLink">
+                            <?php echo "<a href='$row->producerLocation'>$row->producerLocation</a>"; ?>
+                            <i class="fa fa-compass" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="markerInvisablePart">
                         <?php

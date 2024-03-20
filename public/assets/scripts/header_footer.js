@@ -51,7 +51,6 @@ function closeDropdown(i) {
   dropdowns[i].style.display = "none";
   dropdownSvgs[i].style.rotate = "0deg";
   isDropdownOpen[i] = false;
-  console.log("zatvaranje");
 }
 function openDropdown(i) {
   closeDropdown(0);
@@ -59,7 +58,6 @@ function openDropdown(i) {
   dropdowns[i].style.display = "block";
   dropdownSvgs[i].style.rotate = "180deg";
   isDropdownOpen[i] = true;
-  console.log("otvaranje");
 }
 
 burgerMenu.addEventListener("click", () => {
