@@ -11,7 +11,7 @@
 
 
     <div class="person">
-      <img src="assets/img/placeholder/covek.jpg" alt="person" />
+      <img src="assets/img/team/milan.jpg" alt="person" />
       <p class="personName">Milan Končar</p>
       <small class="personRole">Projekt menadžer</small>
     </div>
