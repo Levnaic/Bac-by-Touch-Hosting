@@ -241,6 +241,33 @@ nav .focusedMode {
   align-items: center;
 }
 
+.map-icon {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-smestaj {
+  color: red;
+}
+
+.icon-restorani {
+  color: green;
+}
+
+.icon-proizvodi {
+  color: orange;
+}
+
+.icon-caffe {
+  color: blue;
+}
+
+.icon-suveniri {
+  color: purple;
+}
+
 #map-container .markers-container {
   margin-bottom: 60px;
   position: relative;

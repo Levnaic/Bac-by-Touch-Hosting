@@ -43,13 +43,15 @@
                     </button>
                     <select name="" id="mapCategorySelect">
                         <option value="svi">Prikazi sve</option>
-                        <option value="hrana">Hrana</option>
-                        <option value="usluge">Usluge</option>
-                        <option value="pica">Pica</option>
+                        <option value="smestaj">Smeštaj</option>
+                        <option value="proizvodi">Proizvodi</option>
+                        <option value="restorani">Restorani</option>
+                        <option value="caffe">Caffe</option>
+                        <option value="suveniri">Suveniri</option>
                     </select>
                 </div>
                 <div class="focusedMode">
-                    <button class="showAll mapNavBtn">Prikaži sve</button>
+                    <button class="showAll mapNavBtn">Vrati nazad</button>
                     <!-- <button class="zoomToLocation mapNavBtn">Prikaži lokaciju</button> -->
                 </div>
             </nav>

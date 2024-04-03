@@ -33,7 +33,7 @@
      <div class="popupSection">
          <h2 id="firstTour">Prvi video</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video1.mp4" class="video"></video>
+             <video src="assets/img/videos/video1.mp4" class="video" loading="lazy"></video>
          </div>
          <!-- <p>
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
@@ -55,7 +55,7 @@
      <div class="popupSection">
          <h2 id="secondTour">Drugi video</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video2.mp4" class="video"></video>
+             <video src="assets/img/videos/video2.mp4" class="video" loading="lazy"></video>
          </div>
          <!-- <p>
              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, et. Odio
@@ -76,7 +76,7 @@
      <div class="popupSection">
          <h2 id="thirdTour">Treći video</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video3.mp4" class="video"></video>
+             <video src="assets/img/videos/video3.mp4" class="video" loading="lazy"></video>
          </div>
          <!-- <p>
              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, et. Odio
@@ -97,7 +97,7 @@
      <div class="popupSection">
          <h2 id="firstTour">Četvrti video</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video4.mp4" class="video"></video>
+             <video src="assets/img/videos/video4.mp4" class="video" loading="lazy"></video>
          </div>
          <!-- <p>
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit

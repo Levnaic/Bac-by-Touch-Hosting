@@ -37,6 +37,14 @@ let clickedMarker;
 let screenHeight = window.innerHeight;
 let locationsObjArr = [];
 
+let iconsMaping = {
+  smestaj: "fa-bed icon-smestaj",
+  proizvodi: "fa-glass icon-proizvodi",
+  restorani: "fa-cutlery icon-restorani",
+  caffe: "fa-coffee icon-caffe",
+  suveniri: "fa-shopping-bag icon-suveniri",
+};
+
 //* FUNCTIONS
 
 function initializeMap(
@@ -54,9 +62,9 @@ function initializeMap(
   }).setView([lat, lng], zoom);
 
   // set tiles
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenStreetMap contributors'
-}).addTo(map);
+  L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png", {
+    attribution: "© OpenStreetMap contributors",
+  }).addTo(map);
 
   //set position of zoom buttons
   L.control
@@ -119,10 +127,14 @@ function removeAllMarkers() {
   });
 }
 
-function addBookmarks(lat, lng, msg, iconUrl) {
-  var myIcon = L.icon({
-    iconUrl: `assets/img/mapIcons/${iconUrl}.png`,
+function addBookmarks(lat, lng, msg, category) {
+  let iconClass = iconsMaping[category] || "fa-map-marker";
+  var myIcon = L.divIcon({
+    html: `<i class="fa ${iconClass} fa-lg" aria-hidden="true"></i>`,
+    iconUrl: "dummy-url",
+    // iconUrl: `assets/img/mapIcons/${iconUrl}.png`,
     iconSize: [32, 32],
+    className: "map-icon",
   });
 
   L.marker([lat, lng], { icon: myIcon })

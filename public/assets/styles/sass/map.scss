@@ -83,6 +83,33 @@ nav {
   }
 }
 
+.map-icon {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-smestaj {
+  color: red;
+}
+
+.icon-restorani {
+  color: green;
+}
+
+.icon-proizvodi {
+  color: orange;
+}
+
+.icon-caffe {
+  color: blue;
+}
+
+.icon-suveniri {
+  color: purple;
+}
+
 #map-container {
   //! ISKLJUCITI U PRODUKCIJI!!
   // display: none;
@@ -139,16 +166,16 @@ nav {
     top: 0;
   }
 
-  .markerContact-container{
+  .markerContact-container {
     color: $textPrimary;
     display: flex;
     flex-direction: column;
-    .contactLink{
+    .contactLink {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       gap: 6px;
-      a{
+      a {
         color: $textPrimary;
         text-decoration: underline;
       }
