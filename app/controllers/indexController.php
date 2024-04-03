@@ -6,7 +6,7 @@ use BacByTouch\Session;
 
 Session::sessionStart();
 
-$title = "Bac by touch";
+$title = "Bac by Touch";
 $css = "index.css";
 
 require "../app/views/partials/head.php";
