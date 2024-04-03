@@ -10,7 +10,14 @@
             <input type="text" name="mapLatitude" placeholder="Latitude" data-input-type="float">
             <input type="text" name="mapLongitude" placeholder="Longitude" data-input-type="float">
             <input type="text" name="popupMsg" placeholder="Popup Message" data-input-type="txt">
-            <input type="text" name="category" placeholder="Category" data-input-type="txt">
+            <select name="category">
+                <option value="smestaj">Smeštaj</option>
+                <option value="proizvodi">Proizvodi</option>
+                <option value="prenociste">Prenoćište</option>
+                <option value="restorani">Restorani</option>
+                <option value="caffe">Caffe</option>
+                <option value="suveniri">Suveniri</option>
+            </select>
             <div class="formButtons">
                 <button type="submit" class="loginButton">Create</button>
             </div>

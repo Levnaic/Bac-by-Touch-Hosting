@@ -610,6 +610,18 @@ body {
   border: none;
   resize: none;
 }
+#formContainer .formCard form select {
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff4f4;
+  color: #3a3a3a;
+  transition: box-shadow 0.3s;
+}
+#formContainer .formCard form option {
+  background-color: #f1c376;
+  color: #3a3a3a;
+}
 #formContainer .formButtons {
   display: flex;
   justify-content: flex-end;

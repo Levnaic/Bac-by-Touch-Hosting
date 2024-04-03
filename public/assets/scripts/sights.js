@@ -43,18 +43,54 @@ pages.forEach((e) => {
 });
 
 //* SLIDESHOW
-//variables
+//*variables
 const btnPrev = document.querySelector(".prevBtn");
 const btnNext = document.querySelector(".nextBtn");
 let dots = document.querySelectorAll(".dot");
-let slides = document.getElementsByClassName("slide");
+let slides = [...document.getElementsByClassName("slide")];
+let imgs = document.getElementsByClassName("slideImg");
+let slideTimer = 5000;
+
+// slide timer
+let slideTimerId = setInterval(() => {
+  currentSlide++;
+  showSlide(currentSlide);
+}, slideTimer);
 
 //on startup
 let currentSlide = 0;
 showSlide(currentSlide);
 
-//functions
+//*functions
+
+function startSlideTimer() {
+  clearInterval(slideTimerId);
+  slideTimerId = setInterval(() => {
+    currentSlide++;
+    showSlide(currentSlide);
+  }, slideTimer);
+}
+
+function activateSlide(n) {
+  slides[n].classList.add("activeSlide");
+  // imgs[n].classList.add("fade-id");
+  // imgs[n].classList.remove("fade-out");
+  dots[n].classList.add("activeDot");
+  startSlideTimer();
+}
+
+function deactivateSlides() {
+  slides.forEach((slide, i) => {
+    // imgs[i].classList.remove("fade-in");
+    // imgs[i].classList.add("fade-out");
+    slide.classList.remove("activeSlide");
+    dots[i].className = dots[i].className.replace(" activeDot", "");
+  });
+}
+
 function showSlide(n) {
+  deactivateSlides();
+
   if (n >= slides.length) {
     n = 0;
     currentSlide = 0;
@@ -65,17 +101,7 @@ function showSlide(n) {
     currentSlide = slides.length - 1;
   }
 
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("activeSlide");
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" activeDot", "");
-  }
-
-  // slides[n].style.display = "block";
-  slides[n].classList.add("activeSlide");
-  dots[n].classList.add("activeDot");
+  activateSlide(n);
 }
 
 function showSlideDots(n) {
@@ -94,9 +120,4 @@ btnPrev.addEventListener("click", () => {
   showSlide(currentSlide);
 });
 
-//!PRODUKCIJA
-//auto scroll
-// setInterval(() => {
-//   currentSlide++;
-//   showSlide(currentSlide)
-// }, 7000);
+// auto scroll

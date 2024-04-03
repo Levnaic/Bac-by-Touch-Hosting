@@ -554,8 +554,7 @@ h2 {
   overflow: hidden;
 }
 .slideshow-container .slide {
-  transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
+  opacity: 0;
   width: 100%;
   height: 100%;
 }
@@ -564,11 +563,11 @@ h2 {
   height: 100%;
 }
 .slideshow-container .activeSlide {
+  opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
   display: block;
-  transform: translateX(0);
 }
 .slideshow-container button {
   position: absolute;
@@ -657,11 +656,41 @@ h2 {
   filter: grayscale(0%);
 }
 
+.fade-in {
+  opacity: 1;
+  transition: 1s ease-in;
+  animation: fadeInAnimation 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.fade-out {
+  opacity: 0;
+  transition: 1s ease-in;
+  animation: fadeOutAnimation 1s ease-in-out forwards; /* Fade-out animation */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @media only screen and (max-width: 480px) {
   .slideshow-container {
     height: 400px;
   }
   .slideshow-container .slide img {
+    transform: translateX(-10%);
+    width: 120%;
     height: 400px;
   }
   .suggestedPages {

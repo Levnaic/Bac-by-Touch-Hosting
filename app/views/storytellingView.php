@@ -33,16 +33,16 @@
      <div class="popupSection">
          <h2 id="firstTour">Prvi video</h2>
          <div class="video-container">
-             <video src="assets/img/videos/placeholder.mp4" class="video"></video>
+             <video src="assets/img/videos/video1.mp4" class="video"></video>
          </div>
-         <p>
+         <!-- <p>
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
              debitis a, repellat quo exercitationem sapiente est eum assumenda, sed
              repellendus ab nulla, at cumque eius itaque. Minima error labore sunt
              cum necessitatibus, ab tenetur, repudiandae odit fuga fugiat expedita
              ratione! Itaque deleniti illo recusandae necessitatibus eum numquam at
              dolor officiis.
-         </p>
+         </p> -->
          <!-- <a href="#selectionPart">
              <div class="tourBtn">
                  <div class="btnStandard">
@@ -55,15 +55,15 @@
      <div class="popupSection">
          <h2 id="secondTour">Drugi video</h2>
          <div class="video-container">
-             <video src="assets/img/videos/placeholder.mp4" class="video"></video>
+             <video src="assets/img/videos/video2.mp4" class="video"></video>
          </div>
-         <p>
+         <!-- <p>
              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, et. Odio
              sed sit ipsa quaerat qui ab aliquam nihil ratione eius fuga, eaque
              recusandae error itaque at aut similique provident quod quos est ut
              asperiores rerum odit adipisci. Alias cum, possimus dolorum accusamus
              quae animi corporis ducimus illo odio quaerat!
-         </p>
+         </p> -->
          <!-- <a href="#selectionPart">
              <div class="tourBtn">
                  <div class="btnStandard">
@@ -74,17 +74,39 @@
      </div>
 
      <div class="popupSection">
-         <h2 id="thirdTour">Treci video</h2>
+         <h2 id="thirdTour">Treći video</h2>
          <div class="video-container">
-             <video src="assets/img/videos/placeholder.mp4" class="video"></video>
+             <video src="assets/img/videos/video3.mp4" class="video"></video>
          </div>
-         <p>
+         <!-- <p>
              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, et. Odio
              sed sit ipsa quaerat qui ab aliquam nihil ratione eius fuga, eaque
              recusandae error itaque at aut similique provident quod quos est ut
              asperiores rerum odit adipisci. Alias cum, possimus dolorum accusamus
              quae animi corporis ducimus illo odio quaerat!
-         </p>
+         </p> -->
+         <!-- <a href="#selectionPart">
+             <div class="tourBtn">
+                 <div class="btnStandard">
+                     <p>Meni tura</p>
+                 </div>
+             </div>
+         </a> -->
+     </div>
+
+     <div class="popupSection">
+         <h2 id="firstTour">Četvrti video</h2>
+         <div class="video-container">
+             <video src="assets/img/videos/video4.mp4" class="video"></video>
+         </div>
+         <!-- <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+             debitis a, repellat quo exercitationem sapiente est eum assumenda, sed
+             repellendus ab nulla, at cumque eius itaque. Minima error labore sunt
+             cum necessitatibus, ab tenetur, repudiandae odit fuga fugiat expedita
+             ratione! Itaque deleniti illo recusandae necessitatibus eum numquam at
+             dolor officiis.
+         </p> -->
          <!-- <a href="#selectionPart">
              <div class="tourBtn">
                  <div class="btnStandard">

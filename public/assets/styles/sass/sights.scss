@@ -34,8 +34,7 @@ h2 {
   height: 550px;
   overflow: hidden;
   .slide {
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in-out;
+    opacity: 0;
     width: 100%;
     height: 100%;
     img {
@@ -45,12 +44,11 @@ h2 {
   }
 
   .activeSlide {
+    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
-
     display: block;
-    transform: translateX(0);
   }
 
   button {
@@ -152,5 +150,39 @@ h2 {
     }
   }
 }
+
+// ! ubaceni deo, pod komentarom
+.fade-in {
+  opacity: 1;
+  transition: 1s ease-in;
+
+  animation: fadeInAnimation 1s ease-in-out forwards; /* Fade-in animation */
+}
+
+.fade-out {
+  opacity: 0;
+  transition: 1s ease-in;
+  animation: fadeOutAnimation 1s ease-in-out forwards; /* Fade-out animation */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// ! kraj ubacenog dela
 
 @import "responsive/sightsResponsive";

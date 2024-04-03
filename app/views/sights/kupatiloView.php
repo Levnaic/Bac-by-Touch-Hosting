@@ -5,17 +5,13 @@
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">
     <div class="slide">
-      <img src="../assets/img/sights/tvrdjava/0.jpg" alt="Bačka tvrđava" />
-    </div>
-    <div class="slide">
-      <img src="../assets/img/sights/tvrdjava/1.jpg" alt="Bačka tvrđava" />
+      <img src="../assets/img/sights/kupatilo/0.jpg" alt="Tursko kupatilo" />
     </div>
     <button class="prevBtn">&#10094;</button>
     <button class="nextBtn">&#10095;</button>
   </section>
   <div class="dots">
-    <div class="dot activeDot" onclick="showSlideDots(0)"></div>
-    <div class="dot" onclick="showSlideDots(1)"></div>
+    <div class="dot activeDot" onclick="handleSlideDotsClick(0)"></div>
   </div>
   <section class="cardsPageText margins">
     <p>

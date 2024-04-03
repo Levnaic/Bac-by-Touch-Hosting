@@ -5,17 +5,42 @@
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">
     <div class="slide">
-      <img src="../assets/img/sights/tvrdjava/0.jpg" alt="Bačka tvrđava" />
+      <img src="../assets/img/sights/tvrdjava/0.jpg" alt="Bačka tvrđava" class="slideImg"/>
     </div>
     <div class="slide">
-      <img src="../assets/img/sights/tvrdjava/1.jpg" alt="Bačka tvrđava" />
+      <img src="../assets/img/sights/tvrdjava/1.jpg" alt="Bačka tvrđava" class="slideImg"/>
+    </div>
+    <div class="slide">
+      <img src="../assets/img/sights/tvrdjava/2.jpg" alt="Bačka tvrđava" class="slideImg"/>
+    </div>
+    <div class="slide">
+      <img src="../assets/img/sights/tvrdjava/3.jpg" alt="Bačka tvrđava" class="slideImg"/>
+    </div>
+    <div class="slide">
+      <img src="../assets/img/sights/tvrdjava/4.jpg" alt="Bačka tvrđava" class="slideImg"/>
+    </div>
+    <div class="slide">
+      <img src="../assets/img/sights/tvrdjava/5.jpg" alt="Bačka tvrđava" class="slideImg"/>
+    </div>
+    <div class="slide">
+      <img src="../assets/img/sights/tvrdjava/6.jpg" alt="Bačka tvrđava" class="slideImg"/>
+    </div>
+    <div class="slide">
+      <img src="../assets/img/sights/tvrdjava/7.jpg" alt="Bačka tvrđava" class="slideImg"/>
     </div>
     <button class="prevBtn">&#10094;</button>
     <button class="nextBtn">&#10095;</button>
   </section>
   <div class="dots">
-    <div class="dot activeDot" onclick="showSlideDots(0)"></div>
-    <div class="dot" onclick="showSlideDots(1)"></div>
+    <div class="dot activeDot" onclick="handleSlideDotsClick(0)"></div>
+    <div class="dot" onclick="handleSlideDotsClick(1)"></div>
+    <div class="dot" onclick="handleSlideDotsClick(2)"></div>
+    <div class="dot" onclick="handleSlideDotsClick(3)"></div>
+    <div class="dot" onclick="handleSlideDotsClick(4)"></div>
+    <div class="dot" onclick="handleSlideDotsClick(5)"></div>
+    <div class="dot" onclick="handleSlideDotsClick(6)"></div>
+    <div class="dot" onclick="handleSlideDotsClick(7)"></div>
+
   </div>
   <section class="cardsPageText margins">
     <p>

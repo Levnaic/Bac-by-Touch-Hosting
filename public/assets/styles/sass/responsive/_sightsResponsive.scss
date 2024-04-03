@@ -4,6 +4,8 @@
     height: 400px;
     .slide {
       img {
+        transform: translateX(-10%);
+        width: 120%;
         height: 400px;
       }
     }
