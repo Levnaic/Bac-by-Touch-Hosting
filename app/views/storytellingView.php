@@ -33,7 +33,7 @@
      <div class="popupSection">
          <h2 id="firstTour">Kraljevski grad Bač</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video1.mp4" class="video" loading="lazy"></video>
+             <video src="assets/img/videos/video1.mp4" class="video"></video>
          </div>
          <!-- <p>
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
@@ -55,7 +55,7 @@
      <div class="popupSection">
          <h2 id="secondTour">Aktivni odmor u prirodi</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video2.mp4" class="video" loading="lazy"></video>
+             <video src="assets/img/videos/video2.mp4" class="video"></video>
          </div>
          <!-- <p>
              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, et. Odio
@@ -76,7 +76,7 @@
      <div class="popupSection">
          <h2 id="thirdTour">Bač - gde je tradicija svakodnevnica</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video3.mp4" class="video" loading="lazy"></video>
+             <video src="assets/img/videos/video3.mp4" class="video"></video>
          </div>
          <!-- <p>
              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, et. Odio
@@ -97,7 +97,7 @@
      <div class="popupSection">
          <h2 id="firstTour">Doživi Bač</h2>
          <div class="video-container">
-             <video src="assets/img/videos/video4.mp4" class="video" loading="lazy"></video>
+             <video src="assets/img/videos/video4.mp4" class="video"></video>
          </div>
          <!-- <p>
              Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
