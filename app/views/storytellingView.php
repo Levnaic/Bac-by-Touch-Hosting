@@ -31,7 +31,7 @@
  <section class="videos margins">
 
      <div class="popupSection">
-         <h2 id="firstTour">Prvi video</h2>
+         <h2 id="firstTour">Kraljevski grad Bač</h2>
          <div class="video-container">
              <video src="assets/img/videos/video1.mp4" class="video" loading="lazy"></video>
          </div>
@@ -53,7 +53,7 @@
      </div>
 
      <div class="popupSection">
-         <h2 id="secondTour">Drugi video</h2>
+         <h2 id="secondTour">Aktivni odmor u prirodi</h2>
          <div class="video-container">
              <video src="assets/img/videos/video2.mp4" class="video" loading="lazy"></video>
          </div>
@@ -74,7 +74,7 @@
      </div>
 
      <div class="popupSection">
-         <h2 id="thirdTour">Treći video</h2>
+         <h2 id="thirdTour">Bač - gde je tradicija svakodnevnica</h2>
          <div class="video-container">
              <video src="assets/img/videos/video3.mp4" class="video" loading="lazy"></video>
          </div>
@@ -95,7 +95,7 @@
      </div>
 
      <div class="popupSection">
-         <h2 id="firstTour">Četvrti video</h2>
+         <h2 id="firstTour">Doživi Bač</h2>
          <div class="video-container">
              <video src="assets/img/videos/video4.mp4" class="video" loading="lazy"></video>
          </div>
