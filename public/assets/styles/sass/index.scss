@@ -4,6 +4,8 @@
 @import "partials/footer";
 @import "partials/btn/btnSeeThrough";
 
+
+
 //*HEADLINE SECTION
 #headlineSection {
   position: relative;
@@ -29,11 +31,13 @@
   }
   h1 {
     color: $primaryColor;
-    margin-top: 60px;
+    margin-top: 5%;
     padding-top: 70px;
     font-size: 64px;
     padding-right: 40%;
   }
+
+
 
   span.differentColorHeadline {
     color: $secondaryColor;
@@ -105,6 +109,9 @@
   }
 
   .floatCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px 30px;
     border-radius: 4px;
     position: absolute;
@@ -118,7 +125,13 @@
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     a {
+      font-size: 26px;
       text-decoration: none;
+    }
+
+    p{
+      text-align: center;
+      font-size: 26px;
     }
     #ancorRight {
       color: $primaryColor;
@@ -147,7 +160,7 @@
 #sponsors {
   margin-top: 150px;
   padding: 0 10%;
-  background-color: $primaryColor;
+  background-color: $backgroundColor;
   h2 {
     padding-top: 60px;
     text-align: center;
@@ -158,15 +171,15 @@
     justify-content: space-around;
   }
   img {
-    width: 15%;
+    width: 30%;
     aspect-ratio: 3/2;
     object-fit: contain;
-    mix-blend-mode: color-burn;
   }
 }
 
 //* CARDS
-.cards {
+#headlineBtnJump{
+  padding-top: 160px;
   h2 {
     padding: 150px 0;
     text-align: center;

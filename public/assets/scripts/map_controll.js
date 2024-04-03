@@ -54,7 +54,9 @@ function initializeMap(
   }).setView([lat, lng], zoom);
 
   // set tiles
-  L.tileLayer("http://{s}.tile.osm.org/{z}/{x}/{y}.png").addTo(map);
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
 
   //set position of zoom buttons
   L.control

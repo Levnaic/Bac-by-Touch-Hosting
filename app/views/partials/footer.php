@@ -2,25 +2,32 @@
   <div class="footerFirstRow">
     <div class="footerLogo">
       <p class="footerHeadline">
-        <span class="differentColorHeadline"> Bač</span> by Touch
+        <img src="/assets/img/logos/logo.png" alt="logo">
+        <!-- <span class="differentColorHeadline"> Bač</span> by Touch -->
       </p>
     </div>
     <div class="contactInfo">
-      <p>Broj teleofna: +381000000000</p>
-      <p>Adresa: Marka Markovica 11, Bac</p>
-      <p>Email: randommejl@gmail.com</p>
+      <p class="socialMediaHeadline">Kontaktirajte nas na:</p>
+      <div class="contactBox">
+        <p>Email:</p>
+        <a href="mailto:bacbytouch@gmail.com">bacbytouch@gmail.com</a>
+      </div>
+      <div class="contactBox">
+        <p>Broj telefona:</p>
+        <a href="tel:+381695066771">+381695066771</a>
+      </div>
     </div>
     <div class="socialMedia">
       <p class="socialMediaHeadline">Naše socijalne mreže:</p>
       <div class="socialLinks">
-        <a href="https://www.instagram.com/">
+        <!-- <a href="https://www.instagram.com/">
           <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
-        </a>
-        <a href="https:/www.facebook.com">
+        </a> -->
+        <a href="https://www.facebook.com/profile.php?id=100064781678426&mibextid=ZbWKwL">
           <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
         </a>
-        <a href="https://twitter.com/">
-          <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+        <a href="https://www.youtube.com/watch?v=3-xXpDkiR38">
+          <i class="fa fa-youtube fa-3x" aria-hidden="true"></i>
         </a>
       </div>
     </div>

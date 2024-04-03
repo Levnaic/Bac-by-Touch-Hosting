@@ -1,3 +1,11 @@
+<h1>Leaflet Library License</h1>
+
+<p>Copyright 2024 Leaflet contributors (<a href="https://leafletjs.com/">https://leafletjs.com/</a>)</p>
+
+<p>This software is licensed under the MIT License. For more information, please visit the <a href="https://opensource.org/licenses/MIT">MIT License</a>.</p>
+
+<hr>
+
 <h1>Lato font licence</h1>
 
 <p>Copyright (c) 2010-2014 by tyPoland Lukasz Dziedzic (<a href="mailto:team@latofonts.com">team@latofonts.com</a>) with Reserved Font Name "Lato"</p>
@@ -11,6 +19,25 @@
 <p>Copyright 2011 The Montserrat Project Authors (<a href="https://github.com/JulietaUla/Montserrat">https://github.com/JulietaUla/Montserrat</a>)</p>
 
 <p>This Font Software is licensed under the SIL Open Font License, Version 1.1. For more information, please visit the <a href="https://openfontlicense.org">SIL Open Font License FAQ</a>.</p>
+
+<hr>
+
+<h1>OpenStreetMap Credits</h1>
+
+<p>Map data © OpenStreetMap contributors</p>
+
+<p>OpenStreetMap data is licensed under the <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Database License (ODbL)</a>.</p>
+
+<p>For more information about OpenStreetMap and its data, visit <a href="https://www.openstreetmap.org/copyright">https://www.openstreetmap.org/copyright</a>.</p>
+
+<hr>
+
+
+<h1>Evo Calendar Library</h1>
+
+<p>Copyright [Year] Evo Calendar contributors (<a href="[Evo Calendar GitHub or Website URL]">[Evo Calendar GitHub or Website URL]</a>)</p>
+
+<p>This software is licensed under the [License Name]. For more information, please visit the [License URL].</p>
 
 <hr>
 

@@ -50,7 +50,7 @@
                 </div>
                 <div class="focusedMode">
                     <button class="showAll mapNavBtn">Prikaži sve</button>
-                    <button class="zoomToLocation mapNavBtn">Prikaži lokaciju</button>
+                    <!-- <button class="zoomToLocation mapNavBtn">Prikaži lokaciju</button> -->
                 </div>
             </nav>
 

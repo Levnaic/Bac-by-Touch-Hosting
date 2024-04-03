@@ -23,12 +23,6 @@ const cardsData = {
     img: "../assets/img/cards/tursko-kupatilo.jpg",
     link: "tursko-kupatilo",
   },
-
-  4: {
-    headline: "Šiljak",
-    img: "../assets/img/cards/siljak.jpg",
-    link: "siljak",
-  },
 };
 
 //variables
@@ -37,10 +31,10 @@ const takenPage = Number(
   document.querySelector(".suggestedPages").dataset.taken_page
 );
 let takenPages = new Set([takenPage]);
-let rand = Math.floor(Math.random() * 5);
+let rand = Math.floor(Math.random() * 4);
 pages.forEach((e) => {
   while (takenPages.has(rand)) {
-    rand = Math.floor(Math.random() * 5);
+    rand = Math.floor(Math.random() * 4);
   }
   takenPages.add(rand);
   e.querySelector(".suggestedHeadline").innerHTML = cardsData[rand].headline;

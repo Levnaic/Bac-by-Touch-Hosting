@@ -1,78 +1,45 @@
 <section class="aU_text margins">
-    <h1>About us</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-      incidunt, quo ipsam cupiditate qui dolorem aut laudantium vero
-      perspiciatis totam itaque fugiat porro explicabo, sequi reprehenderit
-      sapiente excepturi minima! Suscipit dolore alias, voluptate, accusamus
-      sit ab enim natus dignissimos quod ullam tempora esse nemo facere
-      molestiae quas rerum vitae culpa laborum inventore at cumque id autem a
-      eaque. Quibusdam fugit molestias adipisci, dolores, nam laudantium
-      soluta minus iste vel, laborum iure veritatis in? Quibusdam laboriosam
-      est ducimus dolores consectetur optio aperiam quia totam accusantium,
-      illo voluptas, nobis aspernatur dolore aut necessitatibus ab atque
-      cupiditate eaque consequuntur iste ad explicabo. Eos reiciendis quisquam
-      voluptatum ullam! Officia temporibus repellat aut adipisci. Laudantium
-      natus, voluptatum vero quam quod reprehenderit sequi asperiores omnis
-      quas ducimus porro fugit saepe optio blanditiis enim accusantium. Omnis
-      quae consectetur non, dolorum sapiente soluta ullam laborum quisquam
-      iusto quam placeat nesciunt dolores aut, nemo illo in saepe et esse
-      rerum perspiciatis cumque minima explicabo. Alias inventore perspiciatis
-      veritatis soluta hic rem animi qui consequuntur consequatur vitae. Neque
-      assumenda quod, aperiam odio autem possimus omnis sint temporibus ut
-      fugiat aut totam rem eos unde in. Repudiandae nisi quasi mollitia
-      consectetur modi cumque autem molestiae blanditiis omnis magni? Impedit,
-      inventore obcaecati?
-    </p>
-  </section>
-  <section class="aU_persons margins popupSection">
-    <h2>Naš tim</h2>
-    <div class="persons">
+  <h1>O nama</h1>
+  <p>
+    Nakon višegodišnjeg iskustva rada i volontiranja u institucijama kulture, baštini, turističkim i omladinskim organizacijama, ovaj sajt smo zamislili kao odgovarajuću implementaciju savremenog iskustva za turiste koji traže savremena rešenja u turizmu. Tokom pandemije KOVID-a, svi smo primetili povećanu potrebu za daljinskim i digitalnim rešenjima u turizmu i očuvanju kulture. Korišćenjem Bač by touch „digitalni turisti“ može da pronađe sve što ih interesuje na području Bača, kao što su istorijska mesta, smeštaj, restorani, prodavnice i domaći proizvođači, što omogućava ovim preduzetnicima da na pravi način reklamiraju svoje proizvode koje oni inače ne bi mogli da prodaju. Mapa je dostupna i preduzetnicima, ali i turistima, da dodaju svoje komentare i iskustva. Jedan od važnijih ciljeva Bač by touch je je razvoj lokalne privrede, malih individualnih preduzeća, kojima je u današnje vreme najpotrebnija podrška, a svaremani turista želi nove anvanture, ekološku ponudu i domaću hranu. Kada je u pitanju evropeizacija kulture, sajt nudi sve opise i mape kulturnog područja Bača, kao i usluge zakazivanja. Ono što je svakako najvažinije je kalendar manifestacija sa detaljnim opisom događaja.
+  </p>
+</section>
+<section class="aU_persons margins popupSection">
+  <h2>Naš tim</h2>
+  <div class="persons">
 
 
-      <div class="person">
-        <img src="assets/img/placeholder/covek.jpg" alt="person" />
-        <p class="personName">Ime i Prezime</p>
-        <small class="personRole">Uloga</small>
-      </div>
-
-      <div class="person">
-        <img src="assets/img/placeholder/covek.jpg" alt="person" />
-        <p class="personName">Ime i Prezime</p>
-        <small class="personRole">Uloga</small>
-      </div>
-
-      <div class="person">
-        <img src="assets/img/placeholder/covek.jpg" alt="person" />
-        <p class="personName">Ime i Prezime</p>
-        <small class="personRole">Uloga</small>
-      </div>
-
-      <div class="person">
-        <img src="assets/img/placeholder/covek.jpg" alt="person" />
-        <p class="personName">Ime i Prezime</p>
-        <small class="personRole">Uloga</small>
-      </div>
-
-      <div class="person">
-        <img src="assets/img/placeholder/covek.jpg" alt="person" />
-        <p class="personName">Ime i Prezime</p>
-        <small class="personRole">Uloga</small>
-      </div>
-
-      <div class="person">
-        <img src="assets/img/placeholder/covek.jpg" alt="person" />
-        <p class="personName">Ime i Prezime</p>
-        <small class="personRole">Uloga</small>
-      </div>
-
-      <div class="person">
-        <img src="assets/img/placeholder/covek.jpg" alt="person" />
-        <p class="personName">Ime i Prezime</p>
-        <small class="personRole">Uloga</small>
-      </div>
+    <div class="person">
+      <img src="assets/img/placeholder/covek.jpg" alt="person" />
+      <p class="personName">Milan Končar</p>
+      <small class="personRole">Projekt menadžer</small>
     </div>
-  </section>
 
-  <script src="assets/scripts/main.js"></script>
-  <script src="assets/scripts/header_footer.js"></script>
+    <div class="person">
+      <img src="assets/img/placeholder/covek.jpg" alt="person" />
+      <p class="personName">Zorica Subotić</p>
+      <small class="personRole">Projekt ekspert</small>
+    </div>
+
+    <div class="person">
+      <img src="assets/img/placeholder/covek.jpg" alt="person" />
+      <p class="personName">Stela Badivuk</p>
+      <small class="personRole">Član BBT tima</small>
+    </div>
+
+    <div class="person">
+      <img src="assets/img/placeholder/covek.jpg" alt="person" />
+      <p class="personName">Branka Mandić</p>
+      <small class="personRole">Član BBT tima</small>
+    </div>
+
+    <div class="person">
+      <img src="assets/img/placeholder/covek.jpg" alt="person" />
+      <p class="personName">Srđan Levnaić</p>
+      <small class="personRole">Web developer</small>
+    </div>
+  </div>
+</section>
+
+<script src="assets/scripts/main.js"></script>
+<script src="assets/scripts/header_footer.js"></script>

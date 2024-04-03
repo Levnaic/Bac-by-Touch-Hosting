@@ -1,29 +1,55 @@
 footer {
   background-color: $primaryColor;
   .footerFirstRow {
+    & > * {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
     margin-top: 150px;
     padding: 0 10%;
     padding-top: 68px;
     padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
-
+    
+    .contactInfo {
+      text-align: center;
+      .contactBox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+      }
+      a {
+        color: $textPrimary;
+        text-decoration: underline;
+      }
+    }
+  
     .footerLogo {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+  
     .footerHeadline {
       font-size: 32px;
       font-weight: 700;
       text-align: center;
       cursor: pointer;
+      img {
+        width: 150px;
+        aspect-ratio: 1;
+      }
     }
-
+  
     .socialMediaHeadline {
       font-size: 22px;
     }
-
+  
     .socialLinks {
       a {
         color: $textPrimary;
@@ -34,6 +60,7 @@ footer {
       gap: 30px;
     }
   }
+  
 
   .footerSecondRow {
     padding-top: 70px;
@@ -55,5 +82,6 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 30px;
+  
   }
 }

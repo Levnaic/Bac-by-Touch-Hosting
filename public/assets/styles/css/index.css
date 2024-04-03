@@ -225,6 +225,10 @@ header * {
   display: block;
 }
 
+.no-description-li > * {
+  width: 70px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -455,6 +459,26 @@ footer .footerFirstRow {
   display: flex;
   justify-content: space-between;
 }
+footer .footerFirstRow > * {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footerFirstRow .contactInfo {
+  text-align: center;
+}
+footer .footerFirstRow .contactInfo .contactBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+footer .footerFirstRow .contactInfo a {
+  color: #3a3a3a;
+  text-decoration: underline;
+}
 footer .footerFirstRow .footerLogo {
   display: flex;
   justify-content: center;
@@ -465,6 +489,10 @@ footer .footerFirstRow .footerHeadline {
   font-weight: 700;
   text-align: center;
   cursor: pointer;
+}
+footer .footerFirstRow .footerHeadline img {
+  width: 150px;
+  aspect-ratio: 1;
 }
 footer .footerFirstRow .socialMediaHeadline {
   font-size: 22px;
@@ -538,7 +566,7 @@ footer .footerSecondRow a {
 }
 #headlineSection h1 {
   color: #f1c376;
-  margin-top: 60px;
+  margin-top: 5%;
   padding-top: 70px;
   font-size: 64px;
   padding-right: 40%;
@@ -608,6 +636,9 @@ footer .footerSecondRow a {
   opacity: 0.8;
 }
 #floatingPart .floatCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px 30px;
   border-radius: 4px;
   position: absolute;
@@ -620,7 +651,12 @@ footer .footerSecondRow a {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 #floatingPart .floatCard a {
+  font-size: 26px;
   text-decoration: none;
+}
+#floatingPart .floatCard p {
+  text-align: center;
+  font-size: 26px;
 }
 #floatingPart .floatCard #ancorRight {
   color: #f1c376;
@@ -644,7 +680,7 @@ footer .footerSecondRow a {
 #sponsors {
   margin-top: 150px;
   padding: 0 10%;
-  background-color: #f1c376;
+  background-color: #fff4f4;
 }
 #sponsors h2 {
   padding-top: 60px;
@@ -656,24 +692,26 @@ footer .footerSecondRow a {
   justify-content: space-around;
 }
 #sponsors img {
-  width: 15%;
+  width: 30%;
   aspect-ratio: 3/2;
   -o-object-fit: contain;
      object-fit: contain;
-  mix-blend-mode: color-burn;
 }
 
-.cards h2 {
+#headlineBtnJump {
+  padding-top: 160px;
+}
+#headlineBtnJump h2 {
   padding: 150px 0;
   text-align: center;
 }
-.cards .cards-container {
+#headlineBtnJump .cards-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 50px;
 }
-.cards .cards-container .card {
+#headlineBtnJump .cards-container .card {
   display: block;
   text-decoration: none;
   margin-bottom: 40px;
@@ -690,33 +728,33 @@ footer .footerSecondRow a {
   transition: ease-in;
   transition-duration: 0.35s;
 }
-.cards .cards-container .card:hover {
+#headlineBtnJump .cards-container .card:hover {
   transform: scale(1.1);
 }
-.cards .cards-container .card img {
+#headlineBtnJump .cards-container .card img {
   width: 100%;
   height: 250px;
   transition: 2s;
 }
-.cards .cards-container .card .cardsHeadline {
+#headlineBtnJump .cards-container .card .cardsHeadline {
   padding: 0 14px;
   text-align: center;
   font-size: 34px;
 }
-.cards .cards-container .card .cardImage {
+#headlineBtnJump .cards-container .card .cardImage {
   transition-duration: 1s;
 }
-.cards .cards-container .card .hoveredCard {
+#headlineBtnJump .cards-container .card .hoveredCard {
   overflow: hidden;
   transform: scale(1.2);
 }
-.cards .cards-container .card .cardsText {
+#headlineBtnJump .cards-container .card .cardsText {
   margin-bottom: 45px;
   padding: 0 7%;
   padding-top: 20px;
   text-align: justify;
 }
-.cards .cards-container .card a {
+#headlineBtnJump .cards-container .card a {
   margin-bottom: 30px;
   position: absolute;
   bottom: 0;
@@ -731,7 +769,7 @@ footer .footerSecondRow a {
   letter-spacing: 2px;
   cursor: pointer;
 }
-.cards .cards-container .card a:active {
+#headlineBtnJump .cards-container .card a:active {
   transform: scale(0.96);
 }
 

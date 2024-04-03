@@ -1,6 +1,6 @@
   <!-- HEADLINE -->
   <section class="headlineSection margins">
-    <h1>Bačka Tvrđava</h1>
+    <h1>Manastir Bođani</h1>
   </section>
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">
@@ -25,7 +25,7 @@
 
 
   <h3 class="seeMore">Vidi još</h3>
-  <section class="suggestedPages margins" data-taken_page="0">
+  <section class="suggestedPages margins" data-taken_page="1">
 
     <div class="suggestedPage">
       <p class="suggestedHeadline"></p>

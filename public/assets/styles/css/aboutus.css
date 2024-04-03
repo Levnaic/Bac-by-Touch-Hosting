@@ -225,6 +225,10 @@ header * {
   display: block;
 }
 
+.no-description-li > * {
+  width: 70px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -455,6 +459,26 @@ footer .footerFirstRow {
   display: flex;
   justify-content: space-between;
 }
+footer .footerFirstRow > * {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footerFirstRow .contactInfo {
+  text-align: center;
+}
+footer .footerFirstRow .contactInfo .contactBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+footer .footerFirstRow .contactInfo a {
+  color: #3a3a3a;
+  text-decoration: underline;
+}
 footer .footerFirstRow .footerLogo {
   display: flex;
   justify-content: center;
@@ -465,6 +489,10 @@ footer .footerFirstRow .footerHeadline {
   font-weight: 700;
   text-align: center;
   cursor: pointer;
+}
+footer .footerFirstRow .footerHeadline img {
+  width: 150px;
+  aspect-ratio: 1;
 }
 footer .footerFirstRow .socialMediaHeadline {
   font-size: 22px;
@@ -533,5 +561,6 @@ h2 {
   font-size: 18px;
 }
 .persons .person .personRole {
+  width: 300px;
   margin-bottom: 60px;
 }/*# sourceMappingURL=aboutus.css.map */

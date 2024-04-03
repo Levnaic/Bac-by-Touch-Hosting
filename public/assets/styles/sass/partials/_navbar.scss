@@ -115,6 +115,13 @@ header * {
   }
 }
 
+// dodano tokom inicijacije
+.no-description-li{
+  & > * {
+    width: 70px;
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

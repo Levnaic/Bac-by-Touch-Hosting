@@ -34,38 +34,26 @@
                      <li>
                        <a href="/tvrdjava" class="item-title">
                          <h3>Bačka tvrđava</h3>
-                         <p>Lorem ipsum dolor sit amet.</p>
-                       </a>
-                     </li>
-                     <li>
-                       <a href="/samostan" class="item-title">
-                         <h3>Franjevački samostan</h3>
-                         <p>Lorem ipsum dolor sit amet.</p>
+                         <p>Drevni čuvar panonske nizije </p>
                        </a>
                      </li>
                      <li>
                        <a href="/manastir" class="item-title">
                          <h3>Manastir Bođani</h3>
-                         <p>Lorem ipsum dolor sit amet.</p>
+                         <p>Duhovna šetnja kroz čudotvorni manastir </p>
+                       </a>
+                     </li>
+                     <li>
+                       <a href="/samostan" class="item-title">
+                         <h3>Franjevački samostan</h3>
+                         <p>Život kroz vekove samostana </p>
                        </a>
                      </li>
                      <li>
                        <a href="tursko-kupatilo" class="item-title">
-                         <h3>Tursko kupatilo</h3>
-                         <p>Dynamic pages, static speed</p>
+                         <h3>Ostaci turskog kupatila - hamam</h3>
+                         <p>Amanet Osmankog carstva</p>
                        </a>
-                     </li>
-                     <li>
-                       <a href="siljak" class="item-title">
-                         <h3>Kula Šiljak</h3>
-                         <p>Lorem ipsum dolor sit amet.</p>
-                       </a>
-                     </li>
-                     <li>
-                       <div class="item-title">
-                         <h3>Lorem ipsum</h3>
-                         <p>Lorem ipsum dolor sit amet.</p>
-                       </div>
                      </li>
                    </ul>
                  </div>
@@ -81,16 +69,16 @@
                <div class="dropdown__wrapper">
                  <div class="dropdown">
                    <ul class="list-items-with-description">
-                     <li>
+                     <li class="no-description-li">
                        <a href="/aboutus" class="item-title">
                          <h3>O nama</h3>
-                         <p>Lorem ipsum dolor sit amet.</p>
+                         <!-- <p>Lorem ipsum dolor sit amet.</p> -->
                        </a>
                      </li>
-                     <li>
+                     <li class="no-description-li">
                        <a href="/blog" class="item-title">
                          <h3>Blog</h3>
-                         <p>Lorem ipsum dolor sit amet.</p>
+                         <!-- <p>Lorem ipsum dolor sit amet.</p> -->
                        </a>
                      </li>
                    </ul>

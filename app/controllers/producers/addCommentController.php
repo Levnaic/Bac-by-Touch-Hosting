@@ -9,7 +9,7 @@ use Models\Comment;
 require "../config/config.php";
 
 Session::sessionStart();
-Authenticator::authenticateAdmin();
+Authenticator::authenticateUserOrAdmin();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['csrf_token']) && Security::validateCsrfToken($_POST['csrf_token'])) {
