@@ -6,7 +6,7 @@
 </section>
 <section class="aU_persons margins popupSection">
   <!-- //!privremeno h1  -->
-<h1>Naš tim</h1>
+  <h1>BBT tim</h1>
   <div class="persons">
 
 
@@ -32,12 +32,6 @@
       <img src="assets/img/team/branka.jpg" alt="person" />
       <p class="personName">Branka Mandić</p>
       <small class="personRole">Član BBT tima</small>
-    </div>
-
-    <div class="person">
-      <img src="assets/img/team/srdjan.jpg" alt="person" />
-      <p class="personName">Srđan Levnaić</p>
-      <small class="personRole">Web developer</small>
     </div>
   </div>
 </section>

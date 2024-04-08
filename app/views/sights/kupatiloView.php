@@ -21,7 +21,7 @@
   </section>
 
 
-  <h3 class="seeMore">Vidi još</h3>
+  <h3 class="seeMore">Istražite</h3>
   <section class="suggestedPages margins" data-taken_page="3">
 
     <div class="suggestedPage">

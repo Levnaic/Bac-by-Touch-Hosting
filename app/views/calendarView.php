@@ -18,7 +18,7 @@
     // require "../app/views/partials/head.php";
     require "../app/views/partials/nav.php";
     ?>
-    <h1>Kalendar dogadjaja</h1>
+    <!-- <h1>Kalendar dogadjaja</h1> -->
 
     <!-- //*COUNTER -->
     <section id="showTime" class="margins">
