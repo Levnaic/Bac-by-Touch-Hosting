@@ -67,7 +67,7 @@ p {
   font-family: roboto;
   font-size: 16px;
   color: #3a3a3a;
-  text-align: justify;
+  text-align: start;
 }
 
 a {
@@ -527,7 +527,7 @@ footer .footerSecondRow a {
   }
 }
 h1 {
-  margin-top: 200px;
+  margin-top: 170px;
   margin-bottom: 60px;
   text-align: center;
 }

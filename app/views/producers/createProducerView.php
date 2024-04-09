@@ -11,12 +11,12 @@
             <input type="text" name="mapLongitude" placeholder="Longitude" data-input-type="float">
             <input type="text" name="popupMsg" placeholder="Popup Message" data-input-type="txt">
             <select name="category">
-                <option value="smestaj">Smeštaj</option>
                 <option value="proizvodi">Proizvodi</option>
-                <option value="prenociste">Prenoćište</option>
                 <option value="restorani">Restorani</option>
                 <option value="caffe">Caffe</option>
                 <option value="suveniri">Suveniri</option>
+                <option value="usluge">Usluge</option>
+                <option value="ostalo">Ostalo</option>
             </select>
             <div class="formButtons">
                 <button type="submit" class="loginButton">Create</button>

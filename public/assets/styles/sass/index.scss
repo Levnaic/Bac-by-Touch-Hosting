@@ -62,6 +62,11 @@
     text-align: center;
     color: $textPrimary;
   }
+
+   a{
+    color: $secondaryColor;
+    text-decoration: underline;
+  }
 }
 
 //* FLOATING PART
@@ -222,6 +227,8 @@
         font-size: 34px;
       }
 
+    
+
       .cardImage {
         transition-duration: 1s;
       }
@@ -235,7 +242,7 @@
         margin-bottom: 45px;
         padding: 0 7%;
         padding-top: 20px;
-        text-align: justify;
+        text-align: center;
       }
 
       a {

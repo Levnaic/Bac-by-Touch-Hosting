@@ -67,7 +67,7 @@ p {
   font-family: roboto;
   font-size: 16px;
   color: #3a3a3a;
-  text-align: justify;
+  text-align: start;
 }
 
 a {
@@ -591,6 +591,10 @@ footer .footerSecondRow a {
   text-align: center;
   color: #3a3a3a;
 }
+#textAfterSlideshow a {
+  color: #679e73;
+  text-decoration: underline;
+}
 
 #floatingPart {
   overflow: hidden;
@@ -752,7 +756,7 @@ footer .footerSecondRow a {
   margin-bottom: 45px;
   padding: 0 7%;
   padding-top: 20px;
-  text-align: justify;
+  text-align: center;
 }
 #headlineBtnJump .cards-container .card a {
   margin-bottom: 30px;

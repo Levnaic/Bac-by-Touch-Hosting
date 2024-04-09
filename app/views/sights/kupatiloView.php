@@ -1,6 +1,7 @@
   <!-- HEADLINE -->
   <section class="headlineSection margins">
     <h1>Hamam - tursko kupatilo</h1>
+    <h2>Amanet Osmanskog carstva</h2>
   </section>
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">

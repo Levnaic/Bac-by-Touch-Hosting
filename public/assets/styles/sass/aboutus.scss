@@ -21,6 +21,10 @@ h2 {
   flex-wrap: wrap;
   gap: 20px;
   .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     margin-bottom: 50px;
     p {
@@ -39,6 +43,23 @@ h2 {
       width: 300px;
       margin-bottom: 60px;
     }
+    .teamPageLink{
+      background-color: $primaryColor;
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+      border-radius: 15px;
+      width: fit-content;
+      i{
+          color: $textPrimary;
+      }
+      a{
+          padding: 0px 12px;
+          color: $textPrimary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+      }
+  }
   }
 }
 

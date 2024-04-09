@@ -1,6 +1,7 @@
   <!-- HEADLINE -->
   <section class="headlineSection margins">
     <h1>Manastir Bođani</h1>
+    <h2>Duhovna šetnja kroz čudnovati manastir</h2>
   </section>
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">

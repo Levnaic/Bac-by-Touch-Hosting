@@ -43,15 +43,17 @@
                     </button>
                     <select name="" id="mapCategorySelect">
                         <option value="svi">Prikazi sve</option>
-                        <option value="smestaj">Smeštaj</option>
-                        <option value="proizvodi">Proizvodi</option>
-                        <option value="restorani">Restorani</option>
-                        <option value="caffe">Caffe</option>
-                        <option value="suveniri">Suveniri</option>
+                        <option value="proizvodi" class="optionProizvodi">Proizvodi</option>
+                        <option value="restorani" class="optionRestorani">Restorani</option>
+                        <option value="caffe" class="optionCaffe">Caffe</option>
+                        <option value="suveniri" class="optionSuveniri">Suveniri</option>
+                        <option value="usluge" class="optionUsluge">Usluge</option>
+                        <option value="ostalo" class="optionOstalo">Ostalo</option>
                     </select>
                 </div>
                 <div class="focusedMode">
                     <button class="showAll mapNavBtn">Vrati nazad</button>
+                    <!-- //! ovo ubaci -->
                     <!-- <button class="zoomToLocation mapNavBtn">Prikaži lokaciju</button> -->
                 </div>
             </nav>
@@ -89,18 +91,24 @@
 
                     <p class="textMarker"><?php echo $row->body; ?></p>
                     <div class="markerContact-container">
-                        <div class="contactLink">
-                            <?php echo "<a href='tel:$row->contact'>$row->contact</a>"; ?>
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                        </div>
-                        <div class="contactLink">
-                            <?php echo "<a href='mailto:$row->email'>$row->email</a>"; ?>
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                        </div>
-                        <div class="contactLink">
-                            <?php echo "<a href='$row->producerLocation'>$row->producerLocation</a>"; ?>
-                            <i class="fa fa-compass" aria-hidden="true"></i>
-                        </div>
+                        <?php if ($row->contact != null) { ?>
+                            <div class="contactLink">
+                                <?php echo "<a href='tel:$row->contact'>$row->contact</a>"; ?>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                            </div>
+                        <?php } ?>
+                        <?php if ($row->email != null) { ?>
+                            <div class="contactLink">
+                                <?php echo "<a href='mailto:$row->email'>$row->email</a>"; ?>
+                                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            </div>
+                        <?php } ?>
+                        <?php if ($row->producerLocation != null) { ?>
+                            <div class="contactLink">
+                                <?php echo "<a href='$row->producerLocation'>$row->producerLocation</a>"; ?>
+                                <i class="fa fa-compass" aria-hidden="true"></i>
+                            </div>
+                        <?php } ?>
                     </div>
                     <div class="markerInvisablePart">
                         <?php

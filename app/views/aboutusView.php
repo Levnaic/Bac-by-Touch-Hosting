@@ -13,25 +13,49 @@
     <div class="person">
       <img src="assets/img/team/milan.jpg" alt="person" />
       <p class="personName">Milan Končar</p>
-      <small class="personRole">Projekt menadžer</small>
+      <div class="teamPageLink">
+        <a href="/team/Milan">
+          <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          <p>Vidi više</p>
+        </a>
+      </div>
+      <!-- <small class="personRole">Projekt menadžer</small> -->
     </div>
 
     <div class="person">
       <img src="assets/img/team/zorica.jpg" alt="person" />
       <p class="personName">Zorica Subotić</p>
-      <small class="personRole">Projekt ekspert</small>
+      <div class="teamPageLink">
+        <a href="/team/Zorica">
+          <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          <p>Vidi više</p>
+        </a>
+      </div>
+      <!-- <small class="personRole">Projekt ekspert</small> -->
     </div>
 
     <div class="person">
       <img src="assets/img/team/stela.jpg" alt="person" />
       <p class="personName">Stela Badivuk</p>
-      <small class="personRole">Član BBT tima</small>
+      <div class="teamPageLink">
+        <a href="/team/Stela">
+          <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          <p>Vidi više</p>
+        </a>
+      </div>
+      <!-- <small class="personRole">Član BBT tima</small> -->
     </div>
 
     <div class="person">
       <img src="assets/img/team/branka.jpg" alt="person" />
       <p class="personName">Branka Mandić</p>
-      <small class="personRole">Član BBT tima</small>
+      <div class="teamPageLink">
+        <a href="/team/Branka">
+          <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+          <p>Vidi više</p>
+        </a>
+      </div>
+      <!-- <small class="personRole">Član BBT tima</small> -->
     </div>
   </div>
 </section>

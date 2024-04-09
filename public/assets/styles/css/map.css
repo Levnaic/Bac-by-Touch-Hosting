@@ -68,7 +68,7 @@ p {
   font-family: roboto;
   font-size: 16px;
   color: #3a3a3a;
-  text-align: justify;
+  text-align: start;
 }
 
 a {
@@ -240,6 +240,9 @@ nav .focusedMode {
   justify-content: center;
   align-items: center;
 }
+nav .focusedMode .zoomToLocation {
+  display: none;
+}
 
 .map-icon {
   background-color: transparent;
@@ -248,24 +251,28 @@ nav .focusedMode {
   align-items: center;
 }
 
-.icon-smestaj {
-  color: red;
+.icon-proizvodi {
+  color: #44AF69;
 }
 
 .icon-restorani {
-  color: green;
-}
-
-.icon-proizvodi {
-  color: orange;
+  color: #F8333C;
 }
 
 .icon-caffe {
-  color: blue;
+  color: #2B9EB3;
 }
 
 .icon-suveniri {
-  color: purple;
+  color: #8F3985;
+}
+
+.icon-usluge {
+  color: #2E4057;
+}
+
+.icon-ostalo {
+  color: #393D3F;
 }
 
 #map-container .markers-container {
@@ -277,6 +284,27 @@ nav .focusedMode {
   display: flex;
   flex-direction: column;
   gap: 26px;
+}
+#map-container .markers-container .optionProizvodi {
+  background-color: #44AF69;
+}
+#map-container .markers-container .optionRestorani {
+  background-color: #F8333C;
+}
+#map-container .markers-container .optionCaffe {
+  background-color: #2B9EB3;
+}
+#map-container .markers-container .optionSuveniri {
+  background-color: #8F3985;
+  color: #fff4f4;
+}
+#map-container .markers-container .optionUsluge {
+  background-color: #2E4057;
+  color: #fff4f4;
+}
+#map-container .markers-container .optionOstalo {
+  background-color: #393D3F;
+  color: #fff4f4;
 }
 #map-container .markers-container .marker {
   display: flex;
@@ -519,6 +547,9 @@ nav .focusedMode {
     font-size: 26px;
     display: flex;
   }
+  nav .focusedMode .zoomToLocation {
+    display: block;
+  }
   #map-container .mapBoxContainer {
     width: 100%;
     display: block;
@@ -527,7 +558,7 @@ nav .focusedMode {
     align-items: center;
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
     height: -moz-fit-content;
     height: fit-content;
   }

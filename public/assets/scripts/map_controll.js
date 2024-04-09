@@ -16,6 +16,7 @@ const domElements = {
   btnShowAll: document.querySelector(".showAll"),
   btnShowLocation: document.querySelector(".zoomToLocation"),
   openMapResponsive: document.querySelector(".openMapResp"),
+  
 };
 
 let userLocation = {
@@ -37,12 +38,14 @@ let clickedMarker;
 let screenHeight = window.innerHeight;
 let locationsObjArr = [];
 
+// classes that will be added to icons connected to font awesome
 let iconsMaping = {
-  smestaj: "fa-bed icon-smestaj",
   proizvodi: "fa-glass icon-proizvodi",
   restorani: "fa-cutlery icon-restorani",
   caffe: "fa-coffee icon-caffe",
   suveniri: "fa-shopping-bag icon-suveniri",
+  usluge: "fa-handshake-o icon-usluge",
+  ostalo: ""
 };
 
 //* FUNCTIONS
@@ -376,6 +379,11 @@ function handleOpenMapResponsiveClick() {
   location.reload();
 }
 
+// ! NAJNOVIJA UBACENA
+// function handleShowLocationClick(){
+//   handleMarkerClick();
+// }
+
 //*MAP application
 window.addEventListener("load", () => {
   // initialize lat and lng of user
@@ -413,10 +421,11 @@ window.addEventListener("load", () => {
   domElements.btnShowAll.addEventListener("click", handleShowAllBtnClick);
 
   // show location of marker when clicked on show location
-  domElements.btnShowLocation.addEventListener(
-    "click",
-    handleShowLocationClick
-  );
+  // ! ovo ubaciti za responsive
+  // domElements.btnShowLocation.addEventListener(
+  //   "click",
+  //   handleShowLocationClick
+  // );
   //responsive
   domElements.openMapResponsive.addEventListener(
     "click",

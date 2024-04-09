@@ -23,6 +23,9 @@ a {
 }
 
 .blogCards-container {
+  // privremeno zbog sklanjanja naslova
+  margin-top: 120px;
+  // kraj privremenog
   display: flex;
   flex-direction: column;
   gap: 85px;

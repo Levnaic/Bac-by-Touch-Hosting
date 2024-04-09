@@ -2,6 +2,14 @@
 @import "partials/general";
 @import "partials/btn/btnCta";
 
+// map icons colors and select option colors
+$proizvodiColor: #44AF69;
+$restoraniColor: #F8333C;
+$caffeColor: #2B9EB3;
+$suveniriColor: #8F3985;
+$uslugeColor: #2E4057;
+$ostaloColor: #393D3F;
+
 body {
   position: relative;
 }
@@ -80,6 +88,9 @@ nav {
     display: none;
     justify-content: center;
     align-items: center;
+    .zoomToLocation{
+      display: none;
+    }
   }
 }
 
@@ -90,30 +101,57 @@ nav {
   align-items: center;
 }
 
-.icon-smestaj {
-  color: red;
+.icon-proizvodi {
+  color: $proizvodiColor;
 }
 
 .icon-restorani {
-  color: green;
-}
-
-.icon-proizvodi {
-  color: orange;
+  color: $restoraniColor;
 }
 
 .icon-caffe {
-  color: blue;
+  color: $caffeColor;
 }
 
 .icon-suveniri {
-  color: purple;
+  color: $suveniriColor;
+}
+
+.icon-usluge{
+  color: $uslugeColor;
+}
+
+.icon-ostalo{
+  color: $ostaloColor;
 }
 
 #map-container {
   //! ISKLJUCITI U PRODUKCIJI!!
   // display: none;
   .markers-container {
+    // select option colors
+    .optionProizvodi{
+      background-color: $proizvodiColor;
+    }
+    .optionRestorani{
+      background-color: $restoraniColor;
+    }
+    .optionCaffe{
+      background-color: $caffeColor;
+
+    }
+    .optionSuveniri{
+      background-color: $suveniriColor;
+      color: $backgroundColor;
+    }
+    .optionUsluge{
+      background-color: $uslugeColor;
+      color: $backgroundColor;
+    }
+    .optionOstalo{
+      background-color: $ostaloColor;
+      color: $backgroundColor;
+    }
     margin-bottom: 60px;
     position: relative;
     left: 2%;

@@ -67,7 +67,7 @@ p {
   font-family: roboto;
   font-size: 16px;
   color: #3a3a3a;
-  text-align: justify;
+  text-align: start;
 }
 
 a {
@@ -528,8 +528,7 @@ footer .footerSecondRow a {
 }
 h1 {
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 180px;
+  margin-top: 170px;
 }
 
 .cardsPageText {
@@ -538,7 +537,8 @@ h1 {
 }
 
 h2 {
-  text-align: justify;
+  margin-bottom: 180px;
+  text-align: center;
 }
 
 .seeMore {

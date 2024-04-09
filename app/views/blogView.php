@@ -1,7 +1,7 @@
  <!--//* BLOGS -->
  <section class="blogs margins">
    <div class="blogHeadline">
-     <h1>Naši blogovi</h1>
+     <!-- <h1>Naši blogovi</h1> -->
    </div>
    <div class="blogCards-container">
      <?php

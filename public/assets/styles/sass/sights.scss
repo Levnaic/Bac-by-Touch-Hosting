@@ -6,7 +6,6 @@
 h1 {
   text-align: center;
   margin-top: $headlineTop;
-  margin-bottom: $headlineBottom;
 }
 
 .cardsPageText {
@@ -14,7 +13,8 @@ h1 {
   margin-bottom: 150px;
 }
 h2 {
-  text-align: justify;
+  margin-bottom: $headlineBottom;
+  text-align: center;
 }
 .seeMore {
   margin-bottom: 80px;

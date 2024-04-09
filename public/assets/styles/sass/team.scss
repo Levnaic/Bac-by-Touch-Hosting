@@ -1,0 +1,45 @@
+@import "partials/variables";
+@import "partials/general";
+@import "partials/navbar";
+@import "partials/footer";
+
+#teamMember{
+    margin-top: 100px;
+    margin-bottom: 60px;
+    display: flex;
+    .leftPart{
+        width: 50%;
+        .backLink{
+            background-color: $primaryColor;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            border-radius: 15px;
+            width: fit-content;
+            i{
+                color: $textPrimary;
+            }
+            a{
+                padding: 4px 12px;
+                color: $textPrimary;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 12px;
+            }
+        }
+    }
+    .rightPart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        img{
+            border: 3px solid $textPrimary;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%
+        }
+    }
+}
+
+
+@import "responsive/teamResponsive";

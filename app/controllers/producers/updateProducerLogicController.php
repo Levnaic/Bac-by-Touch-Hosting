@@ -14,14 +14,11 @@ require "../config/config.php";
 Session::sessionStart();
 Authenticator::authenticateAdmin();
 
-
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    if (isset($_POST['title'], $_POST['email'], $_POST['contact'], $_POST['body'], $_POST['latitude'], $_POST['longitude'], $_POST['popupMsg'], $_POST['category'], $_GET["id"])) {
+    if (isset($_POST['title'], $_POST['email'], $_POST['body'], $_POST['latitude'], $_POST['longitude'], $_POST['popupMsg'], $_POST['category'], $_GET["id"])) {
         // sanitation of data
         $title = Security::sanitizeInput($_POST["title"]);
         $email = Security::sanitizeInput($_POST["email"]);
-        $contact = Security::sanitizeInput($_POST["contact"]);
-        $location = Security::sanitizeInput($_POST["location"]);
         $body = Security::sanitizeInput($_POST["body"]);
         $latitude = Security::sanitizeInput($_POST["latitude"]);
         $longitude = Security::sanitizeInput($_POST["longitude"]);
@@ -29,12 +26,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $category = Security::sanitizeInput($_POST["category"]);
         $id = Security::sanitizeInput($_GET["id"]);
 
+        // Check if contact and location are provided before validating
+        $contact = isset($_POST['contact']) ? Security::sanitizeInput($_POST["contact"]) : null;
+        $location = isset($_POST['location']) ? Security::sanitizeInput($_POST["location"]) : null;
+
         try {
             // validation of data
             $title = Security::validateInput($title, "txt");
             $email = Security::validateInput($email, "email");
-            $contact = Security::validateInput($contact, "phone");
-            $location = Security::validateInput($location, "txt");
             $body = Security::validateInput($body, "txt");
             $latitude = Security::validateInput($latitude, "float");
             $longitude = Security::validateInput($longitude, "float");
@@ -45,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $db = new Database($databaseConfig);
             $producer = new Producer($db->getConnection());
 
+            // Pass null values for contact and location if not provided
             $producer->updateProducer($title, $email, $contact, $location, $body, $latitude, $longitude, $popupMsg, $category, $id);
 
             header("Location: /dashboard/producers");
@@ -58,6 +58,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         Redirect::redirectToErrorPage(400);
     }
 } else {
-    ErrorHandler::logError("Invalid method", "Not a balid POST method", __FILE__, __LINE__);
+    ErrorHandler::logError("Invalid method", "Not a valid POST method", __FILE__, __LINE__);
     Redirect::redirectToErrorPage(400);
 }

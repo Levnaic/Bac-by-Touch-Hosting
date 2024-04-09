@@ -16,7 +16,7 @@
     <section id="textAfterSlideshow" class="margins popupSection">
         <h2 data-i18n="indexMainHeadline">Kako je nastao Bač by Touch </h2>
         <p data-i18n="indexMainText">Nakon višegodišnjeg iskustva rada i volontiranja u institucijama kulture, baštini, turističkim i omladinskim organizacijama, ovaj sajt smo zamislili kao odgovarajuću implementaciju savremenog iskustva za turiste koji traže savremena rešenja u turizmu. Tokom pandemije KOVID-a, svi smo primetili povećanu potrebu za daljinskim i digitalnim rešenjima u turizmu i očuvanju kulture. Korišćenjem Bač by Touch „digitalni turista“ može da pronađe sve što ih interesuje na području Bača, kao što su istorijska mesta, smeštaj, restorani, prodavnice i domaći proizvođači, što omogućava ovim preduzetnicima da na pravi način reklamiraju svoje proizvode koje oni inače ne bi mogli da prodaju. Mapa je dostupna i preduzetnicima, ali i turistima, da dodaju svoje komentare i iskustva. Jedan od važnijih ciljeva Bač by Touch je je razvoj lokalne privrede, malih individualnih preduzeća, kojima je u današnje vreme najpotrebnija podrška, a savremani turista želi nove anvanture, ekološku ponudu i domaću hranu. Kada je u pitanju evropeizacija kulture, sajt nudi sve opise i mape kulturnog područja Bača, kao i usluge zakazivanja. Ono što je svakako najvažnije je kalendar manifestacija sa detaljnim opisom događaja.</p>
-        <!-- <a href="/aboutus">Detaljnije o nama</a> -->
+        <a href="/aboutus" class="linkToAboutus">Detaljnije o nama</a>
     </section>
 
     <!--//* FLOATING PART  -->
@@ -69,7 +69,7 @@
 
             <a href="/tursko-kupatilo" class="card">
                 <img src="assets/img/tursko-kupatilo.jpg" class="cardImage" alt="Tursko kupatilo" />
-                <p class="cardsHeadline animationCards">OSTACI TURSKOG KUPATILA - HAMAM</p>
+                <p class="cardsHeadline animationCards">OSTACI <br> TURSKOG KUPATILA <br> - HAMAM</p>
                 <p class="cardsText">
                     AMANET OSMANSKOG CARSTVA
                 </p>
@@ -79,7 +79,7 @@
 
     <!--//* SPONSORS -->
     <section id="sponsors" class="popupSection">
-        <h2 data-i18n="indexSponsorsHeadline">Naši partneri na projektu</h2>
+        <!-- <h2 data-i18n="indexSponsorsHeadline">Naši partneri na projektu</h2> -->
         <div class="logos">
             <img src="assets/img/logos/skgo.png" alt="sposnor logo" />
             <img src="assets/img/logos/cultour.png" alt="sponsor logo" />

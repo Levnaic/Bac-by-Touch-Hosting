@@ -7,7 +7,7 @@
       </p>
     </div>
     <div class="contactInfo">
-      <p class="socialMediaHeadline">Kontaktirajte nas na:</p>
+      <!-- <p class="socialMediaHeadline">Kontaktirajte nas na:</p> -->
       <div class="contactBox">
         <p>Email:</p>
         <a href="mailto:bacbytouch@gmail.com">bacbytouch@gmail.com</a>
@@ -18,7 +18,7 @@
       </div>
     </div>
     <div class="socialMedia">
-      <p class="socialMediaHeadline">Naše socijalne mreže:</p>
+      <!-- <p class="socialMediaHeadline">Naše socijalne mreže:</p> -->
       <div class="socialLinks">
         <!-- <a href="https://www.instagram.com/">
           <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
@@ -28,6 +28,9 @@
         </a>
         <a href="https://www.youtube.com/watch?v=3-xXpDkiR38">
           <i class="fa fa-youtube fa-3x" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
         </a>
       </div>
     </div>

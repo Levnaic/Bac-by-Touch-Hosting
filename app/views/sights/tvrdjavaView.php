@@ -1,6 +1,7 @@
   <!-- HEADLINE -->
   <section class="headlineSection margins">
     <h1>Bačka Tvrđava</h1>
+    <h2>Drevni čuvar panonske nizije</h2>
   </section>
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">

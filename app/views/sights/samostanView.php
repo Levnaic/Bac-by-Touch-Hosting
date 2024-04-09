@@ -1,6 +1,7 @@
   <!-- HEADLINE -->
   <section class="headlineSection margins">
     <h1>Franjevački samostan</h1>
+    <h2>Život kroz vekove samostana</h2>
   </section>
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">

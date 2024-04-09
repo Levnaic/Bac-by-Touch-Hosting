@@ -29,6 +29,11 @@
       font-size: 26px;
       display: flex;
     }
+    .focusedMode{
+      .zoomToLocation{
+        display: block;
+      }
+    }
   }
   #map-container {
     // margin: 0;
@@ -41,7 +46,7 @@
       align-items: center;
       margin: 0;
       padding: 0;
-      width: 100vw;
+      width: 100%;
       height: fit-content;
       .marker {
         width: 80%;

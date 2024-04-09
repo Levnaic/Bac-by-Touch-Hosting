@@ -66,6 +66,13 @@ $router->get("/products/order", "products/orderProductFormController");
 $router->post("/products/order", "products/orderProductLogicController");
 $router->get("/products/order/made", "products/orderMadeController");
 
+//team
+
+$router->get("/team/Milan", "team/milanController");
+$router->get("/team/Zorica", "team/zoricaController");
+$router->get("/team/Stela", "team/stelaController");
+$router->get("/team/Branka", "team/brankaController");
+
 
 // errors
 $router->get("/error404", "error/404");
