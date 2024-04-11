@@ -294,6 +294,7 @@ header * {
   color: #3a3a3a;
 }
 .item-title p {
+  text-align: center;
   font-size: 0.7rem;
   white-space: nowrap;
   color: #5a5a5a;
@@ -517,6 +518,11 @@ footer .footerSecondRow p {
 footer .footerSecondRow a {
   color: #3a3a3a;
   text-decoration: underline;
+}
+footer .sponsors {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {

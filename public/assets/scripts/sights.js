@@ -1,25 +1,25 @@
 //data for input
 const cardsData = {
   0: {
-    headline: "Tvrđava",
+    headline: "Bačka Tvrđava",
     img: "../assets/img/cards/tvrdjava.jpg",
     link: "tvrdjava",
   },
 
   1: {
-    headline: "Manastir",
+    headline: "Manastir Bođani",
     img: "../assets/img/cards/manastir.jpg",
     link: "manastir",
   },
 
   2: {
-    headline: "Samostan",
+    headline: "Franjevački Samostan",
     img: "../assets/img/cards/samostan.jpg",
     link: "samostan",
   },
 
   3: {
-    headline: "Tursko kupatilo",
+    headline: "Ostaci turskog kupatila - hamam",
     img: "../assets/img/cards/tursko-kupatilo.jpg",
     link: "tursko-kupatilo",
   },

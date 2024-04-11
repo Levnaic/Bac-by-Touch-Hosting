@@ -78,14 +78,13 @@
     </section>
 
     <!--//* SPONSORS -->
-    <section id="sponsors" class="popupSection">
-        <!-- <h2 data-i18n="indexSponsorsHeadline">Naši partneri na projektu</h2> -->
+    <!-- <section id="sponsors" class="popupSection">
         <div class="logos">
             <img src="assets/img/logos/skgo.png" alt="sposnor logo" />
             <img src="assets/img/logos/cultour.png" alt="sponsor logo" />
             <img src="assets/img/logos/eu.png" alt="sponsor logo" />
         </div>
-    </section>
+    </section> -->
 
     <!--//* SCRIPTS -->
     <script src="assets/scripts/main.js"></script>

@@ -29,7 +29,7 @@
         <a href="https://www.youtube.com/watch?v=3-xXpDkiR38">
           <i class="fa fa-youtube fa-3x" aria-hidden="true"></i>
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/bacbytouch/">
           <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
         </a>
       </div>
@@ -38,6 +38,9 @@
   <div class="footerSecondRow">
     <p>Copyright 2024 © Designed and developed by Bac By Touch </p>
     <a href="/credits">Credits</a>
+  </div>
+  <div class="sponsors">
+    <img src="/assets/img/logos/sponsors.png" alt="sponsors">
   </div>
 </footer>
 
