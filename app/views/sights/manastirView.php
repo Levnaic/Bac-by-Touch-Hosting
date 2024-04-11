@@ -6,19 +6,19 @@
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">
     <div class="slide">
-      <img src="../assets/img/sights/manastir/0.jpg" alt="Manastir Bodjani" />
+      <img src="../assets/img/pages/sights/manastir/0.jpg" alt="Manastir Bodjani" />
     </div>
     <div class="slide">
-      <img src="../assets/img/sights/manastir/1.jpg" alt="Manastir Bodjani" />
+      <img src="../assets/img/pages/sights/manastir/1.jpg" alt="Manastir Bodjani" />
     </div>
     <div class="slide">
-      <img src="../assets/img/sights/manastir/2.jpg" alt="Manastir Bodjani" />
+      <img src="../assets/img/pages/sights/manastir/2.jpg" alt="Manastir Bodjani" />
     </div>
     <div class="slide">
-      <img src="../assets/img/sights/manastir/3.jpg" alt="Manastir Bodjani" />
+      <img src="../assets/img/pages/sights/manastir/3.jpg" alt="Manastir Bodjani" />
     </div>
     <div class="slide">
-      <img src="../assets/img/sights/manastir/4.jpg" alt="Manastir Bodjani" />
+      <img src="../assets/img/pages/sights/manastir/4.jpg" alt="Manastir Bodjani" />
     </div>
     <button class="prevBtn">&#10094;</button>
     <button class="nextBtn">&#10095;</button>

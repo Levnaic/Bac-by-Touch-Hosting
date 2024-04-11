@@ -6,13 +6,13 @@
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">
     <div class="slide">
-      <img src="../assets/img/sights/samostan/0.jpg" alt="Franjevacki sasmostan" />
+      <img src="../assets/img/pages/sights/samostan/0.jpg" alt="Franjevacki sasmostan" />
     </div>
     <div class="slide">
-      <img src="../assets/img/sights/samostan/1.jpg" alt="Franjevacki sasmostan" />
+      <img src="../assets/img/pages/sights/samostan/1.jpg" alt="Franjevacki sasmostan" />
     </div>
     <div class="slide">
-      <img src="../assets/img/sights/samostan/2.jpg" alt="Franjevacki sasmostan" />
+      <img src="../assets/img/pages/sights/samostan/2.jpg" alt="Franjevacki sasmostan" />
     </div>
     <button class="prevBtn">&#10094;</button>
     <button class="nextBtn">&#10095;</button>

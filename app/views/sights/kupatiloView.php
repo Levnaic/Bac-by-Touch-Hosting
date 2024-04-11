@@ -6,7 +6,7 @@
   <!-- SLIDESHOW -->
   <section class="slideshow-container margins">
     <div class="slide">
-      <img src="../assets/img/sights/kupatilo/0.jpg" alt="Tursko kupatilo" />
+      <img src="../assets/img/pages/sights/kupatilo/0.jpg" alt="Tursko kupatilo" />
     </div>
     <button class="prevBtn">&#10094;</button>
     <button class="nextBtn">&#10095;</button>
