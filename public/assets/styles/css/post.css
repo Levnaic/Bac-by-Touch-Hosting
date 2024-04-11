@@ -531,6 +531,9 @@ footer .sponsors {
     align-items: center;
     gap: 30px;
   }
+  .sponsors img {
+    width: 100%;
+  }
 }
 .btnStandard {
   padding: 10px 30px;

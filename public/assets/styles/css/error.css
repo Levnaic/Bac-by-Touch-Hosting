@@ -531,6 +531,9 @@ footer .sponsors {
     align-items: center;
     gap: 30px;
   }
+  .sponsors img {
+    width: 100%;
+  }
 }
 #errorMsg {
   margin-top: 200px;

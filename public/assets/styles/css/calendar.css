@@ -413,6 +413,9 @@ footer .sponsors {
     align-items: center;
     gap: 30px;
   }
+  .sponsors img {
+    width: 100%;
+  }
 }
 ::after, ::before {
   box-sizing: border-box;

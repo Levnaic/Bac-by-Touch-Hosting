@@ -531,6 +531,9 @@ footer .sponsors {
     align-items: center;
     gap: 30px;
   }
+  .sponsors img {
+    width: 100%;
+  }
 }
 a {
   text-decoration: none;
