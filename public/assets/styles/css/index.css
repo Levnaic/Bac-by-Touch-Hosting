@@ -553,7 +553,7 @@ footer .sponsors {
 #headlineSection {
   position: relative;
   text-align: center;
-  background-image: url("../../img/nove-koristene/hero-pc.jpg");
+  background-image: url("../../img/pages/index/hero-pc.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -620,7 +620,7 @@ footer .sponsors {
 }
 #floatingPart .left {
   position: relative;
-  background-image: url("../../img/skinute/map3.jpg");
+  background-image: url("../../img/pages/index/map3.jpg");
 }
 #floatingPart .left::before {
   content: "";
@@ -635,7 +635,7 @@ footer .sponsors {
 }
 #floatingPart .right {
   position: relative;
-  background-image: url("../../img/skinute/event2.jpg");
+  background-image: url("../../img/pages/index/event2.jpg");
 }
 #floatingPart .right::before {
   content: "";
@@ -827,7 +827,7 @@ footer .sponsors {
     width: 100%;
     min-height: -moz-fit-content;
     min-height: fit-content;
-    background-image: url("../../img/nove-koristene/hero-mobile.jpg");
+    background-image: url("../../img/pages/index/hero-mobile.jpg");
   }
   #headlineSection .headlineBluredPart {
     padding-left: 0;
