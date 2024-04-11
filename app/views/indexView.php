@@ -43,7 +43,7 @@
         <h2 data-i18n="indexCardsHeadline"> POSETITE</h2>
         <div class="cards-container">
             <a href="/tvrdjava" class="card">
-                <img src="assets/img/cards/tvrdjava.jpg" class="cardImage" alt="Bačka tvrđava" />
+                <img src="assets/img/pages/index/cards/tvrdjava.jpg" class="cardImage" alt="Bačka tvrđava" loading="lazy" />
                 <p class="cardsHeadline animationCards" data-i18n="indexCardsSubheadline1">BAČKA TVRĐAVA</p>
                 <p class="cardsText" data-i18n="indexCardsText1">
                     DREVNI ČUVAR PANONSKE NIZIJE
@@ -51,7 +51,7 @@
             </a>
 
             <a href="/manastir" class="card">
-                <img src="assets/img/manastir.jpg" class="cardImage" alt="Manastir Bođani" />
+                <img src="assets/img/pages/index/cards/manastir.jpg" class="cardImage" alt="Manastir Bođani" loading="lazy" />
                 <p class="cardsHeadline animationCards">MANASTIR BOĐANI</p>
                 <p class="cardsText">
                     DUHOVNA ŠETNJA KROZ ČUDNOVATI MANASTIR
@@ -59,7 +59,7 @@
             </a>
 
             <a href="/samostan" class="card">
-                <img src="assets/img/samostan.jpg" class="cardImage" alt="Franjevački samostan" />
+                <img src="assets/img/pages/index/cards/samostan.jpg" class="cardImage" alt="Franjevački samostan" loading="lazy" />
                 <p class="cardsHeadline animationCards">FRANJEVAČKI <br> SAMOSTAN</p>
                 <p class="cardsText">
                     ŽIVOT KROZ VEKOVE SAMOSTANA
@@ -68,7 +68,7 @@
 
 
             <a href="/tursko-kupatilo" class="card">
-                <img src="assets/img/tursko-kupatilo.jpg" class="cardImage" alt="Tursko kupatilo" />
+                <img src="assets/img/pages/index/cards/tursko-kupatilo.jpg" class="cardImage" alt="Tursko kupatilo" loading="lazy" />
                 <p class="cardsHeadline animationCards">OSTACI <br> TURSKOG KUPATILA <br> - HAMAM</p>
                 <p class="cardsText">
                     AMANET OSMANSKOG CARSTVA

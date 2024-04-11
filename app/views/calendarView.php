@@ -180,6 +180,7 @@
                 firstDayOfWeek: 1,
                 language: 'sr',
                 todayHighlight: true,
+                // eventDisplayDefault: false,
                 calendarEvents: eventsArr
             })
 
