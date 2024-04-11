@@ -57,21 +57,21 @@
     <div class="suggestedPage">
       <p class="suggestedHeadline"></p>
       <a href="">
-        <img src="" alt="" class="suggestedImg">
+        <img src="" alt="" class="suggestedImg" loading="lazy">
       </a>
     </div>
 
     <div class="suggestedPage">
       <p class="suggestedHeadline"></p>
       <a href="">
-        <img src="" alt="" class="suggestedImg">
+        <img src="" alt="" class="suggestedImg" loading="lazy">
       </a>
     </div>
 
     <div class="suggestedPage">
       <p class="suggestedHeadline"></p>
       <a href="">
-        <img src="" alt="" class="suggestedImg">
+        <img src="" alt="" class="suggestedImg" loading="lazy">
       </a>
     </div>
 
