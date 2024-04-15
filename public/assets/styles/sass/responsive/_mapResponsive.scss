@@ -1,71 +1,78 @@
 //* MOBILE
 @media only screen and (max-width: 480px) {
-  .open-btn,
-  .close-btn {
-    display: block;
-  }
-  .open-btn {
-    all: unset;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1;
-    position: fixed;
-    font-size: 20px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    top: 10px;
-    left: 10px;
-    color: $secondaryColor;
-    background-color: $primaryColor;
-    z-index: 1000000000;
+
+  .markers-contrainer{
+    width: 33%;
   }
 
-  nav {
-    width: 80%;
-    min-height: fit-content;
-    .openMapResp {
-      font-size: 26px;
-      display: flex;
-    }
-    .focusedMode{
-      .zoomToLocation{
-        display: block;
-      }
-    }
-  }
-  #map-container {
-    // margin: 0;
-    // padding: 0;
-    .mapBoxContainer {
-      width: 100%;
-      display: block;
-    }
-    .markers-container {
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: fit-content;
-      .marker {
-        width: 80%;
-        min-height: fit-content;
-        &:last-child {
-          margin-bottom: 60px;
-        }
-      }
-    }
-  }
-  .mapPopups {
-    width: 80%;
-    .upperPart {
-      h3 {
-        margin-top: 70px;
-      }
-    }
-    textarea {
-      width: 80%;
-    }
-  }
+
+  // ! stari
+  // .open-btn,
+  // .close-btn {
+  //   display: block;
+  // }
+  // .open-btn {
+  //   all: unset;
+  //   width: 30px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   aspect-ratio: 1;
+  //   position: fixed;
+  //   font-size: 20px;
+  //   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  //     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  //   top: 10px;
+  //   left: 10px;
+  //   color: $secondaryColor;
+  //   background-color: $primaryColor;
+  //   z-index: 1000000000;
+  // }
+
+  // nav {
+  //   width: 80%;
+  //   min-height: fit-content;
+  //   .openMapResp {
+  //     font-size: 26px;
+  //     display: flex;
+  //   }
+  //   .focusedMode{
+  //     .zoomToLocation{
+  //       display: block;
+  //     }
+  //   }
+  // }
+  // #map-container {
+  //   // margin: 0;
+  //   // padding: 0;
+  //   .mapBoxContainer {
+  //     width: 100%;
+  //     display: block;
+  //   }
+  //   .markers-container {
+  //     align-items: center;
+  //     margin: 0;
+  //     padding: 0;
+  //     width: 100%;
+  //     height: fit-content;
+  //     .marker {
+  //       width: 80%;
+  //       min-height: fit-content;
+  //       &:last-child {
+  //         margin-bottom: 60px;
+  //       }
+  //     }
+  //   }
+  // }
+  // .mapPopups {
+  //   width: 80%;
+  //   .upperPart {
+  //     h3 {
+  //       margin-top: 70px;
+  //     }
+  //   }
+  //   textarea {
+  //     width: 80%;
+  //   }
+  // }
 }

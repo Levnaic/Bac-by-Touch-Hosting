@@ -5,13 +5,12 @@
   </p> -->
 </section>
 <section class="aU_persons margins popupSection">
-  <!-- //!privremeno h1  -->
   <h1>BBT tim</h1>
   <div class="persons">
 
 
     <div class="person">
-      <img src="assets/img/team/milan.jpg" alt="person" />
+      <img src="assets/img/team/milan.jpg" alt="Milan Koncar photo taken by Dragan Udovičić" />
       <p class="personName">Milan Končar</p>
       <div class="teamPageLink">
         <a href="/team/Milan">

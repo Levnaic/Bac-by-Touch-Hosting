@@ -10,6 +10,6 @@
         </div>
     </div>
     <div class="rightPart">
-        <img src="/assets/img/team/milan.jpg" alt="Milan Končar">
+        <img src="/assets/img/team/milan.jpg" alt="Milan Koncar photo taken by Dragan Udovičić">
     </div>
 </section>

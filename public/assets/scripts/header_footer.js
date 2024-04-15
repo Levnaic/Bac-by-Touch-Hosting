@@ -14,12 +14,12 @@ const header = document.querySelector("header");
 const yellowRibbon = document.querySelector(".menu__wrapper-yellow");
 const greenRibbon = document.querySelector(".menu__wrapper-green");
 const navBtns = document.querySelectorAll(".nav-btn");
-const dropdownLis = document.querySelectorAll(".dropdown-li");
-const dropdowns = document.querySelectorAll(".dropdown");
-const dropdownSvgs = document.querySelectorAll(".dropdown-svg");
+const dropdownLi = document.querySelector(".dropdown-li");
+const dropdown = document.querySelector(".dropdown");
+const dropdownSvg = document.querySelector(".dropdown-svg");
 
 let isMenuOpened = false;
-let isDropdownOpen = [false, false];
+let isDropdownOpen = false;
 
 function openMenu() {
   setTimeout(() => {
@@ -47,17 +47,16 @@ function closeMenu() {
   isMenuOpened = false;
 }
 
-function closeDropdown(i) {
-  dropdowns[i].style.display = "none";
-  dropdownSvgs[i].style.rotate = "0deg";
-  isDropdownOpen[i] = false;
+function closeDropdown() {
+  dropdown.style.display = "none";
+  dropdownSvg.style.rotate = "0deg";
+  isDropdownOpen = false;
 }
 function openDropdown(i) {
-  closeDropdown(0);
-  closeDropdown(1);
-  dropdowns[i].style.display = "block";
-  dropdownSvgs[i].style.rotate = "180deg";
-  isDropdownOpen[i] = true;
+  closeDropdown();
+  dropdown.style.display = "block";
+  dropdownSvg.style.rotate = "180deg";
+  isDropdownOpen = true;
 }
 
 burgerMenu.addEventListener("click", () => {
@@ -65,10 +64,8 @@ burgerMenu.addEventListener("click", () => {
 });
 
 if (isMobile()) {
-  dropdownLis.forEach((dropdownLi, i) => {
-    dropdownLi.addEventListener("click", () => {
-      isDropdownOpen[i] ? closeDropdown(i) : openDropdown(i);
-    });
+  dropdownLi.addEventListener("click", () => {
+    isDropdownOpen ? closeDropdown() : openDropdown();
   });
 }
 //* sticky navbar
