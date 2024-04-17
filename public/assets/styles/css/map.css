@@ -514,65 +514,52 @@ nav .focusedMode .zoomToLocation {
 }
 
 @media only screen and (max-width: 480px) {
-  .open-btn,
-  .close-btn {
-    display: block;
-  }
-  .open-btn {
-    all: unset;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1;
-    position: fixed;
-    font-size: 20px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    top: 10px;
-    left: 10px;
-    color: #679e73;
-    background-color: #f1c376;
-    z-index: 1000000000;
-  }
   nav {
     width: 80%;
     min-height: -moz-fit-content;
     min-height: fit-content;
   }
-  nav .openMapResp {
-    font-size: 26px;
-    display: flex;
+  nav .mapNavBtn {
+    width: 90%;
   }
-  nav .focusedMode .zoomToLocation {
-    display: block;
+  nav .standardMode #mapCategorySelect {
+    width: 90%;
+    font-size: 14px;
+  }
+  #map-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #map-container .markers-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    z-index: 100;
+    width: 100%;
+    height: 40vh;
+    overflow: scroll;
+    position: unset;
+  }
+  #map-container .markers-container .marker {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    width: 80%;
   }
   #map-container .mapBoxContainer {
     width: 100%;
-    display: block;
+    bottom: 0;
+    top: unset;
+    z-index: 101;
+    border-top: 5px inset #679e73;
   }
-  #map-container .markers-container {
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: -moz-fit-content;
-    height: fit-content;
+  .rateOther {
+    height: auto;
+    display: flex;
   }
-  #map-container .markers-container .marker {
-    width: 80%;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
+  .rateOther:not(:checked) > label {
+    font-size: 20px;
   }
-  #map-container .markers-container .marker:last-child {
-    margin-bottom: 60px;
-  }
-  .mapPopups {
-    width: 80%;
-  }
-  .mapPopups .upperPart h3 {
-    margin-top: 70px;
-  }
-  .mapPopups textarea {
-    width: 80%;
+  .markerContact-container .contactLink a {
+    text-align: end;
   }
 }/*# sourceMappingURL=map.css.map */

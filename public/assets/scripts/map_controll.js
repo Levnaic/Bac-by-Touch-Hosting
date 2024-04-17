@@ -16,7 +16,6 @@ const domElements = {
   btnShowAll: document.querySelector(".showAll"),
   btnShowLocation: document.querySelector(".zoomToLocation"),
   openMapResponsive: document.querySelector(".openMapResp"),
-  
 };
 
 let userLocation = {
@@ -45,10 +44,18 @@ let iconsMaping = {
   caffe: "fa-coffee icon-caffe",
   suveniri: "fa-shopping-bag icon-suveniri",
   usluge: "fa-handshake-o icon-usluge",
-  ostalo: ""
+  ostalo: "",
 };
 
 //* FUNCTIONS
+
+// helper functions
+
+function isMobile() {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+}
 
 function initializeMap(
   lat,
@@ -90,10 +97,12 @@ function getMapPossition() {
   mapZoom = map.getZoom();
 }
 
+// change height of map, if desktop then it will be 100% if mobile then 60%
 function changeMapSize() {
-  screenHeight = window.innerHeight;
+  const screenHeight = isMobile()
+    ? window.innerHeight * 0.6
+    : window.innerHeight;
   domElements.mapBox.style.height = `${screenHeight}px`;
-  //! dodano
   map?.invalidateSize();
 }
 
