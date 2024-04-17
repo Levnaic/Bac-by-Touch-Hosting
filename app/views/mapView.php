@@ -65,15 +65,7 @@
                 <div class="marker">
                     <div class="upperMarker">
                         <p class="markersHeadline"><?php echo $row->title; ?></p>
-                        <p>
-                            <?php
-                            // if ($row->category == "hrana") echo "&#127828;";
-                            // if ($row->category == "pica") echo "&#127870;";
-                            // if ($row->category == "usluge") echo "&#128736;&#65039;";
-                            ?>
 
-
-                        </p>
                     </div>
                     <!-- marker rating -->
                     <div class="rateOther">

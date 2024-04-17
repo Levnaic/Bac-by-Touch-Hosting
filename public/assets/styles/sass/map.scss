@@ -3,12 +3,12 @@
 @import "partials/btn/btnCta";
 
 // map icons colors and select option colors
-$proizvodiColor: #44AF69;
-$restoraniColor: #F8333C;
-$caffeColor: #2B9EB3;
-$suveniriColor: #8F3985;
-$uslugeColor: #2E4057;
-$ostaloColor: #393D3F;
+$proizvodiColor: #44af69;
+$restoraniColor: #f8333c;
+$caffeColor: #2b9eb3;
+$suveniriColor: #8f3985;
+$uslugeColor: #2e4057;
+$ostaloColor: #393d3f;
 
 body {
   position: relative;
@@ -88,7 +88,7 @@ nav {
     display: none;
     justify-content: center;
     align-items: center;
-    .zoomToLocation{
+    .zoomToLocation {
       display: none;
     }
   }
@@ -117,11 +117,11 @@ nav {
   color: $suveniriColor;
 }
 
-.icon-usluge{
+.icon-usluge {
   color: $uslugeColor;
 }
 
-.icon-ostalo{
+.icon-ostalo {
   color: $ostaloColor;
 }
 
@@ -129,29 +129,6 @@ nav {
   //! ISKLJUCITI U PRODUKCIJI!!
   // display: none;
   .markers-container {
-    // select option colors
-    .optionProizvodi{
-      background-color: $proizvodiColor;
-    }
-    .optionRestorani{
-      background-color: $restoraniColor;
-    }
-    .optionCaffe{
-      background-color: $caffeColor;
-
-    }
-    .optionSuveniri{
-      background-color: $suveniriColor;
-      color: $backgroundColor;
-    }
-    .optionUsluge{
-      background-color: $uslugeColor;
-      color: $backgroundColor;
-    }
-    .optionOstalo{
-      background-color: $ostaloColor;
-      color: $backgroundColor;
-    }
     margin-bottom: 60px;
     position: relative;
     left: 2%;
@@ -171,15 +148,33 @@ nav {
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
         rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
       cursor: pointer;
-      .upperMarker {
-        display: flex;
-        gap: 40px;
-      }
       .markerInvisablePart {
         display: none;
       }
       .markerMeta {
         display: none;
+      }
+      // select option colors
+      .optionProizvodi {
+        background-color: $proizvodiColor;
+      }
+      .optionRestorani {
+        background-color: $restoraniColor;
+      }
+      .optionCaffe {
+        background-color: $caffeColor;
+      }
+      .optionSuveniri {
+        background-color: $suveniriColor;
+        color: $backgroundColor;
+      }
+      .optionUsluge {
+        background-color: $uslugeColor;
+        color: $backgroundColor;
+      }
+      .optionOstalo {
+        background-color: $ostaloColor;
+        color: $backgroundColor;
       }
     }
     .invisibleMarker {
