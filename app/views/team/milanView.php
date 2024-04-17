@@ -13,3 +13,7 @@
         <img src="/assets/img/team/milan.jpg" alt="Milan Koncar photo taken by Dragan Udovičić">
     </div>
 </section>
+
+<!-- //* SCRIPTS -->
+<script src="/assets/scripts/main.js"></script>
+<script src="/assets/scripts/header_footer.js"></script>

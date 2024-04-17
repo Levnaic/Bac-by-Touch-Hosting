@@ -514,33 +514,65 @@ nav .focusedMode .zoomToLocation {
 }
 
 @media only screen and (max-width: 480px) {
+  .open-btn,
+  .close-btn {
+    display: block;
+  }
+  .open-btn {
+    all: unset;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    position: fixed;
+    font-size: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    top: 10px;
+    left: 10px;
+    color: #679e73;
+    background-color: #f1c376;
+    z-index: 1000000000;
+  }
   nav {
     width: 80%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
-  nav .mapNavBtn {
-    width: 90%;
+  nav .openMapResp {
+    font-size: 26px;
+    display: flex;
   }
-  nav .standardMode #mapCategorySelect {
-    width: 90%;
-    font-size: 14px;
+  nav .focusedMode .zoomToLocation {
+    display: block;
+  }
+  #map-container .mapBoxContainer {
+    width: 100%;
+    display: block;
   }
   #map-container .markers-container {
-    width: 50%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #map-container .markers-container .marker {
     width: 80%;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
   }
-  #map-container .mapBoxContainer {
-    width: 50%;
+  #map-container .markers-container .marker:last-child {
+    margin-bottom: 60px;
   }
-  .rateOther {
-    height: auto;
-    display: flex;
+  .mapPopups {
+    width: 80%;
   }
-  .rateOther:not(:checked) > label {
-    font-size: 20px;
+  .mapPopups .upperPart h3 {
+    margin-top: 70px;
   }
-  .markerContact-container .contactLink a {
-    text-align: end;
+  .mapPopups textarea {
+    width: 80%;
   }
 }/*# sourceMappingURL=map.css.map */

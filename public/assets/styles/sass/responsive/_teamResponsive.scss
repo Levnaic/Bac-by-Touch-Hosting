@@ -1,7 +1,13 @@
 @media (max-width: 480px) {
-  #teamMember{
+  #teamMember {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    .rightPart {
+      img {
+        width: 220px;
+        height: 220px;
+      }
+    }
   }
-  }
+}

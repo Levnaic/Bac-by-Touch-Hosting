@@ -81,6 +81,7 @@
                         <label title="text">1 star</label>
                     </div>
 
+                    <!-- links for mail, phone and adress of producers -->
                     <p class="textMarker"><?php echo $row->body; ?></p>
                     <div class="markerContact-container">
                         <?php if ($row->contact != null) { ?>

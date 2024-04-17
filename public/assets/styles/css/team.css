@@ -580,4 +580,8 @@ footer .sponsors {
     justify-content: center;
     align-items: center;
   }
+  #teamMember .rightPart img {
+    width: 220px;
+    height: 220px;
+  }
 }/*# sourceMappingURL=team.css.map */

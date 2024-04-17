@@ -1,114 +1,115 @@
 //* MOBILE
 @media only screen and (max-width: 480px) {
-  nav {
-    width: 80%;
-    .mapNavBtn {
-      width: 90%;
-    }
-    .standardMode {
-      #mapCategorySelect {
-        width: 90%;
-        font-size: $mobileSize;
-      }
-    }
-  }
-
-  #map-container {
-    .markers-container {
-      width: 50%;
-      .marker {
-        width: 80%;
-      }
-    }
-
-    .mapBoxContainer {
-      width: 50%;
-    }
-  }
-
-  .rateOther {
-    height: auto;
-    display: flex;
-    &:not(:checked) > label {
-      font-size: 20px;
-    }
-  }
-
-  .markerContact-container {
-    .contactLink {
-      a {
-        text-align: end;
-      }
-    }
-  }
-
-  // ! stari
-  // .open-btn,
-  // .close-btn {
-  //   display: block;
-  // }
-  // .open-btn {
-  //   all: unset;
-  //   width: 30px;
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   aspect-ratio: 1;
-  //   position: fixed;
-  //   font-size: 20px;
-  //   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-  //     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  //   top: 10px;
-  //   left: 10px;
-  //   color: $secondaryColor;
-  //   background-color: $primaryColor;
-  //   z-index: 1000000000;
-  // }
-
+  // ! NOVA VERZIJA
   // nav {
   //   width: 80%;
-  //   min-height: fit-content;
-  //   .openMapResp {
-  //     font-size: 26px;
-  //     display: flex;
+  //   .mapNavBtn {
+  //     width: 90%;
   //   }
-  //   .focusedMode {
-  //     .zoomToLocation {
-  //       display: block;
+  //   .standardMode {
+  //     #mapCategorySelect {
+  //       width: 90%;
+  //       font-size: $mobileSize;
   //     }
   //   }
   // }
+
   // #map-container {
-  //   // margin: 0;
-  //   // padding: 0;
-  //   .mapBoxContainer {
-  //     width: 100%;
-  //     display: block;
-  //   }
   //   .markers-container {
-  //     align-items: center;
-  //     margin: 0;
-  //     padding: 0;
-  //     width: 100%;
-  //     height: fit-content;
+  //     width: 50%;
   //     .marker {
   //       width: 80%;
-  //       min-height: fit-content;
-  //       &:last-child {
-  //         margin-bottom: 60px;
-  //       }
+  //     }
+  //   }
+
+  //   .mapBoxContainer {
+  //     width: 50%;
+  //   }
+  // }
+
+  // .rateOther {
+  //   height: auto;
+  //   display: flex;
+  //   &:not(:checked) > label {
+  //     font-size: 20px;
+  //   }
+  // }
+
+  // .markerContact-container {
+  //   .contactLink {
+  //     a {
+  //       text-align: end;
   //     }
   //   }
   // }
-  // .mapPopups {
-  //   width: 80%;
-  //   .upperPart {
-  //     h3 {
-  //       margin-top: 70px;
-  //     }
-  //   }
-  //   textarea {
-  //     width: 80%;
-  //   }
-  // }
+  // !KRAJ NOVE VERZIJE
+  // ! stari
+  .open-btn,
+  .close-btn {
+    display: block;
+  }
+  .open-btn {
+    all: unset;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    position: fixed;
+    font-size: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    top: 10px;
+    left: 10px;
+    color: $secondaryColor;
+    background-color: $primaryColor;
+    z-index: 1000000000;
+  }
+
+  nav {
+    width: 80%;
+    min-height: fit-content;
+    .openMapResp {
+      font-size: 26px;
+      display: flex;
+    }
+    .focusedMode {
+      .zoomToLocation {
+        display: block;
+      }
+    }
+  }
+  #map-container {
+    // margin: 0;
+    // padding: 0;
+    .mapBoxContainer {
+      width: 100%;
+      display: block;
+    }
+    .markers-container {
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: fit-content;
+      .marker {
+        width: 80%;
+        min-height: fit-content;
+        &:last-child {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+  .mapPopups {
+    width: 80%;
+    .upperPart {
+      h3 {
+        margin-top: 70px;
+      }
+    }
+    textarea {
+      width: 80%;
+    }
+  }
 }

@@ -15,3 +15,7 @@
         <img src="/assets/img/team/branka.jpg" alt="Branka Subotić">
     </div>
 </section>
+
+<!-- //* SCRIPTS -->
+<script src="/assets/scripts/main.js"></script>
+<script src="/assets/scripts/header_footer.js"></script>
