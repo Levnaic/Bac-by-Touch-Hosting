@@ -30,6 +30,9 @@
       .marker {
         min-height: fit-content;
         width: 80%;
+        &:last-child {
+          margin-bottom: 60px;
+        }
       }
     }
 
@@ -52,6 +55,7 @@
 
   .markerContact-container {
     .contactLink {
+      margin-bottom: 20px;
       a {
         text-align: end;
       }

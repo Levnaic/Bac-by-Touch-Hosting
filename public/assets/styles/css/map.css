@@ -545,6 +545,9 @@ nav .focusedMode .zoomToLocation {
     min-height: fit-content;
     width: 80%;
   }
+  #map-container .markers-container .marker:last-child {
+    margin-bottom: 60px;
+  }
   #map-container .mapBoxContainer {
     width: 100%;
     bottom: 0;
@@ -558,6 +561,9 @@ nav .focusedMode .zoomToLocation {
   }
   .rateOther:not(:checked) > label {
     font-size: 20px;
+  }
+  .markerContact-container .contactLink {
+    margin-bottom: 20px;
   }
   .markerContact-container .contactLink a {
     text-align: end;
