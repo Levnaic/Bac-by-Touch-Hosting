@@ -517,6 +517,9 @@ nav .focusedMode .zoomToLocation {
   nav {
     width: 80%;
   }
+  nav .mapNavBtn {
+    width: 90%;
+  }
   nav .standardMode #mapCategorySelect {
     width: 90%;
     font-size: 14px;

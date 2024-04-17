@@ -2,6 +2,9 @@
 @media only screen and (max-width: 480px) {
   nav {
     width: 80%;
+    .mapNavBtn {
+      width: 90%;
+    }
     .standardMode {
       #mapCategorySelect {
         width: 90%;
