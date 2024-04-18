@@ -29,7 +29,8 @@
       position: unset;
       .marker {
         min-height: fit-content;
-        width: 80%;
+        width: 90%;
+        padding: 0px 10px;
         &:last-child {
           margin-bottom: 60px;
         }
