@@ -48,6 +48,7 @@
                         <option value="caffe" class="optionCaffe">Caffe</option>
                         <option value="suveniri" class="optionSuveniri">Suveniri</option>
                         <option value="usluge" class="optionUsluge">Usluge</option>
+                        <option value="prenociste" class="optionPrenociste">Prenoćište</option>
                         <option value="ostalo" class="optionOstalo">Ostalo</option>
                     </select>
                 </div>

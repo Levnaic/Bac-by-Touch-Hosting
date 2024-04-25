@@ -8,6 +8,7 @@ $restoraniColor: #f8333c;
 $caffeColor: #2b9eb3;
 $suveniriColor: #8f3985;
 $uslugeColor: #2e4057;
+$prenocisteColor: rgb(211, 149, 34);
 $ostaloColor: #393d3f;
 
 body {
@@ -121,6 +122,10 @@ nav {
   color: $uslugeColor;
 }
 
+.icon-prenociste{
+  color: $prenocisteColor;
+}
+
 .icon-ostalo {
   color: $ostaloColor;
 }
@@ -172,10 +177,14 @@ nav {
         background-color: $uslugeColor;
         color: $backgroundColor;
       }
+      .optionPrenociste{
+        background-color: $prenocisteColor;
+      }
       .optionOstalo {
         background-color: $ostaloColor;
         color: $backgroundColor;
       }
+
     }
     .invisibleMarker {
       display: none;

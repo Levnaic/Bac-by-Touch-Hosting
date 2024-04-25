@@ -16,6 +16,7 @@
                 <option value="caffe">Caffe</option>
                 <option value="suveniri">Suveniri</option>
                 <option value="usluge">Usluge</option>
+                <option value="prenociste">Prenoćište</option>
                 <option value="ostalo">Ostalo</option>
             </select>
             <div class="formButtons">

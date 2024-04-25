@@ -44,6 +44,7 @@ let iconsMaping = {
   caffe: "fa-coffee icon-caffe",
   suveniri: "fa-shopping-bag icon-suveniri",
   usluge: "fa-handshake-o icon-usluge",
+  prenociste: "fa-bed icon-prenociste",
   ostalo: "",
 };
 

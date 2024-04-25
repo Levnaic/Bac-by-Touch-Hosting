@@ -271,6 +271,10 @@ nav .focusedMode .zoomToLocation {
   color: #2e4057;
 }
 
+.icon-prenociste {
+  color: rgb(211, 149, 34);
+}
+
 .icon-ostalo {
   color: #393d3f;
 }
@@ -318,6 +322,9 @@ nav .focusedMode .zoomToLocation {
 #map-container .markers-container .marker .optionUsluge {
   background-color: #2e4057;
   color: #fff4f4;
+}
+#map-container .markers-container .marker .optionPrenociste {
+  background-color: rgb(211, 149, 34);
 }
 #map-container .markers-container .marker .optionOstalo {
   background-color: #393d3f;

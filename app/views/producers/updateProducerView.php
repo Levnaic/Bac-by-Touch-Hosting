@@ -17,6 +17,7 @@
                 <option value="caffe" <?php if ($row->category == "caffe") echo "selected"; ?>>Caffe</option>
                 <option value="suveniri" <?php if ($row->category == "suveniri") echo "selected"; ?>>Suveniri</option>
                 <option value="usluge" <?php if ($row->category == "usluge") echo "selected"; ?>>Usluge</option>
+                <option value="prenociste" <?php if ($row->category == "prenociste") echo "selected"; ?>>Prenoćište</option>
                 <option value="ostalo" <?php if ($row->category == "usluge") echo "selected"; ?>>Ostalo</option>
             </select>
             <div class="formButtons">
