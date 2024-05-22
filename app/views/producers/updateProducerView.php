@@ -18,7 +18,8 @@
                 <option value="suveniri" <?php if ($row->category == "suveniri") echo "selected"; ?>>Suveniri</option>
                 <option value="usluge" <?php if ($row->category == "usluge") echo "selected"; ?>>Usluge</option>
                 <option value="prenociste" <?php if ($row->category == "prenociste") echo "selected"; ?>>Prenoćište</option>
-                <option value="ostalo" <?php if ($row->category == "usluge") echo "selected"; ?>>Ostalo</option>
+                <option value="lokaliteti" <?php if ($row->category == "lokaliteti") echo "selected"; ?>>Turistički lokaliteti</option>
+                <option value="ostalo" <?php if ($row->category == "ostalo") echo "selected"; ?>>Ostalo</option>
             </select>
             <div class="formButtons">
                 <button type="button" onclick="confirmUpdate(<?php echo $row->id; ?>)" class="loginButton">Create</button>

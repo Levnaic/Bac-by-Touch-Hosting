@@ -45,6 +45,7 @@ let iconsMaping = {
   suveniri: "fa-shopping-bag icon-suveniri",
   usluge: "fa-handshake-o icon-usluge",
   prenociste: "fa-bed icon-prenociste",
+  lokaliteti: "fa-compass icon-lokaliteti",
   ostalo: "",
 };
 

@@ -9,6 +9,7 @@ $caffeColor: #2b9eb3;
 $suveniriColor: #8f3985;
 $uslugeColor: #2e4057;
 $prenocisteColor: rgb(211, 149, 34);
+$lokalitetiColor: #74512D;
 $ostaloColor: #393d3f;
 
 body {
@@ -124,6 +125,10 @@ nav {
 
 .icon-prenociste{
   color: $prenocisteColor;
+}
+
+.icon-lokaliteti{
+  color: $lokalitetiColor;
 }
 
 .icon-ostalo {

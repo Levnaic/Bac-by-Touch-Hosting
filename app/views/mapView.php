@@ -49,6 +49,7 @@
                         <option value="suveniri" class="optionSuveniri">Suveniri</option>
                         <option value="usluge" class="optionUsluge">Usluge</option>
                         <option value="prenociste" class="optionPrenociste">Prenoćište</option>
+                        <option value="lokaliteti" class="optionLokaliteti">Turistički lokaliteti</option>
                         <option value="ostalo" class="optionOstalo">Ostalo</option>
                     </select>
                 </div>
