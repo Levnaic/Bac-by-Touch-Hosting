@@ -39,13 +39,13 @@ let locationsObjArr = [];
 
 // classes that will be added to icons connected to font awesome
 let iconsMaping = {
-  proizvodi: "fa-glass icon-proizvodi",
-  restorani: "fa-cutlery icon-restorani",
-  caffe: "fa-coffee icon-caffe",
-  suveniri: "fa-shopping-bag icon-suveniri",
-  usluge: "fa-handshake-o icon-usluge",
-  prenociste: "fa-bed icon-prenociste",
-  lokaliteti: "fa-compass icon-lokaliteti",
+  proizvodi: "fa-glass fa-lg icon-proizvodi",
+  restorani: "fa-cutlery fa-lg icon-restorani",
+  caffe: "fa-coffee fa-lg icon-caffe",
+  suveniri: "fa-shopping-bag fa-lg icon-suveniri",
+  usluge: "fa-handshake-o fa-lg icon-usluge",
+  prenociste: "fa-bed fa-lg icon-prenociste",
+  lokaliteti: "fa-university fa-lg icon-lokaliteti",
   ostalo: "",
 };
 
